@@ -217,7 +217,19 @@ nav ul::-webkit-scrollbar {
 
 /* Style for each menu link */
 nav ul li {
-    margin: 0 15px;
+    margin: 0 7px;
+}
+
+/* Add vertical line after each item */
+nav ul li::after {
+    content: "|"; /* Vertical divider */
+    color: rgba(46, 46, 46, 0.5); 
+    margin-left: 15px; /* Space between text and divider */
+}
+
+/* Remove divider from last item */
+nav ul li:last-child::after {
+    content: "";
 }
 
 nav ul li a {
@@ -356,6 +368,13 @@ html {
         background-attachment: fixed; /* Keeps background fixed on scroll */
     }
     nav ul li {
-        margin: 5px;
+        margin: 0 0px;
+    }
+    
+    /* Add vertical line after each item */
+    nav ul li::after {
+        content: "|"; /* Vertical divider */
+        color: rgba(46, 46, 46, 0.5); 
+        margin-left: 0px; /* Space between text and divider */
     }
 }
