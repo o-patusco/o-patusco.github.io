@@ -1,0 +1,358 @@
+/* General Page Styling */
+body {
+    background-color: #ffffff; /* Light beige */
+    background-image: url("Aberto.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #4A2E1D; /* Dark brown */
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400; /* Regular */
+}
+
+/* Style the header */
+header {
+    text-align: center; /* Center-align all content */
+    padding: 20px;
+}
+
+/* Logo Styling */
+.header-logo {
+    width: 150px; /* Adjust size as needed */
+    height: 150px; /* Make sure height equals width */
+    border-radius: 50%; /* Creates the circle effect */
+    object-fit: cover; /* Ensures the image fills the circle properly */
+    display: block;
+    margin: 0 auto 10px auto; /* Centers the image */
+}
+
+/* Title Styling */
+h1 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 50px;
+    color: #ffffff; /* Dark brown */
+    margin: 0;
+}
+
+/* Subtitle Styling */
+.subtitle {
+    font-size: 18px;
+    color: #f1f1f1;
+    margin-top: 5px;
+}
+
+/* Titles */
+h2 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 28px;
+    font-weight: 600;
+    color: #ffffff;
+    border-bottom: 3px solid #ede0c4;
+    display: inline-block;
+    padding-bottom: 5px;
+    padding: 10px 15px;
+    position: absolute;
+    top: -100px; /* Moves title above the box */
+    left: 50%;
+    transform: translateX(-50%); /* Centers title */
+}
+
+h3 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 300; /* Light weight */
+    font-size: 22px;
+    text-transform: uppercase; /* Optional: Makes text uppercase */
+    letter-spacing: 1px; /* Optional: Adds slight spacing */
+    margin-bottom: 0px; /* Ensures spacing between h3 and table */
+    margin-top: 40px; /* Adds more space above h3 */
+}
+
+/* Tables */
+table {
+    width: 90%;
+    border-collapse: collapse;
+    margin: 30px auto;
+    table-layout: fixed;
+}
+
+th, td {
+    border: 10px solid #ddd;
+    padding: 12px
+}
+
+th {
+    background-color: #242021; /* Dark brown */
+    color: white;
+    font-weight: bold;
+}
+
+
+th:first-child, td:first-child {
+    width: 70%; /* Left column takes 70% */
+    text-align: left;
+}
+
+th:last-child, td:last-child {
+    width: 30%; /* Right column takes 30% */
+    text-align: center;
+}
+
+
+tr:nth-child(even) {
+    background-color: #F5F0E6;
+}
+
+#bebidas, #pratos, #sobremesas, #snacks {
+    width: 90%; /* Limit width to 90% of the page */
+    max-width: 900px; /* Prevent sections from becoming too wide on large screens */
+    background-color: rgba(255, 255, 255, 0.6); /* Light opacity white */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 120px auto; /* Extra space above */
+    position: relative;
+    margin-bottom: 20px
+}
+
+
+/* Menú do Dia Section */
+#menu-dia {
+    width: 50%; /* Adjust width */
+    max-width: 800px;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark brown */
+    color: white; /* White text for contrast */
+    text-align: center;
+    padding: 10px 10px;
+    border-radius: 10px;
+    font-size: 22px;
+    margin: 20px auto; /* Center the section */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Special Styling for the Menu Description */
+.menu-description {
+    font-size: clamp(12px, 4vw, 20px); /* Dynamically resizes between 16px and 20px */
+    margin-top: 10px;
+    white-space: nowrap; /* Prevents text from breaking into multiple lines */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    width: 100%;
+}
+
+/* Styling for individual items */
+.menu-item {
+    font-weight: bold;
+    color: #ede0c4; /* Gold color for emphasis */
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Styling for the price */
+.menu-price {
+    font-weight: bold;
+    color: #ede0c4; /* Light gold */
+    font-size: 24px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.menu-time {
+    font-size: 14px;
+    margin-top: -10px;
+    color: #c3c2be; /* Gold for a subtle highlight */
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400; /* Regular */
+}
+
+
+/* Navigation Menu  --------------------------------   */
+nav {
+    padding: 10px 0;
+    background-color: rgb(237, 224, 196, 0.6);
+    text-align: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+
+/* Style for the menu items */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    overflow-x: auto; /* Enables horizontal scrolling */
+    white-space: nowrap; /* Prevents items from wrapping */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling for iOS */
+    padding: 10px; /* Space to avoid cut-off */
+}
+
+nav ul::-webkit-scrollbar {
+    display: none; /* Hides scrollbar for a cleaner look */
+}
+
+/* Style for each menu link */
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(46, 46, 46);
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 12px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.nav-line {
+    width: 40%; /* Line width */
+    height: 2px; /* Line thickness */
+    background-color: #ede0c4; /* Dark brown */
+    margin: 10px auto; /* Centers the line */
+}
+
+/* Hover effect */
+nav ul li a:hover {
+    background-color: #232323; /* Gold highlight on hover */
+    color: #ffffff; /* Dark text on hover */
+}
+
+
+/* Footer Section */
+footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    width: 100%;
+    margin-top: 30px;
+}
+
+/* Footer Content */
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px; /* Space between elements */
+    flex-wrap: wrap; /* Ensures items wrap if needed on smaller screens */
+}
+
+/* Instagram Section */
+.instagram-container {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Adjust spacing */
+    text-decoration: none;
+    color: white; /* Removes blue color */
+    font-size: 16px; /* Adjusts text size */
+    font-weight: bold;
+}
+
+/* Social Icon (Instagram) */
+.social-icon {
+    width: 25px; /* Adjust for mobile */
+    height: auto;
+}
+
+/* Phone Container */
+.phone-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: white;
+    font-size: 16px; /* Adjust font size */
+}
+
+/* Phone Icon */
+.phone-icon {
+    width: 22px; /* Adjust for mobile */
+    height: auto;
+}
+
+/* Remove Default Link Colors */
+.footer-content a {
+    text-decoration: none; /* Removes underline */
+    color: white; /* Ensures white text */
+}
+
+
+
+
+
+
+
+
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+
+
+
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    section {
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    th, td {
+        border: 5px solid #ddd;
+        padding: 6px;
+        font-size: 12px;
+    }
+    
+    #menu-dia {
+        width: 80%;
+    }
+
+    table {
+        margin: 10px;
+    }
+
+    h3 {
+        margin-top: 20px;
+    }
+    body {
+        background-size: auto; /* Keeps the original image size */
+        background-position: center; /* Aligns the tiles from the top-left */
+        background-repeat: repeat; /* Enables the mosaic effect */
+        background-attachment: fixed; /* Keeps background fixed on scroll */
+
+}
