@@ -123,6 +123,14 @@ tr:nth-child(even) {
     margin-bottom: 20px
 }
 
+.aviso-disponibilidade {
+    color: gray;
+    font-size: 14px;
+    font-style: italic;
+    margin-top: 0px;
+    text-align: center;
+  }
+
 
 /* Menú do Dia Section */
 #menu-dia {
