@@ -381,7 +381,6 @@ html {
     body {
         background-size: auto; /* Keeps the original image size */
         background-position: center; /* Aligns the tiles from the top-left */
-        background-repeat: repeat; /* Enables the mosaic effect */
         background-attachment: fixed; /* Keeps background fixed on scroll */
     }
     nav ul {
