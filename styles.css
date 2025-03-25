@@ -383,6 +383,12 @@ html {
         background-position: center; /* Aligns the tiles from the top-left */
         background-attachment: fixed; /* Keeps background fixed on scroll */
     }
+
+    .aviso-disponibilidade {
+        font-size: 10px;
+      }
+    
+
     nav ul {
         flex-wrap: wrap; /* Items will wrap to a new line */
         justify-content: center; /* Centers items */
