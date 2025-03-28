@@ -498,7 +498,7 @@ html {
 .cart ul {
     list-style: none;
     padding-left: 0;
-    max-height: 200px;   /* optional: scroll if too long */
+    max-height: 400px;   /* optional: scroll if too long */
     overflow-y: auto;
 }
   
@@ -622,6 +622,7 @@ html {
     }
 
     .cart{
+        display: none;
         font-size: 14px;
         line-height: 0.8; 
         margin: 0px 0;  
