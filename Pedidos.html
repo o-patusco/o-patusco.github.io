@@ -56,6 +56,44 @@
             return;
         }
 
+        const pickupInput = document.getElementById('pickup-time');
+        const pickupTime = pickupInput.value;
+
+        if (!pickupTime) {
+            alert("Por favor, indica a hora de levantamento.");
+            return;
+        }
+
+        const [hours, minutes] = pickupTime.split(":").map(Number);
+        const now = new Date();
+        const pickup = new Date();
+        pickup.setHours(hours, minutes, 0, 0);
+
+        const day = now.getDay(); // 0 = Sunday, 1 = Monday, ..., 6 = Saturday
+        const diffMinutes = (pickup - now) / (1000 * 60);
+
+        // Rule 1: No orders on Monday
+        if (day === 1) {
+            alert("Não aceitamos pedidos à segunda-feira. Por favor escolhe outro dia.");
+            return;
+        }
+
+        // Rule 2: Must be at least 15 minutes ahead
+        if (diffMinutes < 15) {
+            alert("Por favor escolhe uma hora de levantamento pelo menos 15 minutos após o momento atual.");
+            return;
+        }
+
+        // Rule 3: Validate allowed hours
+        const isLunchTime = hours >= 12 && hours < 15;
+        const isDinnerTime = hours >= 19 && (hours < 22 || (hours === 22 && minutes === 0));
+        const isDinnerDay = day === 4 || day === 5 || day === 6; // Thursday to Saturday
+
+        if (!isLunchTime && !(isDinnerDay && isDinnerTime)) {
+            alert("Por favor escolhe uma hora dentro do nosso horário:\n12:00–15:00 (Terça a Domingo)\n19:30–22:00 (Quinta a Sábado)");
+            return;
+        }
+
         let total = 0;
         const messageItems = Object.entries(order)
             .filter(([_, data]) => data.quantity > 0)
@@ -66,8 +104,7 @@
             })
             .join("\n");
 
-        const message = `Olá! Gostaria de pedir:\n${messageItems}\n\nTotal: ${total.toFixed(2)} €`;
-
+        const message = `Olá! Gostaria de pedir:\n${messageItems}\n\nTotal: ${total.toFixed(2)} €\nHora de levantamento: ${pickupTime}`;
         const phoneNumber = '351965298103';
         const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
         window.open(url, '_blank');
@@ -79,8 +116,13 @@
     <div id="cart" class="cart">
         <h3>🛒 O teu pedido</h3>
         <ul id="cart-list"></ul>
+        <div class="pickup-time">
+            <label for="pickup-time">⏰ Hora de levantamento:</label>
+            <input type="time" id="pickup-time">
+        </div>
         <button onclick="sendOrder()">Enviar via WhatsApp</button>
     </div>
+
 
 
 
@@ -93,6 +135,18 @@
         <h1>PATUSCO</h1>
         <p class="subtitle">Comida de conforto à portuguesa</p>
     </header>
+
+    <div class="info-box">
+        <p class="info-address">📍 Rua Faria Guimarães, nº 169</p>
+      
+        <p class="info-subtitle">🕒 Horários</p>
+      
+        <p class="info-hours">
+          Terça, quarta e domingo: <strong>12:00 às 15:30</strong><br>
+          Quinta, sexta e sábado: <strong>12:00 às 15:30</strong> e <strong>19:30 às 22:00</strong>
+        </p>
+      </div>
+
 
     <nav>
         <a href="#top" class="nav-logo">
