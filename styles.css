@@ -529,6 +529,15 @@ html {
     color: rgb(30, 30, 30);
 }
 
+.cart-total {
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    line-height: 1;
+    font-size: 20px
+    
+  }
+
 .pickup-time {
     margin-top: 0px;
     font-family: 'Noto Sans', sans-serif;
@@ -640,14 +649,14 @@ html {
     .cart-total {
         font-weight: bold;
         margin-top: 0px;
-        margin-bottom: 6px;
-        line-height: 1;
-        font-size: 28px;
+        margin-bottom: 0px;
+        line-height: 0.8;
       }
     
     .cart button {
         padding: 8px 24px;
         margin-bottom: 0px;
+        margin-top:0px
       }
 
     .cart ul{
