@@ -27,12 +27,15 @@
 
     function updateCart() {
         const cartList = document.getElementById('cart-list');
+        const cartBox = document.getElementById('cart');
         cartList.innerHTML = '';
 
         let total = 0;
+        let hasItems = false;
 
         Object.entries(order).forEach(([item, data]) => {
             if (data.quantity > 0) {
+                hasItems = true;
                 const subtotal = data.quantity * data.price;
                 total += subtotal;
 
@@ -42,11 +45,15 @@
             }
         });
 
-        // Show total price
-        const totalLi = document.createElement('li');
-        totalLi.innerHTML = `<strong>Total: ${total.toFixed(2)} €</strong>`;
-        totalLi.style.marginTop = '10px';
-        cartList.appendChild(totalLi);
+        if (hasItems) {
+            const totalLi = document.createElement('li');
+            totalLi.innerHTML = `<strong>Total: ${total.toFixed(2)} €</strong>`;
+            totalLi.style.marginTop = '10px';
+            cartList.appendChild(totalLi);
+            cartBox.style.display = 'block';
+        } else {
+            cartBox.style.display = 'none';
+        }
     }
 
 
