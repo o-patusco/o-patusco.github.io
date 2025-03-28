@@ -47,8 +47,8 @@
 
         if (hasItems) {
             const totalLi = document.createElement('li');
-            totalLi.innerHTML = `<strong>Total: ${total.toFixed(2)} €</strong>`;
-            totalLi.style.marginTop = '10px';
+            totalLi.className = 'cart-total';
+            totalLi.innerHTML = `Total: ${total.toFixed(2)} €`;
             cartList.appendChild(totalLi);
             cartBox.style.display = 'block';
         } else {
@@ -124,12 +124,16 @@
 
     <div id="cart" class="cart">
         <h3>🛒 O teu pedido</h3>
-        <ul id="cart-list"></ul>
-        <div class="pickup-time">
-            <label for="pickup-time">⏰ Hora de levantamento:</label>
-            <input type="time" id="pickup-time">
+      
+        <ul id="cart-list"></ul> <!-- ✅ This is the critical element -->
+      
+        <div class="cart-actions">
+            <div class="pickup-time">
+              <label for="pickup-time">⏰ Hora de levantamento:</label><br>
+              <input type="time" id="pickup-time">
+            </div>
+            <button onclick="sendOrder()">Enviar<br class="mobile-break">por WhatsApp</button>
         </div>
-        <button onclick="sendOrder()">Enviar via WhatsApp</button>
     </div>
 
 
@@ -402,6 +406,8 @@
           </tr>
         </table>
       </section>
+
+      <p class="mobile-message">Faz o teu pedido e serás feliz! 🍲</p>
 
       <footer>
         <div class="footer-content">

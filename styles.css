@@ -554,6 +554,20 @@ html {
   }
   
 
+.mobile-message {
+    display: none; /* hidden by default */
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 26px;
+    text-align: center;
+    color: #ffffff;
+    padding: 0px 0px;
+    font-weight: bold;
+    padding-top: 125px;
+    padding-bottom: 125px;
+  }
+
+
+
 
 
 
@@ -567,9 +581,6 @@ html {
     section {
         width: 95%;
     }
-    #sobremesas {
-        margin-bottom: 250px; /* or more, depending on cart height */
-      }
 
     h1 {
         font-size: 40px;
@@ -587,6 +598,10 @@ html {
 
     table {
         margin: 10px;
+    }
+
+    h2 {
+        margin-top: 10px
     }
 
     h3 {
@@ -756,5 +771,8 @@ html {
       }
       .subtitle {
         margin-bottom: 5px;
+    }
+    .mobile-message {
+        display: block;
     }
 }
