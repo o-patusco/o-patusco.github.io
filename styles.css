@@ -501,6 +501,9 @@ html {
     section {
         width: 95%;
     }
+    #sobremesas {
+        margin-bottom: 250px; /* or more, depending on cart height */
+      }
 
     h1 {
         font-size: 40px;
@@ -585,6 +588,10 @@ html {
         padding: 12px 24px;
         margin-bottom: 0px;
       }
+
+    .cart ul{
+        max-height: 120px;
+    }
 
 
     /* Tables for pedidos */
