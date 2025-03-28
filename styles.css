@@ -76,6 +76,29 @@ h1 {
     margin-top: 5px;
 }
 
+/* Take-away */
+
+.take-away button {
+    background-color: rgba(0, 0, 0, 0.5); /* soft beige/gold like your highlights */
+    color: #ffffff;            /* your dark brown text */
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    padding: 12px 24px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+  }
+  
+  .take-away button:hover {
+    background-color: #ede0c4;
+    color: rgb(30, 30, 30);
+  }
+
 /* Titles */
 h2 {
     font-family: 'Barlow Condensed', sans-serif;
@@ -139,6 +162,46 @@ th:last-child, td:last-child {
 tr:nth-child(even) {
     background-color: #F5F0E6;
 }
+
+/* Tables for pedidos */
+.pedidos-table {
+    width: 80%;
+    margin: 0 auto;
+    table-layout: fixed;
+  }
+  
+  .pedidos-table th,
+  .pedidos-table td {
+    text-align: center;
+  }
+  
+  .pedidos-table td:first-child,
+  .pedidos-table th:first-child {
+    width: 50%;
+    text-align: left;
+  }
+  
+  .pedidos-table td:nth-child(2),
+  .pedidos-table th:nth-child(2) {
+    width: 25%;
+  }
+  
+  .pedidos-table td:nth-child(3),
+  .pedidos-table th:nth-child(3) {
+    width: 25%;
+  }
+  
+  /* Button styling inside quantity column */
+  .pedidos-table td button {
+    padding: 4px 10px;
+    margin: 0 2px;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+    background: #ede0c4;
+    cursor: pointer;
+  }
+
 
 #bebidas, #pratos, #sobremesas, #snacks, #cafetaria {
     width: 90%; /* Limit width to 90% of the page */
@@ -373,6 +436,59 @@ html {
 }
 
 
+/* Cart */
+
+.cart {
+    position: fixed;
+    bottom: 20px;        
+    right: 20px;    
+    width: 250px;
+    background: white;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    font-family: 'Barlow Condensed', sans-serif;
+    z-index: 999;         /* stays on top of other elements */
+  }
+  
+.cart h3 {
+    margin-top: 0;
+    font-size: 20px;
+}
+  
+.cart ul {
+    list-style: none;
+    padding-left: 0;
+    max-height: 200px;   /* optional: scroll if too long */
+    overflow-y: auto;
+}
+  
+.cart li {
+    padding: 4px 0;
+}
+
+
+.cart button {
+    background-color: rgba(0, 0, 0, 0.5); /* soft beige/gold like your highlights */
+    color: #ffffff;            /* your dark brown text */
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    padding: 12px 24px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+  }
+  
+.cart button:hover {
+    background-color: #ede0c4;
+    color: rgb(30, 30, 30);
+}
 
 
 
@@ -406,6 +522,7 @@ html {
 
     h3 {
         margin-top: 20px;
+        margin-bottom: 10px;
     }
     body {
         background-size: cover; /* Keeps the original image size */
@@ -445,5 +562,59 @@ html {
         width: 30px !important; /* Ensures a perfect circle */
         object-fit: cover; /* Ensures correct display */
         border-radius: 50%;
+    }
+
+    .cart{
+        font-size: 14px;
+        line-height: 0.8; 
+        margin: 4px 0;  
+        left: 50%;
+        right: auto;
+        transform: translateX(-50%);
+        bottom: 10px
+
+    }
+    .cart-total {
+        font-weight: bold;
+        margin-top: 6px;
+        line-height: 1;
+
+      }
+
+    /* Tables for pedidos */
+    .pedidos-table {
+        width: 100%;
+    }
+    
+    .pedidos-table th,
+    .pedidos-table td {
+        text-align: center;
+    }
+    
+    .pedidos-table td:first-child,
+    .pedidos-table th:first-child {
+        width: 50%;
+        text-align: left;
+    }
+    
+    .pedidos-table td:nth-child(2),
+    .pedidos-table th:nth-child(2) {
+        width: 20%;
+    }
+    
+    .pedidos-table td:nth-child(3),
+    .pedidos-table th:nth-child(3) {
+        width: 30%;
+    }
+    
+    /* Button styling inside quantity column */
+    .pedidos-table td button {
+        padding: 2px 8px;
+        margin: 0 4px;
+        border-radius: 5px;
+        font-weight: bold;
+        border: none;
+        background: #ede0c4;
+        cursor: pointer;
     }
 }
