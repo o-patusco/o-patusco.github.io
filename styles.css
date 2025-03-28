@@ -567,7 +567,7 @@ html {
     .cart{
         font-size: 14px;
         line-height: 0.8; 
-        margin: 4px 0;  
+        margin: 0px 0;  
         left: 50%;
         right: auto;
         transform: translateX(-50%);
@@ -580,6 +580,12 @@ html {
         line-height: 1;
 
       }
+    
+    .cart button {
+        padding: 12px 24px;
+        margin-bottom: 0px;
+      }
+
 
     /* Tables for pedidos */
     .pedidos-table {
