@@ -663,7 +663,7 @@ html {
     }
     .cart-total {
         font-weight: bold;
-        margin-top: 0px;
+        margin-top: 4px;
         margin-bottom: 0px;
         line-height: 0.8;
       }
