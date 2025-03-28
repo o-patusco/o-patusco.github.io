@@ -85,21 +85,23 @@
             return;
         }
 
-        // Rule 2: Must be at least 15 minutes ahead
-        if (diffMinutes < 15) {
-            alert("Por favor escolhe uma hora de levantamento pelo menos 15 minutos após o momento atual.");
-            return;
-        }
-
-        // Rule 3: Validate allowed hours
+        // Rule 2: Validate allowed hours
         const isLunchTime = hours >= 12 && hours < 15;
-        const isDinnerTime = hours >= 19 && (hours < 22 || (hours === 22 && minutes === 0));
+        const isDinnerTime = (hours > 19 || (hours === 19 && minutes >= 30)) && (hours < 22 || (hours === 22 && minutes === 0));
         const isDinnerDay = day === 4 || day === 5 || day === 6; // Thursday to Saturday
 
         if (!isLunchTime && !(isDinnerDay && isDinnerTime)) {
             alert("Por favor escolhe uma hora dentro do nosso horário:\n12:00–15:00 (Terça a Domingo)\n19:30–22:00 (Quinta a Sábado)");
             return;
         }
+
+        // Rule 3: Must be at least 15 minutes ahead
+        if (diffMinutes < 15) {
+            alert("Por favor escolhe uma hora de levantamento pelo menos 15 minutos após o momento atual.");
+            return;
+        }
+
+
 
         let total = 0;
         const messageItems = Object.entries(order)
@@ -400,6 +402,22 @@
           </tr>
         </table>
       </section>
+
+      <footer>
+        <div class="footer-content">
+            <!-- Instagram Icon + Username -->
+            <a href="https://www.instagram.com/o.patusco" target="_blank" class="instagram-container">
+                <img src="Instagram.png" alt="Instagram" class="social-icon">
+                <p class="phone-number">@o.patusco</p>
+            </a>
+    
+            <!-- Phone Icon + Number -->
+            <div class="phone-container">
+                <img src="Whatsapp.png" alt="Phone" class="phone-icon">
+                <p class="phone-number">+351 965 298 103</p>
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>
