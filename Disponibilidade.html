@@ -2,49 +2,103 @@
 <html lang="pt">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Admin - Disponibilidade do Menu</title>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&display=swap" rel="stylesheet">
   <style>
     body {
       font-family: 'Barlow Condensed', sans-serif;
-      padding: 30px;
+      padding: 10px;
       background-color: #f9f9f9;
+      font-size: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
     }
+    #admin-panel {
+        width: 100%;
+        max-width: 600px;
+        display: none;
+    }
+
+
     h1 {
       text-align: center;
     }
     .item {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px;
-      margin: 8px 0;
-      background-color: #fff;
-      border-radius: 6px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        margin: 8px 0;
+        background-color: #fff;
+        border-radius: 6px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        transition: color 0.3s;
     }
+
+    .item.unavailable label {
+        color: red;
+    }
+
+    .item.unavailable .toggle {
+        outline: 2px solid red;
+        border-radius: 4px;
+    }
+
     .toggle {
-      transform: scale(1.5);
+        transform: scale(1.5);
     }
+
     .hidden-saved {
-      color: green;
-      text-align: center;
-      margin-top: 10px;
+        color: green;
+        text-align: center;
+        margin-top: 10px;
     }
+
     .password-area {
-      max-width: 300px;
-      margin: 0 auto 20px;
-      text-align: center;
+        max-width: 300px;
+        margin: 0 auto 20px;
+        text-align: center;
+        font-size: 20px;
     }
+
     .password-area input {
-      padding: 8px;
-      width: 200px;
+        padding: 8px;
+        width: 200px;
+        font-size: 16px;
     }
+
     .password-area button {
-      padding: 8px 16px;
-      margin-left: 10px;
+        padding: 8px 16px;
+        margin-left: 10px;
+        margin-top: 10px;
     }
-    #admin-panel { display: none; }
+    @media (max-width: 600px) {
+        .item {
+            width: 100%;
+            flex-direction: row;
+            padding: 12px;
+            font-size: 20px
+        }
+
+        #admin-panel {
+            padding: 0 10px;
+        }
+
+        .item label {
+            flex: 1;
+            font-size: 18px;
+            padding-right: 12px;
+        }
+
+        .toggle {
+            transform: scale(1.5);
+        }
+    }
+
+
   </style>
 </head>
 <body>
@@ -61,17 +115,72 @@
 
   <script>
     const allItems = {
-    "Entradas": ["Pão", "Rissol", "Coxinha", "Croquete", "Sopa do dia (meia)", "Sopa do dia"],
-    "Pratos de Carne": ["Frango assado", "Hambúrguer", "Alheira com ovo", "Moelas", "Rissóis (prato)", "Lombo de porco assado", "Carne de porco à alentejana", "Prego no prato", "Frango recheado com alheira", "Arroz de pato"],
-    "Pratos de Peixe": ["Massa de marisco", "Filete de peixe"],
-    "Pratos Vegetarianos": ["Chili", "Tofu panado com arroz de tomate", "Beringelas recheadas", "Strogonoff de tofu e cogumelos", "Tofu à lagareiro"],
-    "Extras": ["Salada mista", "Dose de batatas fritas"],
-    "Bebidas": ["Água", "Água das Pedras", "Água das Pedras Limão","Água das Pedras Morango", "Coca-Cola", "Coca-Cola Zero","7Up","Guaraná", "Sumol", "Ice Tea", "Compal"],
-    "Cerveja": ["Super Bock Mini", "Super Bock 33cl", "Super Bock Stout", "Super Bock s/Álcool	"],
-    "Sobremesas": ["Salame", "Arroz doce", "Mousse de limão", "Mousse de chocolate", "Pêra bêbada"]
+    "Entradas": [
+        "Pão", "Bolinho de bacalhau", "Rissol", "Coxinha", "Croquete", 
+        "Sopa do dia (meia)", "Sopa do dia"
+    ],
+    "Pratos de Carne": [
+        "Frango assado", "Hambúrguer", "Alheira com ovo", "Moelas", "Rissóis (prato)", 
+        "Lombo de porco assado", "Carne de porco à alentejana", "Prego no prato", 
+        "Frango recheado com alheira", "Arroz de pato"
+    ],
+    "Pratos de Peixe": [
+        "Massa de marisco", "Filete de peixe"
+    ],
+    "Pratos Vegetarianos": [
+        "Chili", "Tofu panado com arroz de tomate", "Beringelas recheadas", 
+        "Strogonoff de tofu e cogumelos", "Tofu à lagareiro"
+    ],
+    "Extras": [
+        "Salada mista", "Dose de batatas fritas"
+    ],
+    "Bebidas": [
+        "Água", "Água das Pedras", "Água das Pedras Limão", "Coca-Cola", "Coca-Cola Zero", 
+        "7Up", "Guaraná", "Sumol", "Ice Tea", "Limonada", "Compal"
+    ],
+    "Cerveja": [
+        "Super Bock Mini", "Super Bock 33cl", "Super Bock Fino", "Super Bock Stout", 
+        "Super Bock s/Álcool", "Super Bock Caneca"
+    ],
+    "Vinho da casa": [
+        "Copo", "Jarro 0,25L", "Jarro 0,5L"
+    ],
+    "Vinho (copo)": [
+        "O tal da lixa", "Porta da Ravessa (branco)", "Porta da Ravessa (tinto)", 
+        "Altano", "Papa Figos"
+    ],
+    "Digestivos": [
+        "Moscatel", "Amêndoa Amarga", "Vinho do Porto Cálem Velhotes Tawny", 
+        "Licor Beirão", "Bailey's Irish Cream", "Whiskey Johnnie Walker Red", 
+        "Whiskey Johnnie Walker Black 12 Anos"
+    ],
+    "Cocktails": [
+        "Caipirinha","Whiskey-Cola", "Mojito", "Cuba Libre", "Vodka Limão", 
+        "Gin Tónico Gordon's", "Gin Tónico Beefeater", "Aperol Spritz"
+    ],
+    "Sobremesas": [
+        "Salame", "Arroz doce", "Mousse de limão", "Mousse de chocolate", 
+        "Pêra bêbada", "Bolo de bolacha", "Bolo de chocolate"
+    ],
+    "Petiscos": [
+        "Rissol", "Coxinha", "Croquete", "Batatas fritas", "Peixinhos da horta", 
+        "Aros de cebola", "Chouriço no barro c/pão", "Alheira grelhada c/pão", 
+        "Alheira vegetariana grelhada c/pão", "Moelas"
+    ],
+    "Sandes & Tostas": [
+        "Torrada", "Tosta de queijo", "Tosta de queijo vegano", 
+        "Tosta mista", "Bifana"
+    ],
+    "Café": [
+        "Café", "Abatanado", "Pingo", "Duplo shot", "Meia de leite", 
+        "Galão", "Cappuccino"
+    ],
+    "Chás": [
+        "Carioca de limão", "Tetley"
+    ]
     };
 
-    const correctPassword = "slb&Pato25"; // Change this to a secure password in production
+    const correctPassword = "123"; // Change this to a secure password in production
 
     function checkPassword() {
       const input = document.getElementById("admin-password").value;
@@ -95,24 +204,33 @@
             container.appendChild(sectionTitle);
 
             allItems[section].forEach(item => {
-            const row = document.createElement("div");
-            row.className = "item";
+                const row = document.createElement("div");
+                row.className = "item";
 
-            const label = document.createElement("label");
-            label.textContent = item;
+                const label = document.createElement("label");
+                label.textContent = item;
 
-            const checkbox = document.createElement("input");
-            checkbox.type = "checkbox";
-            checkbox.className = "toggle";
-            checkbox.checked = !unavailableItems.includes(item);
-            checkbox.onchange = () => saveItemStatus(item, checkbox.checked);
+                const checkbox = document.createElement("input");
+                checkbox.type = "checkbox";
+                checkbox.className = "toggle";
+                checkbox.checked = !unavailableItems.includes(item);
 
-            row.appendChild(label);
-            row.appendChild(checkbox);
-            container.appendChild(row);
+                // Highlight unavailable items in red
+                if (!checkbox.checked) {
+                    row.classList.add("unavailable");
+                }
+
+                checkbox.onchange = () => {
+                    saveItemStatus(item, checkbox.checked);
+                    row.classList.toggle("unavailable", !checkbox.checked);
+                };
+
+                row.appendChild(label);
+                row.appendChild(checkbox);
+                container.appendChild(row);
             });
         }
-        }
+    }
 
     function saveItemStatus(item, isAvailable) {
       let unavailableItems = JSON.parse(localStorage.getItem("unavailableItems") || "[]");

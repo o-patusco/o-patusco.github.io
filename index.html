@@ -9,6 +9,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400&display=swap" rel="stylesheet">
 
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          const unavailableItems = JSON.parse(localStorage.getItem("unavailableItems") || "[]");
+      
+          unavailableItems.forEach(item => {
+            const rows = document.querySelectorAll(`tr[data-name="${item}"]`);
+            rows.forEach(row => row.style.display = "none");
+          });
+        });
+      </script>
+
 </head>
 <body>
 
@@ -58,189 +69,188 @@
         <h3>Entradas</h3>
         <table>
             <tr><th>Nome</th><th>Preço</th></tr>
-            <tr><td>Pão</td><td>1,00 €</td></tr>
-            <tr><td>Bolinho de bacalhau</td><td>1,00 €</td></tr>
-            <tr><td>Rissol</td><td>1,50 €</td></tr>
-            <tr><td>Coxinha</td><td>1,50 €</td></tr>
-            <tr><td>Croquete</td><td>1,50 €</td></tr>
-            <tr><td>Sopa do dia (meia)</td><td>1,50 €</td></tr>
-            <tr><td>Sopa do dia</td><td>2,00 €</td></tr>
+            <tr data-name="Pão"><td>Pão</td><td>1,00 €</td></tr>
+            <tr data-name="Bolinho de bacalhau"><td>Bolinho de bacalhau</td><td>1,00 €</td></tr>
+            <tr data-name="Rissol"><td>Rissol</td><td>1,50 €</td></tr>
+            <tr data-name="Coxinha"><td>Coxinha</td><td>1,50 €</td></tr>
+            <tr data-name="Croquete"><td>Croquete</td><td>1,50 €</td></tr>
+            <tr data-name="Sopa do dia (meia)"><td>Sopa do dia (meia)</td><td>1,50 €</td></tr>
+            <tr data-name="Sopa do dia"><td>Sopa do dia</td><td>2,00 €</td></tr>
         </table>
-
+        
         <h3>Pratos de Carne</h3>
         <table>
             <tr><th>Nome</th><th>Preço</th></tr>
-            <tr><td>Frango assado</td><td>6,00 €</td></tr>
-            <tr><td>Hambúrguer</td><td>6,00 €</td></tr>
-            <tr><td>Alheira com ovo</td><td>6,00 €</td></tr>
-            <tr><td>Moelas</td><td>6,00 €</td></tr>
-            <tr><td>Rissóis (prato)</td><td>6,00 €</td></tr>
-            <tr><td>Lombo de porco assado*</td><td>7,00 €</td></tr>
-            <tr><td>Carne de porco à alentejana</td><td>7,00 €</td></tr>
-            <tr><td>Prego no prato</td><td>7,00 €</td></tr>
-            <tr><td>Frango recheado com alheira</td><td>7,00 €</td></tr>
-            <tr><td>Arroz de pato</td><td>8,00 €</td></tr>
+            <tr data-name="Frango assado"><td>Frango assado</td><td>6,00 €</td></tr>
+            <tr data-name="Hambúrguer"><td>Hambúrguer</td><td>6,00 €</td></tr>
+            <tr data-name="Alheira com ovo"><td>Alheira com ovo</td><td>6,00 €</td></tr>
+            <tr data-name="Moelas"><td>Moelas</td><td>6,00 €</td></tr>
+            <tr data-name="Rissóis (prato)"><td>Rissóis (prato)</td><td>6,00 €</td></tr>
+            <tr data-name="Lombo de porco assado"><td>Lombo de porco assado*</td><td>7,00 €</td></tr>
+            <tr data-name="Carne de porco à alentejana"><td>Carne de porco à alentejana</td><td>7,00 €</td></tr>
+            <tr data-name="Prego no prato"><td>Prego no prato</td><td>7,00 €</td></tr>
+            <tr data-name="Frango recheado com alheira"><td>Frango recheado com alheira</td><td>7,00 €</td></tr>
+            <tr data-name="Arroz de pato"><td>Arroz de pato</td><td>8,00 €</td></tr>
         </table>
         <p class="aviso-disponibilidade">*Consulte a disponibilidade no dia.</p>
-
+        
         <h3>Pratos de Peixe</h3>
         <table>
             <tr><th>Nome</th><th>Preço</th></tr>
-            <tr><td>Massa de marisco</td><td>7,00 €</td></tr>
-            <tr><td>Filete de peixe*</td><td>7,00 €</td></tr>
+            <tr data-name="Massa de marisco"><td>Massa de marisco</td><td>7,00 €</td></tr>
+            <tr data-name="Filete de peixe"><td>Filete de peixe*</td><td>7,00 €</td></tr>
         </table>
         <p class="aviso-disponibilidade">*Consulte a disponibilidade no dia.</p>
-
-
+        
         <h3>Pratos Vegetarianos</h3>
         <table>
             <tr><th>Nome</th><th>Preço</th></tr>
-            <tr><td>Chili</td><td>6,00 €</td></tr>
-            <tr><td>Tofu panado com arroz de tomate*</td><td>7,00 €</td></tr>
-            <tr><td>Beringelas recheadas</td><td>7,00 €</td></tr>
-            <tr><td>Strogonoff de tofu e cogumelos*</td><td>7,00 €</td></tr>
-            <tr><td>Tofu à lagareiro</td><td>8,00 €</td></tr>
+            <tr data-name="Chili"><td>Chili</td><td>6,00 €</td></tr>
+            <tr data-name="Tofu panado com arroz de tomate"><td>Tofu panado com arroz de tomate*</td><td>7,00 €</td></tr>
+            <tr data-name="Beringelas recheadas"><td>Beringelas recheadas</td><td>7,00 €</td></tr>
+            <tr data-name="Strogonoff de tofu e cogumelos"><td>Strogonoff de tofu e cogumelos*</td><td>7,00 €</td></tr>
+            <tr data-name="Tofu à lagareiro"><td>Tofu à lagareiro</td><td>8,00 €</td></tr>
         </table>
         <p class="aviso-disponibilidade">*Consulte a disponibilidade no dia.</p>
-
+        
         <h3>Extras</h3>
         <table>
             <tr><th>Nome</th><th>Preço</th></tr>
-            <tr><td>Salada mista</td><td>1,50 €</td></tr>
-            <tr><td>Dose de batatas fritas</td><td>2,00 €</td></tr>
+            <tr data-name="Salada mista"><td>Salada mista</td><td>1,50 €</td></tr>
+            <tr data-name="Dose de batatas fritas"><td>Dose de batatas fritas</td><td>2,00 €</td></tr>
         </table>
 
     </section>
 
     <section id="bebidas">
         <h2>Bebidas</h2>
-
+    
         <table>
             <tr><th>Nome</th><th>Preço</th></tr>
-            <tr><td>Água</td><td>1,00 €</td></tr>
-            <tr><td>Água das Pedras</td><td>1,30 €</td></tr>
-            <tr><td>Água das Pedras Limão</td><td>1,50 €</td></tr>
-            <tr><td>Coca-Cola</td><td>1,50 €</td></tr>
-            <tr><td>Coca-Cola Zero</td><td>1,50 €</td></tr>
-            <tr><td>7Up</td><td>1,50 €</td></tr>
-            <tr><td>Guaraná</td><td>1,50 €</td></tr>
-            <tr><td>Sumol</td><td>1,50 €</td></tr>
-            <tr><td>Ice Tea</td><td>1,50 €</td></tr>
-            <tr><td>Limonada</td><td>1,00 €</td></tr>
-            <tr><td>Compal</td><td>1,50 €</td></tr>
+            <tr data-name="Água"><td>Água</td><td>1,00 €</td></tr>
+            <tr data-name="Água das Pedras"><td>Água das Pedras</td><td>1,30 €</td></tr>
+            <tr data-name="Água das Pedras Limão"><td>Água das Pedras Limão</td><td>1,50 €</td></tr>
+            <tr data-name="Coca-Cola"><td>Coca-Cola</td><td>1,50 €</td></tr>
+            <tr data-name="Coca-Cola Zero"><td>Coca-Cola Zero</td><td>1,50 €</td></tr>
+            <tr data-name="7Up"><td>7Up</td><td>1,50 €</td></tr>
+            <tr data-name="Guaraná"><td>Guaraná</td><td>1,50 €</td></tr>
+            <tr data-name="Sumol"><td>Sumol</td><td>1,50 €</td></tr>
+            <tr data-name="Ice Tea"><td>Ice Tea</td><td>1,50 €</td></tr>
+            <tr data-name="Limonada"><td>Limonada</td><td>1,00 €</td></tr>
+            <tr data-name="Compal"><td>Compal</td><td>1,50 €</td></tr>
         </table>
-
+    
         <h3>Cerveja</h3>
         <table>
             <tr><th>Nome</th><th>Preço</th></tr>
-            <tr><td>Super Bock Mini</td><td>1,00 €</td></tr>
-            <tr><td>Super Bock 33cl</td><td>1,50 €</td></tr>
-            <tr><td>Super Bock Fino</td><td>1,30 €</td></tr>
-            <tr><td>Super Bock Stout</td><td>1,50 €</td></tr>
-            <tr><td>Super Bock s/Álcool</td><td>1,50 €</td></tr>
-            <tr><td>Super Bock Caneca</td><td>2,50 €</td></tr>
+            <tr data-name="Super Bock Mini"><td>Super Bock Mini</td><td>1,00 €</td></tr>
+            <tr data-name="Super Bock 33cl"><td>Super Bock 33cl</td><td>1,50 €</td></tr>
+            <tr data-name="Super Bock Fino"><td>Super Bock Fino</td><td>1,30 €</td></tr>
+            <tr data-name="Super Bock Stout"><td>Super Bock Stout</td><td>1,50 €</td></tr>
+            <tr data-name="Super Bock s/Álcool"><td>Super Bock s/Álcool</td><td>1,50 €</td></tr>
+            <tr data-name="Super Bock Caneca"><td>Super Bock Caneca</td><td>2,50 €</td></tr>
         </table>
-
+    
         <h3>Vinho da casa (tinto, espadal, branco ou verde)</h3>
         <table>
             <tr><th>Nome</th><th>Preço</th></tr>
-            <tr><td>Copo</td><td>1,00 €</td></tr>
-            <tr><td>Jarro 0,25L</td><td>1,50 €</td></tr>
-            <tr><td>Jarro 0,5L</td><td>2,50 €</td></tr>
+            <tr data-name="Copo"><td>Copo</td><td>1,00 €</td></tr>
+            <tr data-name="Jarro 0,25L"><td>Jarro 0,25L</td><td>1,50 €</td></tr>
+            <tr data-name="Jarro 0,5L"><td>Jarro 0,5L</td><td>2,50 €</td></tr>
         </table>
-
+    
         <h3>Vinho (copo)</h3>
         <table>
             <tr><th>Nome</th><th>Preço</th></tr>
-            <tr><td>O tal da lixa</td><td>2,00 €</td></tr>
-            <tr><td>Porta da Ravessa (branco)</td><td>2,00 €</td></tr>
-            <tr><td>Porta da Ravessa (tinto)</td><td>2,00 €</td></tr>
-            <tr><td>Altano</td><td>4,00 €</td></tr>
-            <tr><td>Papa Figos</td><td>5,00 €</td></tr>
-
+            <tr data-name="O tal da lixa"><td>O tal da lixa</td><td>2,00 €</td></tr>
+            <tr data-name="Porta da Ravessa (branco)"><td>Porta da Ravessa (branco)</td><td>2,00 €</td></tr>
+            <tr data-name="Porta da Ravessa (tinto)"><td>Porta da Ravessa (tinto)</td><td>2,00 €</td></tr>
+            <tr data-name="Altano"><td>Altano</td><td>4,00 €</td></tr>
+            <tr data-name="Papa Figos"><td>Papa Figos</td><td>5,00 €</td></tr>
         </table>
-
+    
         <h3>Digestivos</h3>
-            <table>
-                <tr><th>Nome</th><th>Preço</th></tr>
-                <tr><td>Moscatel</td><td>1,50 €</td></tr>
-                <tr><td>Amêndoa Amarga</td><td>2,00 €</td></tr>
-                <tr><td>Vinho do Porto Cálem Velhotes Tawny</td><td>2,00 €</td></tr>
-                <tr><td>Licor Beirão</td><td>3,00 €</td></tr>
-                <tr><td>Bailey's Irish Cream</td><td>4,00 €</td></tr>
-                <tr><td>Whiskey Johnnie Walker Red</td><td>4,00 €</td></tr>
-                <tr><td>Whiskey Johnnie Walker Black 12 Anos</td><td>6,00 €</td></tr>
-            </table>
-
+        <table>
+            <tr><th>Nome</th><th>Preço</th></tr>
+            <tr data-name="Moscatel"><td>Moscatel</td><td>1,50 €</td></tr>
+            <tr data-name="Amêndoa Amarga"><td>Amêndoa Amarga</td><td>2,00 €</td></tr>
+            <tr data-name="Vinho do Porto"><td>Vinho do Porto Cálem Velhotes Tawny</td><td>2,00 €</td></tr>
+            <tr data-name="Licor Beirão"><td>Licor Beirão</td><td>3,00 €</td></tr>
+            <tr data-name="Bailey's Irish Cream"><td>Bailey's Irish Cream</td><td>4,00 €</td></tr>
+            <tr data-name="Whiskey Johnnie Walker Red"><td>Whiskey Johnnie Walker Red</td><td>4,00 €</td></tr>
+            <tr data-name="Whiskey Johnnie Walker Black 12 Anos"><td>Whiskey Johnnie Walker Black 12 Anos</td><td>6,00 €</td></tr>
+        </table>
+    
         <h3>Cocktails</h3>
         <table>
             <tr><th>Nome</th><th>Preço</th></tr>
-            <tr><td>Whiskey-Cola</td><td>5,50 €</td></tr>
-            <tr><td>Mojito</td><td>5,50 €</td></tr>
-            <tr><td>Cuba Libre</td><td>5,50 €</td></tr>
-            <tr><td>Vodka Limão</td><td>5,50 €</td></tr>
-            <tr><td>Gin Tónico Gordon's</td><td>5,50 €</td></tr>
-            <tr><td>Gin Tónico Beefeater</td><td>7,50 €</td></tr>
-            <tr><td>Aperol Spritz</td><td>6,00 €</td></tr>
+            <tr data-name="Caipirinha"><td>Caipirinha</td><td>5,50 €</td></tr>
+            <tr data-name="Whiskey-Cola"><td>Whiskey-Cola</td><td>5,50 €</td></tr>
+            <tr data-name="Mojito"><td>Mojito</td><td>5,50 €</td></tr>
+            <tr data-name="Cuba Libre"><td>Cuba Libre</td><td>5,50 €</td></tr>
+            <tr data-name="Vodka Limão"><td>Vodka Limão</td><td>5,50 €</td></tr>
+            <tr data-name="Gin Tónico Gordon's"><td>Gin Tónico Gordon's</td><td>5,50 €</td></tr>
+            <tr data-name="Gin Tónico Beefeater"><td>Gin Tónico Beefeater</td><td>7,50 €</td></tr>
+            <tr data-name="Aperol Spritz"><td>Aperol Spritz</td><td>6,00 €</td></tr>
         </table>
     </section>
-
+    
     <section id="sobremesas">
         <h2>Sobremesas</h2>
-
+    
         <table>
             <tr><th>Nome</th><th>Preço</th></tr>
-            <tr><td>Salame</td><td>1,00 €</td></tr>
-            <tr><td>Arroz doce</td><td>1,80 €</td></tr>
-            <tr><td>Mousse de limão</td><td>1,80 €</td></tr>
-            <tr><td>Mousse de chocolate</td><td>1,80 €</td></tr>
-            <tr><td>Pêra bêbada</td><td>2,20 €</td></tr>
+            <tr data-name="Salame"><td>Salame</td><td>1,00 €</td></tr>
+            <tr data-name="Arroz doce"><td>Arroz doce</td><td>1,80 €</td></tr>
+            <tr data-name="Mousse de limão"><td>Mousse de limão</td><td>1,80 €</td></tr>
+            <tr data-name="Mousse de chocolate"><td>Mousse de chocolate</td><td>1,80 €</td></tr>
+            <tr data-name="Pêra bêbada"><td>Pêra bêbada</td><td>2,20 €</td></tr>
+            <tr data-name="Bolo de bolacha"><td>Bolo de bolacha</td><td>2,50 €</td></tr>
+            <tr data-name="Bolo de chocolate"><td>Bolo de chocolate</td><td>2,50 €</td></tr>
         </table>
     </section>
-
+    
     <section id="snacks">
         <h2>Petiscos</h2>
-
+    
         <table>
             <tr><th>Nome</th><th>Preço</th></tr>
-            <tr><td>Rissol</td><td>1,50 €</td></tr>
-            <tr><td>Coxinha</td><td>1,50 €</td></tr>
-            <tr><td>Croquete</td><td>1,50 €</td></tr>
-            <tr><td>Batatas fritas</td><td>2,00 €</td></tr>
-            <tr><td>Peixinhos da horta</td><td>2,00 €</td></tr>
-            <tr><td>Aros de cebola</td><td>2,50 €</td></tr>
-            <tr><td>Chouriço no barro c/pão</td><td>4,00 €</td></tr>
-            <tr><td>Alheira grelhada c/pão</td><td>4,00 €</td></tr>
-            <tr><td>Alheira vegetariana grelhada c/pão</td><td>4,00 €</td></tr>
-            <tr><td>Moelas</td><td>5,00 €</td></tr>
+            <tr data-name="Rissol"><td>Rissol</td><td>1,50 €</td></tr>
+            <tr data-name="Coxinha"><td>Coxinha</td><td>1,50 €</td></tr>
+            <tr data-name="Croquete"><td>Croquete</td><td>1,50 €</td></tr>
+            <tr data-name="Batatas fritas"><td>Batatas fritas</td><td>2,00 €</td></tr>
+            <tr data-name="Peixinhos da horta"><td>Peixinhos da horta</td><td>2,00 €</td></tr>
+            <tr data-name="Aros de cebola"><td>Aros de cebola</td><td>2,50 €</td></tr>
+            <tr data-name="Chouriço no barro c/pão"><td>Chouriço no barro c/pão</td><td>4,00 €</td></tr>
+            <tr data-name="Alheira grelhada c/pão"><td>Alheira grelhada c/pão</td><td>4,00 €</td></tr>
+            <tr data-name="Alheira vegetariana grelhada c/pão"><td>Alheira vegetariana grelhada c/pão</td><td>4,00 €</td></tr>
+            <tr data-name="Moelas"><td>Moelas</td><td>5,00 €</td></tr>
         </table>
-
+    
         <h3>Sandes & Tostas</h3>
         <table>
             <tr><th>Nome</th><th>Preço</th></tr>
-            <tr><td>Torrada</td><td>1,50 €</td></tr>
-            <tr><td>Tosta de queijo</td><td>2,00 €</td></tr>
-            <tr><td>Tosta de queijo vegano</td><td>2,00 €</td></tr>
-            <tr><td>Tosta mista</td><td>2,50 €</td></tr>
-            <tr><td>Bifana</td><td>2,50 €</td></tr>
+            <tr data-name="Torrada"><td>Torrada</td><td>1,50 €</td></tr>
+            <tr data-name="Tosta de queijo"><td>Tosta de queijo</td><td>2,00 €</td></tr>
+            <tr data-name="Tosta de queijo vegano"><td>Tosta de queijo vegano</td><td>2,00 €</td></tr>
+            <tr data-name="Tosta mista"><td>Tosta mista</td><td>2,50 €</td></tr>
+            <tr data-name="Bifana"><td>Bifana</td><td>2,50 €</td></tr>
         </table>
-
-
     </section>
-
+    
     <section id="cafetaria">
         <h2>Cafetaria</h2>
     
         <h3>Café</h3>
         <table>
             <tr><th>Nome</th><th>Preço</th></tr>
-            <tr><td>Café</td><td>0,80 €</td></tr>
-            <tr><td>Abatanado</td><td>0,80 €</td></tr>
-            <tr><td>Pingo*</td><td>0,90 €</td></tr>
-            <tr><td>Duplo shot</td><td>1,50 €</td></tr>
-            <tr><td>Meia de leite*</td><td>1,30 €</td></tr>
-            <tr><td>Galão*</td><td>1,30 €</td></tr>
-            <tr><td>Cappuccino*</td><td>1,80 €</td></tr>
+            <tr data-name="Café"><td>Café</td><td>0,80 €</td></tr>
+            <tr data-name="Abatanado"><td>Abatanado</td><td>0,80 €</td></tr>
+            <tr data-name="Pingo"><td>Pingo*</td><td>0,90 €</td></tr>
+            <tr data-name="Duplo shot"><td>Duplo shot</td><td>1,50 €</td></tr>
+            <tr data-name="Meia de leite"><td>Meia de leite*</td><td>1,30 €</td></tr>
+            <tr data-name="Galão"><td>Galão*</td><td>1,30 €</td></tr>
+            <tr data-name="Cappuccino"><td>Cappuccino*</td><td>1,80 €</td></tr>
         </table>
     
         <p class="note">*Com leite de vaca ou bebida de soja. Bebida de aveia tem um acréscimo de 0,20€.</p>
@@ -248,8 +258,8 @@
         <h3>Chás</h3>
         <table>
             <tr><th>Nome</th><th>Preço</th></tr>
-            <tr><td>Carioca de limão</td><td>0,80 €</td></tr>
-            <tr><td>Tetley</td><td>1,00 €</td></tr>
+            <tr data-name="Carioca de limão"><td>Carioca de limão</td><td>0,80 €</td></tr>
+            <tr data-name="Tetley"><td>Tetley</td><td>1,00 €</td></tr>
         </table>
     </section>
 
