@@ -9,7 +9,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400&display=swap" rel="stylesheet">
     <script>
-
     let order = {};
 
     function changeQuantity(item, change, price) {
@@ -21,7 +20,6 @@
         if (order[item].quantity < 0) order[item].quantity = 0;
 
         document.getElementById(`qty-${item}`).innerText = order[item].quantity;
-
         updateCart();
     }
 
@@ -56,7 +54,6 @@
         }
     }
 
-
     function sendOrder() {
         if (Object.keys(order).length === 0) {
             alert("O teu pedido está vazio!");
@@ -76,32 +73,27 @@
         const pickup = new Date();
         pickup.setHours(hours, minutes, 0, 0);
 
-        const day = now.getDay(); // 0 = Sunday, 1 = Monday, ..., 6 = Saturday
+        const day = now.getDay();
         const diffMinutes = (pickup - now) / (1000 * 60);
 
-        // Rule 1: No orders on Monday
         if (day === 1) {
             alert("Não aceitamos pedidos à segunda-feira. Por favor escolhe outro dia.");
             return;
         }
 
-        // Rule 2: Validate allowed hours
         const isLunchTime = hours >= 12 && hours < 15;
         const isDinnerTime = (hours > 19 || (hours === 19 && minutes >= 30)) && (hours < 22 || (hours === 22 && minutes === 0));
-        const isDinnerDay = day === 4 || day === 5 || day === 6; // Thursday to Saturday
+        const isDinnerDay = day === 4 || day === 5 || day === 6;
 
         if (!isLunchTime && !(isDinnerDay && isDinnerTime)) {
             alert("Por favor escolhe uma hora dentro do nosso horário:\n12:00–15:00 (Terça a Domingo)\n19:30–22:00 (Quinta a Sábado)");
             return;
         }
 
-        // Rule 3: Must be at least 15 minutes ahead
         if (diffMinutes < 15) {
             alert("Por favor escolhe uma hora de levantamento pelo menos 15 minutos após o momento atual.");
             return;
         }
-
-
 
         let total = 0;
         const messageItems = Object.entries(order)
@@ -118,6 +110,22 @@
         const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
         window.open(url, '_blank');
     }
+
+    // NEW: Hide unavailable items on load
+    window.addEventListener("DOMContentLoaded", () => {
+        const unavailable = JSON.parse(localStorage.getItem("unavailableItems") || "[]");
+
+        unavailable.forEach(item => {
+            // Go through all <td> that are first child of a row
+            const rows = document.querySelectorAll("table.pedidos-table tbody tr td:first-child");
+            rows.forEach(td => {
+                const text = td.textContent.trim().toLowerCase();
+                if (text === item.trim().toLowerCase()) {
+                    td.closest("tr").style.display = "none";
+                }
+            });
+        });
+    });
     </script>
 </head>
 <body>
@@ -297,13 +305,6 @@
               <button onclick="changeQuantity('Ice Tea', -1, 1.50)">–</button>
               <span id="qty-Ice Tea">0</span>
               <button onclick="changeQuantity('Ice Tea', 1, 1.50)">+</button>
-            </td>
-          </tr>
-          <tr><td>Limonada</td><td>1,00 €</td>
-            <td>
-              <button onclick="changeQuantity('Limonada', -1, 1.00)">–</button>
-              <span id="qty-Limonada">0</span>
-              <button onclick="changeQuantity('Limonada', 1, 1.00)">+</button>
             </td>
           </tr>
           <tr><td>Compal</td><td>1,50 €</td>

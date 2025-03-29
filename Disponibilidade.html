@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin - Disponibilidade do Menu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Barlow Condensed', sans-serif;
+      padding: 30px;
+      background-color: #f9f9f9;
+    }
+    h1 {
+      text-align: center;
+    }
+    .item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      margin: 8px 0;
+      background-color: #fff;
+      border-radius: 6px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .toggle {
+      transform: scale(1.5);
+    }
+    .hidden-saved {
+      color: green;
+      text-align: center;
+      margin-top: 10px;
+    }
+    .password-area {
+      max-width: 300px;
+      margin: 0 auto 20px;
+      text-align: center;
+    }
+    .password-area input {
+      padding: 8px;
+      width: 200px;
+    }
+    .password-area button {
+      padding: 8px 16px;
+      margin-left: 10px;
+    }
+    #admin-panel { display: none; }
+  </style>
+</head>
+<body>
+  <div class="password-area">
+    <input type="password" id="admin-password" placeholder="Palavra-passe de admin">
+    <button onclick="checkPassword()">Entrar</button>
+  </div>
+
+  <div id="admin-panel">
+    <h1>Gestor de Disponibilidade</h1>
+    <div id="item-list"></div>
+    <p class="hidden-saved" id="saveMsg" style="display: none;">Disponibilidade guardada! ✅</p>
+  </div>
+
+  <script>
+    const allItems = {
+    "Entradas": ["Pão", "Rissol", "Coxinha", "Croquete", "Sopa do dia (meia)", "Sopa do dia"],
+    "Pratos de Carne": ["Frango assado", "Hambúrguer", "Alheira com ovo", "Moelas", "Rissóis (prato)", "Lombo de porco assado", "Carne de porco à alentejana", "Prego no prato", "Frango recheado com alheira", "Arroz de pato"],
+    "Pratos de Peixe": ["Massa de marisco", "Filete de peixe"],
+    "Pratos Vegetarianos": ["Chili", "Tofu panado com arroz de tomate", "Beringelas recheadas", "Strogonoff de tofu e cogumelos", "Tofu à lagareiro"],
+    "Extras": ["Salada mista", "Dose de batatas fritas"],
+    "Bebidas": ["Água", "Água das Pedras", "Água das Pedras Limão","Água das Pedras Morango", "Coca-Cola", "Coca-Cola Zero","7Up","Guaraná", "Sumol", "Ice Tea", "Compal"],
+    "Cerveja": ["Super Bock Mini", "Super Bock 33cl", "Super Bock Stout", "Super Bock s/Álcool	"],
+    "Sobremesas": ["Salame", "Arroz doce", "Mousse de limão", "Mousse de chocolate", "Pêra bêbada"]
+    };
+
+    const correctPassword = "slb&Pato25"; // Change this to a secure password in production
+
+    function checkPassword() {
+      const input = document.getElementById("admin-password").value;
+      if (input === correctPassword) {
+        document.querySelector(".password-area").style.display = "none";
+        document.getElementById("admin-panel").style.display = "block";
+        loadItems();
+      } else {
+        alert("Palavra-passe incorreta.");
+      }
+    }
+
+    function loadItems() {
+        const unavailableItems = JSON.parse(localStorage.getItem("unavailableItems") || "[]");
+        const container = document.getElementById("item-list");
+        container.innerHTML = "";
+
+        for (const section in allItems) {
+            const sectionTitle = document.createElement("h2");
+            sectionTitle.textContent = section;
+            container.appendChild(sectionTitle);
+
+            allItems[section].forEach(item => {
+            const row = document.createElement("div");
+            row.className = "item";
+
+            const label = document.createElement("label");
+            label.textContent = item;
+
+            const checkbox = document.createElement("input");
+            checkbox.type = "checkbox";
+            checkbox.className = "toggle";
+            checkbox.checked = !unavailableItems.includes(item);
+            checkbox.onchange = () => saveItemStatus(item, checkbox.checked);
+
+            row.appendChild(label);
+            row.appendChild(checkbox);
+            container.appendChild(row);
+            });
+        }
+        }
+
+    function saveItemStatus(item, isAvailable) {
+      let unavailableItems = JSON.parse(localStorage.getItem("unavailableItems") || "[]");
+
+      if (!isAvailable) {
+        if (!unavailableItems.includes(item)) unavailableItems.push(item);
+      } else {
+        unavailableItems = unavailableItems.filter(i => i !== item);
+      }
+
+      localStorage.setItem("unavailableItems", JSON.stringify(unavailableItems));
+
+      const msg = document.getElementById("saveMsg");
+      msg.style.display = "block";
+      setTimeout(() => msg.style.display = "none", 2000);
+    }
+  </script>
+</body>
+</html>
