@@ -10,13 +10,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400&display=swap" rel="stylesheet">
 
     <script>
-        document.addEventListener("DOMContentLoaded", () => {
-          const unavailableItems = JSON.parse(localStorage.getItem("unavailableItems") || "[]");
+        document.addEventListener("DOMContentLoaded", async () => {
+          try {
+            const response = await fetch("https://raw.githubusercontent.com/o-patusco/o-patusco.github.io/main/availability.json");
+            if (!response.ok) throw new Error("Failed to fetch availability data.");
       
-          unavailableItems.forEach(item => {
-            const rows = document.querySelectorAll(`tr[data-name="${item}"]`);
-            rows.forEach(row => row.style.display = "none");
-          });
+            const data = await response.json();
+            const unavailableItems = data.unavailableItems || [];
+      
+            unavailableItems.forEach(item => {
+              const rows = document.querySelectorAll(`tr[data-name="${item}"]`);
+              rows.forEach(row => row.style.display = "none");
+            });
+          } catch (error) {
+            console.error("Error loading unavailable items:", error);
+          }
         });
       </script>
 
@@ -40,7 +48,7 @@
 
     <header>
         <img src="Patusco_logo.jpeg" alt="PATUSCO Logo" class="header-logo">
-        <h1>PATUSCO</h1>
+        <h1>PATUSC</h1>
         <p class="subtitle">Comida de conforto à portuguesa</p>
     </header>
 
