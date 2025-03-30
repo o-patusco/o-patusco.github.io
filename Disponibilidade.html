@@ -115,73 +115,63 @@
 
   <script>
     const allItems = {
-    "Entradas": [
-        "Pão", "Bolinho de bacalhau", "Rissol", "Coxinha", "Croquete", 
-        "Sopa do dia (meia)", "Sopa do dia"
-    ],
-    "Pratos de Carne": [
-        "Frango assado", "Hambúrguer", "Alheira com ovo", "Moelas", "Rissóis (prato)", 
-        "Lombo de porco assado", "Carne de porco à alentejana", "Prego no prato", 
-        "Frango recheado com alheira", "Arroz de pato"
-    ],
-    "Pratos de Peixe": [
-        "Massa de marisco", "Filete de peixe"
-    ],
-    "Pratos Vegetarianos": [
-        "Chili", "Tofu panado com arroz de tomate", "Beringelas recheadas", 
-        "Strogonoff de tofu e cogumelos", "Tofu à lagareiro"
-    ],
-    "Extras": [
-        "Salada mista", "Dose de batatas fritas"
-    ],
-    "Bebidas": [
-        "Água", "Água das Pedras", "Água das Pedras Limão", "Coca-Cola", "Coca-Cola Zero", 
-        "7Up", "Guaraná", "Sumol", "Ice Tea", "Limonada", "Compal"
-    ],
-    "Cerveja": [
-        "Super Bock Mini", "Super Bock 33cl", "Super Bock Fino", "Super Bock Stout", 
-        "Super Bock s/Álcool", "Super Bock Caneca"
-    ],
-    "Vinho da casa": [
-        "Copo", "Jarro 0,25L", "Jarro 0,5L"
-    ],
-    "Vinho (copo)": [
-        "O tal da lixa", "Porta da Ravessa (branco)", "Porta da Ravessa (tinto)", 
-        "Altano", "Papa Figos"
-    ],
-    "Digestivos": [
-        "Moscatel", "Amêndoa Amarga", "Vinho do Porto Cálem Velhotes Tawny", 
-        "Licor Beirão", "Bailey's Irish Cream", "Whiskey Johnnie Walker Red", 
-        "Whiskey Johnnie Walker Black 12 Anos"
-    ],
-    "Cocktails": [
-        "Caipirinha","Whiskey-Cola", "Mojito", "Cuba Libre", "Vodka Limão", 
-        "Gin Tónico Gordon's", "Gin Tónico Beefeater", "Aperol Spritz"
-    ],
-    "Sobremesas": [
-        "Salame", "Arroz doce", "Mousse de limão", "Mousse de chocolate", 
-        "Pêra bêbada", "Bolo de bolacha", "Bolo de chocolate"
-    ],
-    "Petiscos": [
-        "Rissol", "Coxinha", "Croquete", "Batatas fritas", "Peixinhos da horta", 
-        "Aros de cebola", "Chouriço no barro c/pão", "Alheira grelhada c/pão", 
-        "Alheira vegetariana grelhada c/pão", "Moelas"
-    ],
-    "Sandes & Tostas": [
-        "Torrada", "Tosta de queijo", "Tosta de queijo vegano", 
-        "Tosta mista", "Bifana"
-    ],
-    "Café": [
-        "Café", "Abatanado", "Pingo", "Duplo shot", "Meia de leite", 
-        "Galão", "Cappuccino"
-    ],
-    "Chás": [
-        "Carioca de limão", "Tetley"
-    ]
+      "Entradas": ["Pão", "Bolinho de bacalhau", "Rissol", "Coxinha", "Croquete", "Sopa do dia (meia)", "Sopa do dia"],
+      "Pratos de Carne": ["Frango assado", "Hambúrguer", "Alheira com ovo", "Moelas", "Rissóis (prato)", "Lombo de porco assado", "Carne de porco à alentejana", "Prego no prato", "Frango recheado com alheira", "Arroz de pato"],
+      "Pratos de Peixe": ["Massa de marisco", "Filete de peixe"],
+      "Pratos Vegetarianos": ["Chili", "Tofu panado com arroz de tomate", "Beringelas recheadas", "Strogonoff de tofu e cogumelos", "Tofu à lagareiro"],
+      "Extras": ["Salada mista", "Dose de batatas fritas"],
+      "Bebidas": ["Água", "Água das Pedras", "Água das Pedras Limão", "Coca-Cola", "Coca-Cola Zero", "7Up", "Guaraná", "Sumol", "Ice Tea", "Limonada", "Compal"],
+      "Cerveja": ["Super Bock Mini", "Super Bock 33cl", "Super Bock Fino", "Super Bock Stout", "Super Bock s/Álcool", "Super Bock Caneca"],
+      "Vinho da casa": ["Copo", "Jarro 0,25L", "Jarro 0,5L"],
+      "Vinho (copo)": ["O tal da lixa", "Porta da Ravessa (branco)", "Porta da Ravessa (tinto)", "Altano", "Papa Figos"],
+      "Digestivos": ["Moscatel", "Amêndoa Amarga", "Vinho do Porto Cálem Velhotes Tawny", "Licor Beirão", "Bailey's Irish Cream", "Whiskey Johnnie Walker Red", "Whiskey Johnnie Walker Black 12 Anos"],
+      "Cocktails": ["Caipirinha", "Whiskey-Cola", "Mojito", "Cuba Libre", "Vodka Limão", "Gin Tónico Gordon's", "Gin Tónico Beefeater", "Aperol Spritz"],
+      "Sobremesas": ["Salame", "Arroz doce", "Mousse de limão", "Mousse de chocolate", "Pêira bêbada", "Bolo de bolacha", "Bolo de chocolate"],
+      "Petiscos": ["Rissol", "Coxinha", "Croquete", "Batatas fritas", "Peixinhos da horta", "Aros de cebola", "Chouriço no barro c/pão", "Alheira grelhada c/pão", "Alheira vegetariana grelhada c/pão", "Moelas"],
+      "Sandes & Tostas": ["Torrada", "Tosta de queijo", "Tosta de queijo vegano", "Tosta mista", "Bifana"],
+      "Café": ["Café", "Abatanado", "Pingo", "Duplo shot", "Meia de leite", "Galão", "Cappuccino"],
+      "Chás": ["Carioca de limão", "Tetley"]
     };
-
-    const correctPassword = "123"; // Change this to a secure password in production
-
+  
+    const correctPassword = "123"; // change in production
+    const REPO_OWNER = "o-patusco";
+    const REPO_NAME = "o-patusco.github.io";
+    const FILE_PATH = "availability.json";
+  
+    async function saveToGitHub(data) {
+        await fetch("https://disponibilidade.restaurante-patusco.workers.dev/", {
+            method: "POST",
+            headers: {
+            "Content-Type": "application/json"
+            },
+            body: JSON.stringify(data)
+        });
+    }
+  
+      // First get the SHA of the current file (if exists)
+      let sha = null;
+      try {
+        const res = await fetch(apiUrl, { headers });
+        const json = await res.json();
+        if (json.sha) sha = json.sha;
+      } catch (e) {
+        console.warn("First-time creation (no SHA)");
+      }
+  
+      const content = btoa(unescape(encodeURIComponent(JSON.stringify(data, null, 2))));
+      const body = {
+        message: "Update availability",
+        content,
+        sha
+      };
+  
+      await fetch(apiUrl, {
+        method: "PUT",
+        headers,
+        body: JSON.stringify(body)
+      });
+    }
+  
     function checkPassword() {
       const input = document.getElementById("admin-password").value;
       if (input === correctPassword) {
@@ -192,61 +182,64 @@
         alert("Palavra-passe incorreta.");
       }
     }
-
+  
     function loadItems() {
-        const unavailableItems = JSON.parse(localStorage.getItem("unavailableItems") || "[]");
-        const container = document.getElementById("item-list");
-        container.innerHTML = "";
-
-        for (const section in allItems) {
+      fetch("availability.json")
+        .then(res => res.ok ? res.json() : [])
+        .then(unavailableItems => {
+          const container = document.getElementById("item-list");
+          container.innerHTML = "";
+  
+          for (const section in allItems) {
             const sectionTitle = document.createElement("h2");
             sectionTitle.textContent = section;
             container.appendChild(sectionTitle);
-
+  
             allItems[section].forEach(item => {
-                const row = document.createElement("div");
-                row.className = "item";
-
-                const label = document.createElement("label");
-                label.textContent = item;
-
-                const checkbox = document.createElement("input");
-                checkbox.type = "checkbox";
-                checkbox.className = "toggle";
-                checkbox.checked = !unavailableItems.includes(item);
-
-                // Highlight unavailable items in red
-                if (!checkbox.checked) {
-                    row.classList.add("unavailable");
-                }
-
-                checkbox.onchange = () => {
-                    saveItemStatus(item, checkbox.checked);
-                    row.classList.toggle("unavailable", !checkbox.checked);
-                };
-
-                row.appendChild(label);
-                row.appendChild(checkbox);
-                container.appendChild(row);
+              const row = document.createElement("div");
+              row.className = "item";
+  
+              const label = document.createElement("label");
+              label.textContent = item;
+  
+              const checkbox = document.createElement("input");
+              checkbox.type = "checkbox";
+              checkbox.className = "toggle";
+              checkbox.checked = !unavailableItems.includes(item);
+  
+              if (!checkbox.checked) {
+                row.classList.add("unavailable");
+              }
+  
+              checkbox.onchange = () => {
+                saveItemStatus(item, checkbox.checked);
+                row.classList.toggle("unavailable", !checkbox.checked);
+              };
+  
+              row.appendChild(label);
+              row.appendChild(checkbox);
+              container.appendChild(row);
             });
-        }
+          }
+        });
     }
-
-    function saveItemStatus(item, isAvailable) {
-      let unavailableItems = JSON.parse(localStorage.getItem("unavailableItems") || "[]");
-
+  
+    async function saveItemStatus(item, isAvailable) {
+      let unavailableItems = await fetch("availability.json").then(r => r.ok ? r.json() : []);
+  
       if (!isAvailable) {
         if (!unavailableItems.includes(item)) unavailableItems.push(item);
       } else {
         unavailableItems = unavailableItems.filter(i => i !== item);
       }
-
-      localStorage.setItem("unavailableItems", JSON.stringify(unavailableItems));
-
+  
+      await saveToGitHub(unavailableItems);
+  
       const msg = document.getElementById("saveMsg");
       msg.style.display = "block";
       setTimeout(() => msg.style.display = "none", 2000);
     }
   </script>
+  
 </body>
 </html>
