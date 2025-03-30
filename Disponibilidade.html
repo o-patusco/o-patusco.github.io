@@ -58,10 +58,15 @@
     }
 
     .password-area {
+        display: flex;
         max-width: 300px;
-        margin: 0 auto 20px;
+        margin: 0 auto 10px;
         text-align: center;
         font-size: 20px;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
     }
 
     .password-area input {
@@ -72,27 +77,30 @@
 
     .password-area button {
         font-family: 'Barlow Condensed', sans-serif;
+        font-size: 16px;
         padding: 8px 16px;
-        margin-left: 10px;
-        margin-top: 10px;
     }
 
     .reset-availability {
         max-width: 300px;
-        margin: 0 auto 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
         text-align: center;
-        font-size: 20px;
+
     }
 
     .reset-availability button {
-        padding: 8px 16px;
-        margin-left: 10px;
+        padding: 8px 8px;
         margin-top: 10px;
+        font-family: 'Barlow Condensed', sans-serif; 
+        font-size: 16px;
     }
 
     #layout {
         display: flex;
-        gap: 20px;
+        gap: 30px;
         align-items: flex-start;
         justify-content: center;
         flex-wrap: wrap;
@@ -106,7 +114,7 @@
     #sidebar {
         flex: 1;
         max-width: 250px;
-        padding: 10px;
+        padding: 20px;
         background-color: #fff;
         border-radius: 6px;
         box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -123,6 +131,10 @@
     #sidebar li {
         margin: 4px 0;
     }
+    #sidebar h2 {
+        margin-top: 0;
+    }
+
 
 
     @media (max-width: 600px) {
@@ -156,10 +168,10 @@
   </style>
 </head>
 <body>
-  <div class="password-area">
-    <input type="password" id="admin-password" placeholder="Palavra-passe de admin">
-    <button onclick="checkPassword()">Entrar</button>
-  </div>
+    <form class="password-area" onsubmit="checkPassword(); return false;">
+        <input type="password" id="admin-password" placeholder="Palavra-passe de admin" />
+        <button type="submit">Entrar</button>
+    </form>
 
   <div id="admin-panel">
     <h1>Gestor de Disponibilidade</h1>
@@ -170,7 +182,7 @@
           <h2>Faltam por categoria</h2>
           <ul id="sidebar-list"></ul>
           <div class="reset-availability">
-            <button onclick="resetAvailability()" style="justify-content: center; align-items: center; font-family: 'Barlow Condensed', sans-serif">🔄 Reiniciar todas as categorias</button>
+            <button onclick="resetAvailability()">🔄 Reiniciar todas as categorias</button>
           </div>
         </div>
     </div>
@@ -280,8 +292,8 @@
                 container.appendChild(row);
                 });
             }
+            updateSidebar(currentUnavailableItems);
         });
-        updateSidebar(currentUnavailableItems);
     }
   
     function updateAvailability(item, isAvailable) {
