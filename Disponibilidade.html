@@ -89,16 +89,29 @@
         margin-top: 10px;
     }
 
+    #layout {
+        display: flex;
+        gap: 20px;
+        align-items: flex-start;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #item-list {
+        flex: 3;
+        max-width: 600px;
+    }
+
     #sidebar {
         flex: 1;
-        position: sticky;
-        top: 20px;
         max-width: 250px;
         padding: 10px;
         background-color: #fff;
         border-radius: 6px;
         box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         font-size: 18px;
+        position: sticky;
+        top: 20px;
     }
 
     #sidebar ul {
@@ -147,12 +160,13 @@
     <h1>Gestor de Disponibilidade</h1>
   
     <!-- ✅ Sidebar lives here -->
-    <div id="sidebar" style="display: none;">
-      <h2>Ocultos por categoria</h2>
-      <ul id="missing-counts"></ul>
+    <div id="layout">
+        <div id="item-list"></div>
+        <div id="sidebar">
+          <h2>Ocultos por categoria</h2>
+          <ul id="sidebar-list"></ul>
+        </div>
     </div>
-  
-    <div id="item-list"></div>
   
     <p class="hidden-saved" id="saveMsg" style="display: none;">Disponibilidade guardada! ✅</p>
   
