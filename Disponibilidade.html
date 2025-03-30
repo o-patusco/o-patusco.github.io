@@ -159,20 +159,19 @@
   <div id="admin-panel">
     <h1>Gestor de Disponibilidade</h1>
   
-    <!-- ✅ Sidebar lives here -->
     <div id="layout">
         <div id="item-list"></div>
         <div id="sidebar">
           <h2>Ocultos por categoria</h2>
           <ul id="sidebar-list"></ul>
+          <div class="reset-availability">
+            <button onclick="resetAvailability()" style="margin-top: 20px;">🔄 Reiniciar todas as categorias</button>
+          </div>
         </div>
     </div>
   
     <p class="hidden-saved" id="saveMsg" style="display: none;">Disponibilidade guardada! ✅</p>
   
-    <div class="reset-availability">
-      <button onclick="resetAvailability()" style="margin-top: 20px;">🔄 Reiniciar Disponibilidade</button>
-    </div>
   </div>
 
   
