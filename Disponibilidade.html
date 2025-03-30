@@ -242,7 +242,6 @@
             .then(unavailableItems => {
                 console.log("Unavailable items:", unavailableItems);
             currentUnavailableItems = unavailableItems; // ✅ save to memory
-            updateSidebar(currentUnavailableItems);
 
             const container = document.getElementById("item-list");
             container.innerHTML = "";
@@ -279,6 +278,7 @@
                 });
             }
         });
+        updateSidebar(currentUnavailableItems);
     }
   
     function updateAvailability(item, isAvailable) {
@@ -303,26 +303,28 @@
     }
 
     function updateSidebar(unavailableItems) {
-        const counts = {};
+        const sidebarList = document.getElementById("sidebar-list");
+        if (!sidebarList) {
+            console.error("Sidebar list not found");
+            return;
+        }
 
-        for (const section in allItems) {
-            const hiddenCount = allItems[section].filter(item => unavailableItems.includes(item)).length;
+        const hiddenCountPerCategory = {};
+
+        for (const category in allItems) {
+            const items = allItems[category];
+            const hiddenCount = items.filter(item => unavailableItems.includes(item)).length;
             if (hiddenCount > 0) {
-            counts[section] = hiddenCount;
+            hiddenCountPerCategory[category] = hiddenCount;
             }
         }
 
-        const sidebar = document.getElementById("sidebar");
-        const list = document.getElementById("missing-counts");
-        list.innerHTML = "";
-
-        Object.entries(counts).forEach(([section, count]) => {
+        sidebarList.innerHTML = "";
+        Object.entries(hiddenCountPerCategory).forEach(([category, count]) => {
             const li = document.createElement("li");
-            li.textContent = `${section}: ${count}`;
-            list.appendChild(li);
+            li.textContent = `${category}: ${count}`;
+            sidebarList.appendChild(li);
         });
-
-        sidebar.style.display = Object.keys(counts).length > 0 ? "block" : "none";
     }
 
     async function resetAvailability() {
