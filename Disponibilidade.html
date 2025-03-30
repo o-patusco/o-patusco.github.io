@@ -100,6 +100,7 @@
     #item-list {
         flex: 3;
         max-width: 600px;
+        border: 1px solid red;
     }
 
     #sidebar {
@@ -225,20 +226,21 @@
   
   
     function checkPassword() {
-      const input = document.getElementById("admin-password").value;
-      if (input === correctPassword) {
-        document.querySelector(".password-area").style.display = "none";
-        document.getElementById("admin-panel").style.display = "block";
-        loadItems();
-      } else {
-        alert("Palavra-passe incorreta.");
-      }
+        const input = document.getElementById("admin-password").value;
+        if (input === correctPassword) {
+            document.querySelector(".password-area").style.display = "none";
+            document.getElementById("admin-panel").style.display = "block";
+            loadItems(); // ✅ this should be here
+        } else {
+            alert("Palavra-passe incorreta.");
+        }
     }
   
     function loadItems() {
         fetch("https://disponibilidade.restaurante-patusco.workers.dev/")
             .then(res => res.ok ? res.json() : [])
             .then(unavailableItems => {
+                console.log("Unavailable items:", unavailableItems);
             currentUnavailableItems = unavailableItems; // ✅ save to memory
             updateSidebar(currentUnavailableItems);
 
