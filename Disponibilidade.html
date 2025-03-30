@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Admini - Disponibilidade do Menu</title>
+  <title>Admin - Disponibilidade do Menu</title>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&display=swap" rel="stylesheet">
   <style>
     body {
@@ -145,29 +145,6 @@
         });
     }
   
-      // First get the SHA of the current file (if exists)
-      let sha = null;
-      try {
-        const res = await fetch(apiUrl, { headers });
-        const json = await res.json();
-        if (json.sha) sha = json.sha;
-      } catch (e) {
-        console.warn("First-time creation (no SHA)");
-      }
-  
-      const content = btoa(unescape(encodeURIComponent(JSON.stringify(data, null, 2))));
-      const body = {
-        message: "Update availability",
-        content,
-        sha
-      };
-  
-      await fetch(apiUrl, {
-        method: "PUT",
-        headers,
-        body: JSON.stringify(body)
-      });
-    }
   
     function checkPassword() {
       const input = document.getElementById("admin-password").value;
