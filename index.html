@@ -4,31 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="Patusco.ico">
-    <title>Patusc</title>
+    <title>Patusco</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400&display=swap" rel="stylesheet">
 
     <script>
         document.addEventListener("DOMContentLoaded", async () => {
-          try {
-            const response = await fetch("https://disponibilidade.restaurante-patusco.workers.dev/");
-            if (!response.ok) throw new Error("Failed to fetch availability data.");
-      
-            const data = await response.json();
-            console.log("Fetched availability.json:", data);
-      
-            const unavailableItems = data.unavailableItems || [];
-            console.log("Unavailable items to hide:", unavailableItems);
-      
-            unavailableItems.forEach(item => {
-              const rows = document.querySelectorAll(`tr[data-name="${item}"]`);
-              console.log(`Found ${rows.length} row(s) for item "${item}"`);
-              rows.forEach(row => row.style.display = "none");
-            });
-          } catch (error) {
-            console.error("Error loading unavailable items:", error);
-          }
+            try {
+                const response = await fetch("https://disponibilidade.restaurante-patusco.workers.dev/");
+                if (!response.ok) throw new Error("Failed to fetch availability data.");
+
+                const data = await response.json();
+                const unavailableItems = Array.isArray(data) ? data : [];
+                console.log("Unavailable items to hide:", unavailableItems);
+
+                unavailableItems.forEach(item => {
+                const rows = document.querySelectorAll(`tr[data-name="${item}"]`);
+                rows.forEach(row => row.style.display = "none");
+                });
+            } catch (error) {
+                console.error("Error loading unavailable items:", error);
+            }
         });
       </script>
 
