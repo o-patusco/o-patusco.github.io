@@ -108,7 +108,7 @@
   </div>
 
   <div id="admin-panel">
-    <h1>Gestori de Disponibilidade</h1>
+    <h1>Gestor de Disponibilidade</h1>
     <div id="item-list"></div>
     <p class="hidden-saved" id="saveMsg" style="display: none;">Disponibilidade guardada! ✅</p>
   </div>
@@ -136,13 +136,20 @@
     const correctPassword = "123"; // change in production
   
     async function saveToGitHub(data) {
-        await fetch("https://disponibilidade.restaurante-patusco.workers.dev/", {
+        try {
+            const response = await fetch("https://disponibilidade.restaurante-patusco.workers.dev/", {
             method: "POST",
             headers: {
-            "Content-Type": "application/json"
+                "Content-Type": "application/json"
             },
             body: JSON.stringify(data)
-        });
+            });
+
+            const text = await response.text();
+            console.log("Response from Cloudflare Worker:", text);
+        } catch (error) {
+            console.error("Failed to update GitHub availability.json:", error);
+        }
     }
   
   
@@ -158,7 +165,7 @@
     }
   
     function loadItems() {
-      fetch("availability.json")
+      fetch("https://disponibilidade.restaurante-patusco.workers.dev/")
         .then(res => res.ok ? res.json() : [])
         .then(unavailableItems => {
           const container = document.getElementById("item-list");
