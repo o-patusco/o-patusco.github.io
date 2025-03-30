@@ -10,13 +10,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400&display=swap" rel="stylesheet">
 
     <script>
-        document.addEventListener("DOMContentLoaded", () => {
-          const unavailableItems = JSON.parse(localStorage.getItem("unavailableItems") || "[]");
-      
-          unavailableItems.forEach(item => {
-            const rows = document.querySelectorAll(`tr[data-name="${item}"]`);
-            rows.forEach(row => row.style.display = "none");
-          });
+        document.addEventListener("DOMContentLoaded", async () => {
+            try {
+                const response = await fetch("https://disponibilidade.restaurante-patusco.workers.dev/");
+                if (!response.ok) throw new Error("Failed to fetch availability data.");
+
+                const data = await response.json();
+                const unavailableItems = Array.isArray(data) ? data : [];
+                console.log("Unavailable items to hide:", unavailableItems);
+
+                unavailableItems.forEach(item => {
+                const rows = document.querySelectorAll(`tr[data-name="${item}"]`);
+                rows.forEach(row => row.style.display = "none");
+                });
+            } catch (error) {
+                console.error("Error loading unavailable items:", error);
+            }
         });
       </script>
 
@@ -63,7 +72,7 @@
         <h3>Starters</h3>
         <table>
             <tr><th>Name</th><th>Price</th></tr>
-            <tr data-name="Pão"><td>Bread</td><td>1.00 €</td></tr>
+            <tr data-name="Pao"><td>Bread</td><td>1.00 €</td></tr>
             <tr data-name="Bolinho de bacalhau"><td>Codfish Cake</td><td>1.00 €</td></tr>
             <tr data-name="Rissol"><td>Rissol</td><td>1.50 €</td></tr>
             <tr data-name="Coxinha"><td>Coxinha</td><td>1.50 €</td></tr>
@@ -76,12 +85,12 @@
         <table>
             <tr><th>Name</th><th>Price</th></tr>
             <tr data-name="Frango assado"><td>Roast chicken</td><td>6.00 €</td></tr>
-            <tr data-name="Hambúrguer"><td>Burger</td><td>6.00 €</td></tr>
+            <tr data-name="Hamburguer"><td>Burger</td><td>6.00 €</td></tr>
             <tr data-name="Alheira com ovo"><td>Alheira with egg</td><td>6.00 €</td></tr>
             <tr data-name="Moelas"><td>Gizzards</td><td>6.00 €</td></tr>
-            <tr data-name="Rissóis (prato)"><td>Rissóis (plate)</td><td>6.00 €</td></tr>
+            <tr data-name="Rissois (prato)"><td>Rissóis (plate)</td><td>6.00 €</td></tr>
             <tr data-name="Lombo de porco assado"><td>Roast pork loin*</td><td>7.00 €</td></tr>
-            <tr data-name="Carne de porco à alentejana"><td>Alentejo-style pork</td><td>7.00 €</td></tr>
+            <tr data-name="Carne de porco a alentejana"><td>Alentejo-style pork</td><td>7.00 €</td></tr>
             <tr data-name="Prego no prato"><td>Beef steak on plate</td><td>7.00 €</td></tr>
             <tr data-name="Frango recheado com alheira"><td>Chicken stuffed with alheira</td><td>7.00 €</td></tr>
             <tr data-name="Arroz de pato"><td>Duck rice</td><td>8.00 €</td></tr>
@@ -246,7 +255,7 @@
             <tr data-name="Cappuccino"><td>Cappuccino*</td><td>1.80 €</td></tr>
         </table>
 
-        
+
         <h3>Tea</h3>
         <table>
             <tr><th>Name</th><th>Price</th></tr>

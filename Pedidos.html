@@ -112,19 +112,26 @@
     }
 
     // NEW: Hide unavailable items on load
-    window.addEventListener("DOMContentLoaded", () => {
-        const unavailable = JSON.parse(localStorage.getItem("unavailableItems") || "[]");
+    window.addEventListener("DOMContentLoaded", async () => {
+        try {
+            const response = await fetch("https://disponibilidade.restaurante-patusco.workers.dev/");
+            if (!response.ok) throw new Error("Erro ao obter os itens indisponíveis");
 
-        unavailable.forEach(item => {
-            // Go through all <td> that are first child of a row
-            const rows = document.querySelectorAll("table.pedidos-table tbody tr td:first-child");
-            rows.forEach(td => {
-                const text = td.textContent.trim().toLowerCase();
-                if (text === item.trim().toLowerCase()) {
-                    td.closest("tr").style.display = "none";
-                }
+            const unavailableItems = await response.json();
+
+            unavailableItems.forEach(item => {
+                const rows = document.querySelectorAll("table.pedidos-table tbody tr td:first-child");
+                rows.forEach(td => {
+                    const text = td.textContent.trim().toLowerCase();
+                    if (text === item.trim().toLowerCase()) {
+                        td.closest("tr").style.display = "none";
+                    }
+                });
             });
-        });
+
+        } catch (error) {
+            console.error("Erro ao esconder itens indisponíveis:", error);
+        }
     });
     </script>
 </head>
