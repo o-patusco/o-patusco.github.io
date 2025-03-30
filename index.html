@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="Patusco.ico">
-    <title>Patusco</title>
+    <title>Patusc</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400&display=swap" rel="stylesheet">
@@ -12,7 +12,7 @@
     <script>
         document.addEventListener("DOMContentLoaded", async () => {
           try {
-            const response = await fetch("https://raw.githubusercontent.com/o-patusco/o-patusco.github.io/main/availability.json");
+            const response = await fetch("https://disponibilidade.restaurante-patusco.workers.dev/");
             if (!response.ok) throw new Error("Failed to fetch availability data.");
       
             const data = await response.json();
