@@ -111,6 +111,7 @@
     <h1>Gestor de Disponibilidade</h1>
     <div id="item-list"></div>
     <p class="hidden-saved" id="saveMsg" style="display: none;">Disponibilidade guardada! ✅</p>
+    <button onclick="resetAvailability()" style="margin-top: 20px;">🔄 Reiniciar Disponibilidade</button>
   </div>
 
   <script>
@@ -221,6 +222,26 @@
         msg.style.display = "block";
         setTimeout(() => msg.style.display = "none", 2000);
     }
+    async function resetAvailability() {
+        const confirmReset = confirm("Tens a certeza que queres reiniciar a disponibilidade? Todos os itens ficarão disponíveis.");
+        if (!confirmReset) return;
+
+        const unavailableItems = [];
+
+        await saveToGitHub(unavailableItems);
+
+        loadItems();
+
+        const msg = document.getElementById("saveMsg");
+        msg.innerText = "Disponibilidade reiniciada! ✅";
+        msg.style.display = "block";
+        setTimeout(() => {
+            msg.style.display = "none";
+            msg.innerText = "Disponibilidade guardada! ✅";
+        }, 3000);
+    }
+
+
   </script>
   
 </body>
