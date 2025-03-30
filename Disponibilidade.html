@@ -139,6 +139,11 @@
 
 
     @media (max-width: 600px) {
+
+        body {
+            padding: 10px;
+        }
+        
         .item {
             width: 100%;
             flex-direction: row;
@@ -148,6 +153,10 @@
 
         #admin-panel {
             padding: 0 10px;
+            margin: 0 auto;
+            align-items: center;
+            justify-content: center;
+            margin-right: 20px;
         }
 
         .item label {
@@ -162,6 +171,15 @@
 
         #sidebar{
             display:none
+        }
+        #layout {
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        #item-list {
+            margin: 0 auto;
+            width: 100%;
         }
     }
 
