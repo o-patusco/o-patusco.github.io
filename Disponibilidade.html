@@ -132,6 +132,8 @@
   </div>
 
   <script>
+
+    
     const allItems = {
       "Entradas": ["Pão", "Bolinho de bacalhau", "Rissol", "Coxinha", "Croquete", "Sopa do dia (meia)", "Sopa do dia"],
       "Pratos de Carne": ["Frango assado", "Hambúrguer", "Alheira com ovo", "Moelas", "Rissóis (prato)", "Lombo de porco assado", "Carne de porco à alentejana", "Prego no prato", "Frango recheado com alheira", "Arroz de pato"],
@@ -152,6 +154,9 @@
     };
   
     const correctPassword = "123"; // change in production
+
+    let currentUnavailableItems = [];
+    let saveTimeout = null;
   
     async function saveToGitHub(data) {
         try {
@@ -183,62 +188,67 @@
     }
   
     function loadItems() {
-      fetch("https://disponibilidade.restaurante-patusco.workers.dev/")
-        .then(res => res.ok ? res.json() : [])
-        .then(unavailableItems => {
-          const container = document.getElementById("item-list");
-          container.innerHTML = "";
-  
-          for (const section in allItems) {
-            const sectionTitle = document.createElement("h2");
-            sectionTitle.textContent = section;
-            container.appendChild(sectionTitle);
-  
-            allItems[section].forEach(item => {
-              const row = document.createElement("div");
-              row.className = "item";
-  
-              const label = document.createElement("label");
-              label.textContent = item;
-  
-              const checkbox = document.createElement("input");
-              checkbox.type = "checkbox";
-              checkbox.className = "toggle";
-              checkbox.checked = !unavailableItems.includes(item);
-  
-              if (!checkbox.checked) {
-                row.classList.add("unavailable");
-              }
-  
-              checkbox.onchange = () => {
-                saveItemStatus(item, checkbox.checked);
-                row.classList.toggle("unavailable", !checkbox.checked);
-              };
-  
-              row.appendChild(label);
-              row.appendChild(checkbox);
-              container.appendChild(row);
-            });
-          }
+        fetch("https://disponibilidade.restaurante-patusco.workers.dev/")
+            .then(res => res.ok ? res.json() : [])
+            .then(unavailableItems => {
+            currentUnavailableItems = unavailableItems; // ✅ save to memory
+
+            const container = document.getElementById("item-list");
+            container.innerHTML = "";
+
+            for (const section in allItems) {
+                const sectionTitle = document.createElement("h2");
+                sectionTitle.textContent = section;
+                container.appendChild(sectionTitle);
+
+                allItems[section].forEach(item => {
+                const row = document.createElement("div");
+                row.className = "item";
+
+                const label = document.createElement("label");
+                label.textContent = item;
+
+                const checkbox = document.createElement("input");
+                checkbox.type = "checkbox";
+                checkbox.className = "toggle";
+                checkbox.checked = !currentUnavailableItems.includes(item);
+
+                if (!checkbox.checked) {
+                    row.classList.add("unavailable");
+                }
+
+                checkbox.onchange = () => {
+                    updateAvailability(item, checkbox.checked);
+                    row.classList.toggle("unavailable", !checkbox.checked);
+                };
+
+                row.appendChild(label);
+                row.appendChild(checkbox);
+                container.appendChild(row);
+                });
+            }
         });
     }
   
-    async function saveItemStatus(item, isAvailable) {
-        let unavailableItems = await fetch("https://disponibilidade.restaurante-patusco.workers.dev/")
-            .then(r => r.ok ? r.json() : []);
-
+    function updateAvailability(item, isAvailable) {
         if (!isAvailable) {
-            if (!unavailableItems.includes(item)) unavailableItems.push(item);
+            if (!currentUnavailableItems.includes(item)) {
+            currentUnavailableItems.push(item);
+            }
         } else {
-            unavailableItems = unavailableItems.filter(i => i !== item);
+            currentUnavailableItems = currentUnavailableItems.filter(i => i !== item);
         }
 
-        await saveToGitHub(unavailableItems);
-
-        const msg = document.getElementById("saveMsg");
-        msg.style.display = "block";
-        setTimeout(() => msg.style.display = "none", 2000);
+        // Debounce the save: wait 1 second after last change
+        if (saveTimeout) clearTimeout(saveTimeout);
+        saveTimeout = setTimeout(() => {
+            saveToGitHub(currentUnavailableItems);
+            const msg = document.getElementById("saveMsg");
+            msg.style.display = "block";
+            setTimeout(() => msg.style.display = "none", 2000);
+        }, 1000);
     }
+
     async function resetAvailability() {
         const confirmReset = confirm("Tens a certeza que queres reiniciar a disponibilidade? Todos os itens ficarão disponíveis.");
         if (!confirmReset) return;
