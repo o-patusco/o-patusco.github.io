@@ -199,19 +199,20 @@
     }
   
     async function saveItemStatus(item, isAvailable) {
-      let unavailableItems = await fetch("availability.json").then(r => r.ok ? r.json() : []);
-  
-      if (!isAvailable) {
-        if (!unavailableItems.includes(item)) unavailableItems.push(item);
-      } else {
-        unavailableItems = unavailableItems.filter(i => i !== item);
-      }
-  
-      await saveToGitHub(unavailableItems);
-  
-      const msg = document.getElementById("saveMsg");
-      msg.style.display = "block";
-      setTimeout(() => msg.style.display = "none", 2000);
+        let unavailableItems = await fetch("https://disponibilidade.restaurante-patusco.workers.dev/")
+            .then(r => r.ok ? r.json() : []);
+
+        if (!isAvailable) {
+            if (!unavailableItems.includes(item)) unavailableItems.push(item);
+        } else {
+            unavailableItems = unavailableItems.filter(i => i !== item);
+        }
+
+        await saveToGitHub(unavailableItems);
+
+        const msg = document.getElementById("saveMsg");
+        msg.style.display = "block";
+        setTimeout(() => msg.style.display = "none", 2000);
     }
   </script>
   
