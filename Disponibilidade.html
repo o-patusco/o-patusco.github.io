@@ -89,6 +89,27 @@
         margin-top: 10px;
     }
 
+    #sidebar {
+        flex: 1;
+        position: sticky;
+        top: 20px;
+        max-width: 250px;
+        padding: 10px;
+        background-color: #fff;
+        border-radius: 6px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        font-size: 18px;
+    }
+
+    #sidebar ul {
+        list-style: none;
+        padding-left: 0;
+    }
+
+    #sidebar li {
+        margin: 4px 0;
+    }
+
 
     @media (max-width: 600px) {
         .item {
@@ -124,12 +145,25 @@
 
   <div id="admin-panel">
     <h1>Gestor de Disponibilidade</h1>
+  
+    <!-- ✅ Sidebar lives here -->
+    <div id="sidebar" style="display: none;">
+      <h2>Ocultos por categoria</h2>
+      <ul id="missing-counts"></ul>
+    </div>
+  
     <div id="item-list"></div>
+  
     <p class="hidden-saved" id="saveMsg" style="display: none;">Disponibilidade guardada! ✅</p>
-    <div class = "reset-availability">
-        <button onclick="resetAvailability()" style="margin-top: 20px;">🔄 Reiniciar Disponibilidade</button>
+  
+    <div class="reset-availability">
+      <button onclick="resetAvailability()" style="margin-top: 20px;">🔄 Reiniciar Disponibilidade</button>
     </div>
   </div>
+
+  
+
+
 
   <script>
 
@@ -192,6 +226,7 @@
             .then(res => res.ok ? res.json() : [])
             .then(unavailableItems => {
             currentUnavailableItems = unavailableItems; // ✅ save to memory
+            updateSidebar(currentUnavailableItems);
 
             const container = document.getElementById("item-list");
             container.innerHTML = "";
@@ -247,6 +282,31 @@
             msg.style.display = "block";
             setTimeout(() => msg.style.display = "none", 2000);
         }, 1000);
+
+        updateSidebar(currentUnavailableItems);
+    }
+
+    function updateSidebar(unavailableItems) {
+        const counts = {};
+
+        for (const section in allItems) {
+            const hiddenCount = allItems[section].filter(item => unavailableItems.includes(item)).length;
+            if (hiddenCount > 0) {
+            counts[section] = hiddenCount;
+            }
+        }
+
+        const sidebar = document.getElementById("sidebar");
+        const list = document.getElementById("missing-counts");
+        list.innerHTML = "";
+
+        Object.entries(counts).forEach(([section, count]) => {
+            const li = document.createElement("li");
+            li.textContent = `${section}: ${count}`;
+            list.appendChild(li);
+        });
+
+        sidebar.style.display = Object.keys(counts).length > 0 ? "block" : "none";
     }
 
     async function resetAvailability() {
@@ -258,6 +318,7 @@
         await saveToGitHub(unavailableItems);
 
         loadItems();
+        updateSidebar([]);
 
         const msg = document.getElementById("saveMsg");
         msg.innerText = "Disponibilidade reiniciada! ✅";
