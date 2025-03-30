@@ -17,16 +17,10 @@
       min-height: 100vh;
     }
     #admin-panel {
-        display: flex;
-        flex-direction: row;
-        gap: 30px;
-        align-items: flex-start;
+        width: 100%;
+        max-width: 600px;
+        display: none;
     }
-
-    #item-list {
-        flex: 2;
-    }
-
 
 
     h1 {
@@ -187,7 +181,7 @@
       "Digestivos": ["Moscatel", "Amêndoa Amarga", "Vinho do Porto Cálem Velhotes Tawny", "Licor Beirão", "Bailey's Irish Cream", "Whiskey Johnnie Walker Red", "Whiskey Johnnie Walker Black 12 Anos"],
       "Cocktails": ["Caipirinha", "Whiskey-Cola", "Mojito", "Cuba Libre", "Vodka Limão", "Gin Tónico Gordon's", "Gin Tónico Beefeater", "Aperol Spritz"],
       "Sobremesas": ["Salame", "Arroz doce", "Mousse de limão", "Mousse de chocolate", "Pêira bêbada", "Bolo de bolacha", "Bolo de chocolate"],
-      "Petiscos": ["Rissol", "Coxinha", "Croquete", "Batatas fritas", "Peixinhos da horta", "Aros de cebola", "Chouriço no barro c/pão", "Alheira grelhada c/pão", "Alheira vegetariana grelhada c/pão", "Moelas"],
+      "Petiscos": ["Batatas fritas", "Peixinhos da horta", "Aros de cebola", "Chouriço no barro c/pão", "Alheira grelhada c/pão", "Alheira vegetariana grelhada c/pão", "Moelas"],
       "Sandes & Tostas": ["Torrada", "Tosta de queijo", "Tosta de queijo vegano", "Tosta mista", "Bifana"],
       "Café": ["Café", "Abatanado", "Pingo", "Duplo shot", "Meia de leite", "Galão", "Cappuccino"],
       "Chás": ["Carioca de limão", "Tetley"]
@@ -324,7 +318,7 @@
         await saveToGitHub(unavailableItems);
 
         loadItems();
-        updateSidebar([]);
+        
 
         const msg = document.getElementById("saveMsg");
         msg.innerText = "Disponibilidade reiniciada! ✅";
