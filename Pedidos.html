@@ -386,6 +386,52 @@
         </table>
       </section>
 
+      <h3>Vinho (garrafa)</h3>
+        <table class="pedidos-table">
+          <tr><th>Nome</th><th>Preço</th><th>Quantidade</th></tr>
+
+          <tr><td>O tal da lixa</td><td>6,00 €</td>
+            <td>
+              <button onclick="changeQuantity('O tal da lixa', -1, 6.00)">–</button>
+              <span id="qty-O tal da lixa">0</span>
+              <button onclick="changeQuantity('O tal da lixa', 1, 6.00)">+</button>
+            </td>
+          </tr>
+
+          <tr><td>Porta da Ravessa (branco)</td><td>6,00 €</td>
+            <td>
+              <button onclick="changeQuantity('Porta da Ravessa (branco)', -1, 6.00)">–</button>
+              <span id="qty-Porta da Ravessa (branco)">0</span>
+              <button onclick="changeQuantity('Porta da Ravessa (branco)', 1, 6.00)">+</button>
+            </td>
+          </tr>
+
+          <tr><td>Porta da Ravessa (tinto)</td><td>6,00 €</td>
+            <td>
+              <button onclick="changeQuantity('Porta da Ravessa (tinto)', -1, 6.00)">–</button>
+              <span id="qty-Porta da Ravessa (tinto)">0</span>
+              <button onclick="changeQuantity('Porta da Ravessa (tinto)', 1, 6.00)">+</button>
+            </td>
+          </tr>
+
+          <tr><td>Altano</td><td>12,00 €</td>
+            <td>
+              <button onclick="changeQuantity('Altano', -1, 12.00)">–</button>
+              <span id="qty-Altano">0</span>
+              <button onclick="changeQuantity('Altano', 1, 12.00)">+</button>
+            </td>
+          </tr>
+
+          <tr><td>Papa Figos</td><td>14,00 €</td>
+            <td>
+              <button onclick="changeQuantity('Papa Figos', -1, 14.00)">–</button>
+              <span id="qty-Papa Figos">0</span>
+              <button onclick="changeQuantity('Papa Figos', 1, 14.00)">+</button>
+            </td>
+          </tr>
+        </table>
+      </section>
+
       <section id="sobremesas">
         <h2>Sobremesas</h2>
       
@@ -393,7 +439,7 @@
           <tr><th>Nome</th><th>Preço</th><th>Quantidade</th></tr>
       
           <tr>
-            <td>Salame</td>
+            <td>Salame de chocolate</td>
             <td>1,00 €</td>
             <td>
               <button onclick="changeQuantity('Salame', -1, 1.00)">–</button>
