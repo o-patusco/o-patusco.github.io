@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="Patusco.ico">
+    <title>Patusco</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400&display=swap" rel="stylesheet">
+
+    <script>
+        document.addEventListener("DOMContentLoaded", async () => {
+            try {
+                const response = await fetch("https://disponibilidade.restaurante-patusco.workers.dev/");
+                if (!response.ok) throw new Error("Error al cargar los datos de disponibilidad.");
+
+                const data = await response.json();
+                const unavailableItems = Array.isArray(data) ? data : [];
+                console.log("Elementos no disponibles para ocultar:", unavailableItems);
+
+                unavailableItems.forEach(item => {
+                    const rows = document.querySelectorAll(`tr[data-name="${item}"]`);
+                    rows.forEach(row => row.style.display = "none");
+                });
+            } catch (error) {
+                console.error("Error al cargar los elementos no disponibles:", error);
+            }
+        });
+    </script>
+</head>
+<body>
+    <div class="language-switch">
+        <button onclick="location.href='index.html'">PT</button>
+        <button onclick="location.href='en.html'">EN</button>
+        <button onclick="location.href='fr.html'">FR</button>
+        <button onclick="location.href='fr.html'">ES</button>
+    </div>
+
+    <section id="menu-dia">
+        <p class="menu-description">
+            <span class="menu-item">Sopa o café</span> + 
+            <span class="menu-item">Bebida</span> + 
+            <span class="menu-item">Plato del día</span> = 
+            <span class="menu-price">8€</span>
+        </p>
+        <p class="menu-time">De lunes a viernes, de 12:00 a 15:00</p>
+    </section>
+
+    <header>
+        <img src="Patusco_logo.jpeg" alt="Logo de PATUSCO" class="header-logo">
+        <h1>PATUSCO</h1>
+        <p class="subtitle">Comida casera portuguesa</p>
+    </header>
+
+    <nav>
+        <a href="#top" class="nav-logo">
+            <img src="Patusco_logo.jpeg" alt="Logo de PATUSCO">
+        </a>
+        <ul>
+            <li><a href="#pratos">Platos</a></li>
+            <li><a href="#bebidas">Bebidas</a></li>
+            <li><a href="#snacks">Aperitivos</a></li>
+            <li><a href="#sobremesas">Postres</a></li>
+            <li><a href="#cafetaria">Cafetería</a></li>
+        </ul>
+    </nav>
+    <!-- CONTENIDO ANTERIOR INALTERADO -->
+
+    <section id="pratos">
+        <h2>Platos</h2>
+
+        <h3>Entrantes</h3>
+        <table>
+            <tr><th>Nombre</th><th>Precio</th></tr>
+            <tr data-name="Azeitonas"><td>Aceitunas</td><td>1,00 €</td></tr>
+            <tr data-name="Pão"><td>Pan</td><td>1.00 €</td></tr>
+            <tr data-name="Pão e manteiga"><td>Pan con mantequilla</td><td>2,00 €</td></tr>
+            <tr data-name="Pão e manteiga de ervas"><td>Pan con mantequilla de hierbas</td><td>3,00 €</td></tr>
+            <tr data-name="Bolinho de bacalhau"><td>Bollo de bacalao</td><td>1.00 €</td></tr>
+            <tr data-name="Rissol"><td>Rissol</td><td>1.50 €</td></tr>
+            <tr data-name="Coxinha"><td>Coxinha</td><td>1.50 €</td></tr>
+            <tr data-name="Croquete"><td>Croqueta</td><td>1.50 €</td></tr>
+            <tr data-name="Sopa do dia (meia)"><td>Sopa del día (media)</td><td>1.50 €</td></tr>
+            <tr data-name="Sopa do dia"><td>Sopa del día</td><td>2.00 €</td></tr>
+        </table>
+
+        <h3>Platos de carne</h3>
+        <table>
+            <tr><th>Nombre</th><th>Precio</th></tr>
+            <tr data-name="Frango assado"><td>Pollo asado</td><td>6.00 €</td></tr>
+            <tr data-name="Hambúrguer"><td>Hamburguesa</td><td>6.00 €</td></tr>
+            <tr data-name="Alheira com ovo"><td>Alheira con huevo</td><td>6.00 €</td></tr>
+            <tr data-name="Moelas"><td>Mollejas</td><td>6.00 €</td></tr>
+            <tr data-name="Rissóis (prato)"><td>Plato de rissóis</td><td>6.00 €</td></tr>
+            <tr data-name="Lombo de porco assado"><td>Lomo de cerdo asado*</td><td>7.00 €</td></tr>
+            <tr data-name="Carne de porco à alentejana"><td>Cerdo al estilo alentejano</td><td>7.00 €</td></tr>
+            <tr data-name="Prego no prato"><td>Bistec de ternera al plato</td><td>8.00 €</td></tr>
+            <tr data-name="Frango recheado com alheira"><td>Pollo relleno de alheira</td><td>7.00 €</td></tr>
+            <tr data-name="Arroz de pato"><td>Arroz de pato</td><td>8.00 €</td></tr>
+        </table>
+        <p class="aviso-disponibilidade">*Consultar disponibilidad del día.</p>
+
+        <h3>Platos de pescado</h3>
+        <table>
+            <tr><th>Nombre</th><th>Precio</th></tr>
+            <tr data-name="Massa de marisco"><td>Pasta con marisco</td><td>7.00 €</td></tr>
+            <tr data-name="Filete de peixe"><td>Filete de pescado*</td><td>7.00 €</td></tr>
+        </table>
+        <p class="aviso-disponibilidade">*Consultar disponibilidad del día.</p>
+
+        <h3>Platos vegetarianos</h3>
+        <table>
+            <tr><th>Nombre</th><th>Precio</th></tr>
+            <tr data-name="Chili"><td>Chili</td><td>6.00 €</td></tr>
+            <tr data-name="Tofu panado"><td>Tofu empanado con arroz de tomate*</td><td>7.00 €</td></tr>
+            <tr data-name="Beringelas recheadas"><td>Berenjenas rellenas</td><td>7.00 €</td></tr>
+            <tr data-name="Strogonoff de tofu e cogumelos"><td>Stroganoff de tofu y champiñones*</td><td>7.00 €</td></tr>
+            <tr data-name="Tofu à lagareiro"><td>Tofu a la lagareiro</td><td>8.00 €</td></tr>
+        </table>
+        <p class="aviso-disponibilidade">*Consultar disponibilidad del día.</p>
+
+        <h3>Extras</h3>
+        <table>
+            <tr><th>Nombre</th><th>Precio</th></tr>
+            <tr data-name="Salada mista"><td>Ensalada mixta</td><td>1.50 €</td></tr>
+            <tr data-name="Dose de batatas fritas"><td>Porción de patatas fritas</td><td>2.00 €</td></tr>
+        </table>
+    </section>
+    <!-- CONTINUACIÓN DEL DOCUMENTO EN ESPAÑOL -->
+
+    <section id="bebidas">
+        <h2>Bebidas</h2>
+
+        <table>
+            <tr><th>Nombre</th><th>Precio</th></tr>
+            <tr data-name="Água"><td>Agua</td><td>1.00 €</td></tr>
+            <tr data-name="Água das Pedras"><td>Água das Pedras</td><td>1.30 €</td></tr>
+            <tr data-name="Água das Pedras Limão"><td>Água das Pedras Limón</td><td>1.50 €</td></tr>
+            <tr data-name="Água das Pedras Morango"><td>Água das Pedras Fresa</td><td>1,50 €</td></tr>
+            <tr data-name="Coca-Cola"><td>Coca-Cola</td><td>1.50 €</td></tr>
+            <tr data-name="Coca-Cola Zero"><td>Coca-Cola Zero</td><td>1.50 €</td></tr>
+            <tr data-name="7Up"><td>7Up</td><td>1.50 €</td></tr>
+            <tr data-name="Guaraná"><td>Guaraná</td><td>1.50 €</td></tr>
+            <tr data-name="Sumol de Laranja"><td>Sumol Naranja</td><td>1,50 €</td></tr>
+            <tr data-name="Sumol de Ananás"><td>Sumol Piña</td><td>1,50 €</td></tr>
+            <tr data-name="Ice Tea de Limão"><td>Té Helado Limón</td><td>1,50 €</td></tr>
+            <tr data-name="Ice Tea de Manga"><td>Té Helado Mango</td><td>1,50 €</td></tr>
+            <tr data-name="Ice Tea de Pêssego"><td>Té Helado Durazno</td><td>1,50 €</td></tr>
+            <tr data-name="Limonada"><td>Limonada</td><td>1.00 €</td></tr>
+            <tr data-name="Compal"><td>Jugo Compal</td><td>1.50 €</td></tr>
+        </table>
+
+        <h3>Cerveza</h3>
+        <table>
+            <tr><th>Nombre</th><th>Precio</th></tr>
+            <tr data-name="Super Bock Mini"><td>Super Bock Mini</td><td>1.00 €</td></tr>
+            <tr data-name="Super Bock 33cl"><td>Super Bock 33cl</td><td>1.50 €</td></tr>
+            <tr data-name="Super Bock Stout"><td>Super Bock Stout</td><td>1.50 €</td></tr>
+            <tr data-name="Super Bock s/Álcool"><td>Super Bock Sin Alcohol</td><td>1.50 €</td></tr>
+            <tr data-name="Super Bock Fino"><td>Super Bock de Barril (0,2L)</td><td>1.30 €</td></tr>
+            <tr data-name="Super Bock Fino"><td>Super Bock de Barril (0,35L)</td><td>2.00 €</td></tr>
+            <tr data-name="Super Bock Fino"><td>Super Bock de Barril (0,4L)</td><td>2.30 €</td></tr>
+        </table>
+
+        <h3>Vino de la casa (tinto, espadal, blanco o verde)</h3>
+        <table>
+            <tr><th>Nombre</th><th>Precio</th></tr>
+            <tr data-name="Copo"><td>Copa</td><td>1.00 €</td></tr>
+            <tr data-name="Jarro 0,25L"><td>Jarra 0,25L</td><td>1.50 €</td></tr>
+            <tr data-name="Jarro 0,5L"><td>Jarra 0,5L</td><td>2.50 €</td></tr>
+            <tr data-name="Jarro 1L"><td>Jarra 1L</td><td>4.80 €</td></tr>
+        </table>
+
+        <h3>Vino (botella)</h3>
+        <table>
+            <tr><th>Nombre</th><th>Precio</th></tr>
+            <tr data-name="O tal da lixa"><td>O Tal da Lixa</td><td>6.00 €</td></tr>
+            <tr data-name="Porta da Ravessa (branco)"><td>Porta da Ravessa (blanco)</td><td>6.00 €</td></tr>
+            <tr data-name="Porta da Ravessa (tinto)"><td>Porta da Ravessa (tinto)</td><td>6.00 €</td></tr>
+            <tr data-name="Altano"><td>Altano</td><td>12.00 €</td></tr>
+            <tr data-name="Papa Figos"><td>Papa Figos</td><td>14.00 €</td></tr>
+        </table>
+
+        <h3>Digestivos</h3>
+        <table>
+            <tr><th>Nombre</th><th>Precio</th></tr>
+            <tr data-name="Ginja"><td>Ginja</td><td>1.00 €</td></tr>
+            <tr data-name="Moscatel"><td>Moscatel</td><td>1.50 €</td></tr>
+            <tr data-name="Amêndoa Amarga"><td>Licor de almendra amarga</td><td>2.00 €</td></tr>
+            <tr data-name="Vinho do Porto"><td>Vino de Oporto Cálem Velhotes Tawny</td><td>2.00 €</td></tr>
+            <tr data-name="Licor Beirão"><td>Licor Beirão</td><td>3.00 €</td></tr>
+            <tr data-name="1920"><td>Brandy (1920)</td><td>3.00 €</td></tr>
+            <tr data-name="Bailey's Irish Cream"><td>Bailey's Irish Cream</td><td>4.00 €</td></tr>
+            <tr data-name="Whiskey Johnnie Walker Red"><td>Johnnie Walker Red</td><td>4.00 €</td></tr>
+            <tr data-name="Whiskey Johnnie Walker Black 12 Anos"><td>Johnnie Walker Black 12 Años</td><td>6.00 €</td></tr>
+        </table>
+
+        <h3>Cócteles</h3>
+        <table>
+            <tr><th>Nombre</th><th>Precio</th></tr>
+            <tr data-name="Caipirinha"><td>Caipiriña</td><td>5.50 €</td></tr>
+            <tr data-name="Whiskey-Cola"><td>Whiskey con Coca-Cola</td><td>5.50 €</td></tr>
+            <tr data-name="Mojito"><td>Mojito</td><td>5.50 €</td></tr>
+            <tr data-name="Cuba Libre"><td>Cuba Libre</td><td>5.50 €</td></tr>
+            <tr data-name="Vodka Limão"><td>Vodka con limón</td><td>5.50 €</td></tr>
+            <tr data-name="Gin Tónico Gordon's"><td>Gin & Tonic Gordon's</td><td>5.50 €</td></tr>
+            <tr data-name="Gin Tónico Beefeater"><td>Gin & Tonic Beefeater</td><td>7.50 €</td></tr>
+            <tr data-name="Aperol Spritz"><td>Aperol Spritz</td><td>6.00 €</td></tr>
+        </table>
+    </section>
+
+    <section id="sobremesas">
+        <h2>Postres</h2>
+        <table>
+            <tr><th>Nombre</th><th>Precio</th></tr>
+            <tr data-name="Salame"><td>Salami de chocolate</td><td>1.00 €</td></tr>
+            <tr data-name="Arroz doce"><td>Arroz con leche</td><td>1.80 €</td></tr>
+            <tr data-name="Mousse de limão"><td>Mousse de limón</td><td>1.80 €</td></tr>
+            <tr data-name="Mousse de chocolate"><td>Mousse de chocolate</td><td>1.80 €</td></tr>
+            <tr data-name="Pêra bêbada"><td>Pera al vino</td><td>2.20 €</td></tr>
+            <tr data-name="Bolo de bolacha"><td>Tarta de galleta María</td><td>2.20 €</td></tr>
+            <tr data-name="Bolo de chocolate"><td>Tarta de chocolate</td><td>2.20 €</td></tr>
+            <tr data-name="Bolo de côco e baunilha (vegano)"><td>Tarta de coco y vainilla (vegana)</td><td>2.50 €</td></tr>
+        </table>
+    </section>
+    <section id="snacks">
+        <h2>Aperitivos</h2>
+    
+        <table>
+            <tr><th>Nombre</th><th>Precio</th></tr>
+            <tr data-name="Rissol"><td>Rissol</td><td>1.50 €</td></tr>
+            <tr data-name="Coxinha"><td>Coxinha</td><td>1.50 €</td></tr>
+            <tr data-name="Croquete"><td>Croqueta</td><td>1.50 €</td></tr>
+            <tr data-name="Batatas fritas"><td>Papas fritas</td><td>2.00 €</td></tr>
+            <tr data-name="Peixinhos da horta"><td>Tempura de judías verdes</td><td>2.00 €</td></tr>
+            <tr data-name="Aros de cebola"><td>Aros de cebolla</td><td>2.50 €</td></tr>
+            <tr data-name="Chouriço no barro c/pão"><td>Chorizo en olla de barro con pan</td><td>4.00 €</td></tr>
+            <tr data-name="Alheira grelhada c/pão"><td>Alheira a la parrilla con pan</td><td>4.00 €</td></tr>
+            <tr data-name="Alheira vegetariana grelhada c/pão"><td>Alheira vegetariana a la parrilla con pan</td><td>4.00 €</td></tr>
+            <tr data-name="Moelas"><td>Mollejas</td><td>5.00 €</td></tr>
+        </table>
+    
+        <h3>Sándwiches & Tostadas</h3>
+        <table>
+            <tr><th>Nombre</th><th>Precio</th></tr>
+            <tr data-name="Torrada"><td>Tostada</td><td>1.50 €</td></tr>
+            <tr data-name="Tosta de queijo"><td>Tostada de queso</td><td>2.00 €</td></tr>
+            <tr data-name="Tosta de queijo vegano"><td>Tostada de queso vegano</td><td>2.00 €</td></tr>
+            <tr data-name="Tosta mista"><td>Tostada mixta (jamón y queso)</td><td>2.50 €</td></tr>
+            <tr data-name="Bifana"><td>Sándwich de bistec de cerdo</td><td>2.50 €</td></tr>
+        </table>
+    </section>
+    
+    <section id="cafetaria">
+        <h2>Café & Tés</h2>
+    
+        <h3>Café</h3>
+        <table>
+            <tr><th>Nombre</th><th>Precio</th></tr>
+            <tr data-name="Café"><td>Espresso</td><td>0.80 €</td></tr>
+            <tr data-name="Abatanado"><td>Abatanado (Americano)</td><td>0.80 €</td></tr>
+            <tr data-name="Pingo"><td>Pingo*</td><td>0.90 €</td></tr>
+            <tr data-name="Duplo shot"><td>Doble Espresso</td><td>1.50 €</td></tr>
+            <tr data-name="Meia de leite"><td>Café con leche*</td><td>1.30 €</td></tr>
+            <tr data-name="Galão"><td>Latte*</td><td>1.30 €</td></tr>
+            <tr data-name="Cappuccino"><td>Capuchino*</td><td>1.80 €</td></tr>
+        </table>
+    
+        <h3>Té</h3>
+        <table>
+            <tr><th>Nombre</th><th>Precio</th></tr>
+            <tr data-name="Carioca de limão"><td>Infusión de cáscara de limón</td><td>0.80 €</td></tr>
+            <tr data-name="Tetley"><td>Té Tetley</td><td>1.30 €</td></tr>
+        </table>
+    </section>
+    
+    <footer>
+        <div class="footer-content">
+            <a href="https://www.instagram.com/o.patusco" target="_blank" class="instagram-container">
+                <img src="Instagram.png" alt="Instagram" class="social-icon">
+                <p class="phone-number">@o.patusco</p>
+            </a>
+    
+            <div class="phone-container">
+                <img src="Whatsapp.png" alt="Teléfono" class="phone-icon">
+                <p class="phone-number">+351 965 298 103</p>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
+    
