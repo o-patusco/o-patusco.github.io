@@ -21,7 +21,10 @@
 
                 unavailableItems.forEach(item => {
                     const rows = document.querySelectorAll(`tr[data-name="${item}"]`);
-                    rows.forEach(row => row.style.display = "none");
+                    rows.forEach(row => {
+                        row.classList.add("unavailable");
+                        row.title = "Indisponível no momento";
+                    });
                 });
             } catch (error) {
                 console.error("Error al cargar los elementos no disponibles:", error);

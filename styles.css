@@ -163,6 +163,12 @@ tr:nth-child(even) {
     background-color: #F5F0E6;
 }
 
+.unavailable td {
+    text-decoration: line-through;
+    color: gray;
+    opacity: 0.7;
+  }
+
 /* Tables for pedidos */
 .pedidos-table {
     width: 80%;
