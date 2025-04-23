@@ -166,7 +166,7 @@ tr:nth-child(even) {
 .unavailable td {
     text-decoration: line-through;
     color: gray;
-    opacity: 0.2;
+    opacity: 0.3;
   }
 
 /* Tables for pedidos */
@@ -595,6 +595,11 @@ html {
         border: 5px solid #ddd;
         padding: 6px;
         font-size: 12px;
+    }
+    .unavailable td {
+        text-decoration: line-through !important;
+        color: gray !important;
+        opacity: 0.3 !important;
     }
     
     #menu-dia {
