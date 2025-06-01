@@ -213,7 +213,7 @@ tr:nth-child(even) {
     width: 90%; /* Limit width to 90% of the page */
     max-width: 900px; /* Prevent sections from becoming too wide on large screens */
     background-color: rgba(255, 255, 255, 0.6); /* Light opacity white */
-    padding: 20px;
+    padding: 10px;
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     margin: 120px auto; /* Extra space above */
@@ -467,7 +467,10 @@ footer {
 
 
 
-
+/* apontamentos */
+.note {
+  font-size: 10px;
+}
 
 
 
@@ -611,7 +614,8 @@ html {
     }
 
     h2 {
-        margin-top: 10px
+        margin-top: 10px;
+        width: 60%;
     }
 
     h3 {
