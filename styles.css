@@ -209,7 +209,7 @@ tr:nth-child(even) {
   }
 
 
-#bebidas, #pratos, #sobremesas, #snacks, #cafetaria {
+#bebidas, #pratos, #sobremesas, #snacks, #cafetaria, #sandes {
     width: 90%; /* Limit width to 90% of the page */
     max-width: 900px; /* Prevent sections from becoming too wide on large screens */
     background-color: rgba(255, 255, 255, 0.6); /* Light opacity white */
