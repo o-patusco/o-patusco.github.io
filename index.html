@@ -12,21 +12,53 @@
     <script>
         document.addEventListener("DOMContentLoaded", async () => {
             try {
-                const response = await fetch("https://disponibilidade.restaurante-patusco.workers.dev/");
-                if (!response.ok) throw new Error("Failed to fetch availability data.");
+                const res = await fetch("https://disponibilidade.restaurante-patusco.workers.dev/", { cache: "no-cache" });
+                if (!res.ok) throw new Error("fetch failed");
+                const data = await res.json();
 
-                const data = await response.json();
-                const unavailableItems = Array.isArray(data) ? data : [];
-                console.log("Unavailable items to hide:", unavailableItems);
+                // Normalize shapes (old array vs new object)
+                const unavailable = Array.isArray(data) ? data : (data.unavailable || []);
+                const prices      = Array.isArray(data) ? {}    : (data.prices || {});
+                const currency    = Array.isArray(data) ? "EUR" : (data.currency || "EUR");
 
-                unavailableItems.forEach(item => {
-                const rows = document.querySelectorAll(`tr[data-name="${item}"]`);
-                rows.forEach(row => row.style.display = "none");
+                // Hide unavailable rows
+                unavailable.forEach(name => {
+                document.querySelectorAll(`tr[data-name="${name}"]`).forEach(tr => tr.style.display = "none");
                 });
-            } catch (error) {
-                console.error("Error loading unavailable items:", error);
+
+                // ------- TEST: update price for a single item -------
+                const ITEM = "Azeitonas"; // change this to test other items
+                const lang = document.documentElement.lang || "pt";
+                const localeMap = { pt: "pt-PT", en: "en-GB", fr: "fr-FR", es: "es-ES" };
+                const fmt = new Intl.NumberFormat(localeMap[lang] || "pt-PT", {
+                style: "currency", currency, minimumFractionDigits: 2
+                });
+
+                if (typeof prices[ITEM] === "number") {
+                const td = document.querySelector(`tr[data-name="${ITEM}"] td:last-child`);
+                if (td) td.textContent = fmt.format(prices[ITEM]);
+                }
+                // ----------------------------------------------------
+
+                // When you're ready to update ALL items, replace the block above with:
+                // document.querySelectorAll("tr[data-name]").forEach(tr => {
+                //   const key = tr.getAttribute("data-name");
+                //   const p = prices[key];
+                //   if (typeof p === "number") {
+                //     const cell = tr.querySelector("td:last-child");
+                //     if (cell) cell.textContent = fmt.format(p);
+                //   }
+                // });
+
+            } catch (e) {
+                console.error("menu settings load error:", e);
+                // fallback: keep the hardcoded prices
             }
         });
+
+
+
+
       </script>
 
 </head>
