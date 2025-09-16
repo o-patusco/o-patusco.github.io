@@ -16,7 +16,8 @@
     "Bifana",
     "Tosta de queijo com tomate",
     "Tosta de queijo vegano com tomate",
-    "Tosta mista com tomate"
+    "Tosta mista com tomate",
+    "Gin Tónico Beefeater"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -47,6 +48,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2025-09-16T13:10:25.872Z",
+  "updated_at": "2025-09-16T13:10:39.647Z",
   "version": 1
 }
