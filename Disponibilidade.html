@@ -280,8 +280,16 @@
 
             console.log("Unavailable items:", unavailableItems);
 
-            // ensure it's an array (copy)
-            currentUnavailableItems = [...unavailableItems];
+            if (Array.isArray(data)) {
+                currentUnavailableItems = [...data];
+            } else if (Array.isArray(data.unavailable)) {
+                currentUnavailableItems = [...data.unavailable];
+            } else {
+                currentUnavailableItems = [];
+            }
+
+            console.log("Unavailable items (array):", currentUnavailableItems);
+
 
             const container = document.getElementById("item-list");
             container.innerHTML = "";
