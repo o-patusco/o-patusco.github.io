@@ -3,12 +3,13 @@
   "unavailable": [
     "Pão e manteiga de ervas",
     "Rissol chili",
-    "Peixinhos da horta"
+    "Peixinhos da horta",
+    "Nachos com queijo"
   ],
   "prices": {
     "Azeitonas": 1.5,
     "Pão": 1.5
   },
-  "updated_at": "2025-09-16T12:42:15.168Z",
+  "updated_at": "2025-09-16T12:42:17.203Z",
   "version": 1
 }
