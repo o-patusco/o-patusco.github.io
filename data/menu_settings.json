@@ -20,8 +20,9 @@
   ],
   "prices": {
     "Azeitonas": 1.5,
-    "Pão": 1.5
+    "Pão": 1.5,
+    "Pão e manteiga": 2.5
   },
-  "updated_at": "2025-09-16T12:43:06.714Z",
+  "updated_at": "2025-09-16T12:44:06.531Z",
   "version": 1
 }
