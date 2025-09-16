@@ -10,12 +10,13 @@
     "Paté do mar",
     "Hummus",
     "Altano",
-    "Tosta de queijo"
+    "Tosta de queijo",
+    "Tosta de queijo vegano"
   ],
   "prices": {
     "Azeitonas": 1.5,
     "Pão": 1.5
   },
-  "updated_at": "2025-09-16T12:43:00.900Z",
+  "updated_at": "2025-09-16T12:43:02.378Z",
   "version": 1
 }
