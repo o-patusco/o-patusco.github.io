@@ -440,26 +440,8 @@
         if (!wrap) return;
         wrap.innerHTML = "";
 
-        // Currency selector
-        const currencyRow = document.createElement("div");
-        currencyRow.className = "item";
-        const cLabel = document.createElement("label");
-        cLabel.textContent = "Moeda";
-        const cSelect = document.createElement("select");
-        ["EUR", "GBP", "USD", "BRL"].forEach(c => {
-            const opt = document.createElement("option");
-            opt.value = c;
-            opt.textContent = c;
-            if (c === MENU_SETTINGS.currency) opt.selected = true;
-            cSelect.appendChild(opt);
-        });
-        cSelect.onchange = () => {
-            MENU_SETTINGS.currency = cSelect.value;
-            saveSettingsDebounced();
-        };
-        currencyRow.appendChild(cLabel);
-        currencyRow.appendChild(cSelect);
-        wrap.appendChild(currencyRow);
+        // Always use EUR
+        MENU_SETTINGS.currency = "EUR";
 
         // Price inputs by section/item
         for (const section in allItems) {
@@ -479,9 +461,11 @@
                 input.step = "0.1";
                 input.min = "0";
                 input.style = "width:110px;text-align:right;";
+
                 if (typeof MENU_SETTINGS.prices[item] === "number") {
                     input.value = String(MENU_SETTINGS.prices[item]);
                 }
+
                 input.placeholder = "—";
                 input.oninput = () => {
                     const v = input.value.trim();
@@ -494,13 +478,12 @@
                     saveSettingsDebounced();
                 };
 
-            row.appendChild(label);
-            row.appendChild(input);
-            wrap.appendChild(row);
-            });
+                row.appendChild(label);
+                row.appendChild(input);
+                wrap.appendChild(row);
+                });
         }
     }
-
 
   </script>
   
