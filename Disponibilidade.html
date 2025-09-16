@@ -272,10 +272,10 @@
     }
   
     function loadItems() {
-    fetch("https://disponibilidade.restaurante-patusco.workers.dev/")
+    fetch("https://disponibilidade.restaurante-patusco.workers.dev/", { cache: "no-cache" })
         .then(res => res.ok ? res.json() : [])
         .then(data => {
-        // accept old array or new object shape
+        // accept old array OR new object from the Worker
         const unavailableItems = Array.isArray(data) ? data : (data.unavailable || []);
 
         console.log("Unavailable items:", unavailableItems);
@@ -317,6 +317,28 @@
         })
         .catch(err => {
         console.error("Failed to load availability", err);
+        // Fallback: render with everything available so the UI still shows
+        const container = document.getElementById("item-list");
+        container.innerHTML = "";
+        for (const section in allItems) {
+            const sectionTitle = document.createElement("h2");
+            sectionTitle.textContent = section;
+            container.appendChild(sectionTitle);
+            allItems[section].forEach(item => {
+            const row = document.createElement("div");
+            row.className = "item";
+            const label = document.createElement("label");
+            label.textContent = item;
+            const checkbox = document.createElement("input");
+            checkbox.type = "checkbox";
+            checkbox.className = "toggle";
+            checkbox.checked = true;
+            checkbox.onchange = () => updateAvailability(item, checkbox.checked);
+            row.appendChild(label);
+            row.appendChild(checkbox);
+            container.appendChild(row);
+            });
+        }
         });
     }
   
