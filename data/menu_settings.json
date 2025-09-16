@@ -1,7 +1,9 @@
 {
   "currency": "EUR",
   "unavailable": [],
-  "prices": {},
-  "updated_at": "",
+  "prices": {
+    "Azeitonas": 1.5
+  },
+  "updated_at": "2025-09-16T12:27:46.073Z",
   "version": 1
 }
