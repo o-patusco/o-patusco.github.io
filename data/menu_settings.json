@@ -1,12 +1,7 @@
 {
   "currency": "EUR",
-  "unavailable": ["Moelas", "Bifana"],
-  "prices": {
-    "Azeitonas": 1.0,
-    "Pão": 1.0,
-    "Moelas": 6.0,
-    "Bifana": 2.5
-  },
-  "updated_at": "2025-09-16T10:30:00Z",
+  "unavailable": [],
+  "prices": {},
+  "updated_at": "",
   "version": 1
 }
