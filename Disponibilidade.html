@@ -272,47 +272,51 @@
     }
   
     function loadItems() {
-        fetch("https://disponibilidade.restaurante-patusco.workers.dev/")
-            .then(res => res.ok ? res.json() : [])
-            .then(unavailableItems => {
-                console.log("Unavailable items:", unavailableItems);
-            currentUnavailableItems = unavailableItems; // ✅ save to memory
+    fetch("https://disponibilidade.restaurante-patusco.workers.dev/")
+        .then(res => res.ok ? res.json() : [])
+        .then(data => {
+        // accept old array or new object shape
+        const unavailableItems = Array.isArray(data) ? data : (data.unavailable || []);
 
-            const container = document.getElementById("item-list");
-            container.innerHTML = "";
+        console.log("Unavailable items:", unavailableItems);
+        currentUnavailableItems = unavailableItems;
 
-            for (const section in allItems) {
-                const sectionTitle = document.createElement("h2");
-                sectionTitle.textContent = section;
-                container.appendChild(sectionTitle);
+        const container = document.getElementById("item-list");
+        container.innerHTML = "";
 
-                allItems[section].forEach(item => {
-                const row = document.createElement("div");
-                row.className = "item";
+        for (const section in allItems) {
+            const sectionTitle = document.createElement("h2");
+            sectionTitle.textContent = section;
+            container.appendChild(sectionTitle);
 
-                const label = document.createElement("label");
-                label.textContent = item;
+            allItems[section].forEach(item => {
+            const row = document.createElement("div");
+            row.className = "item";
 
-                const checkbox = document.createElement("input");
-                checkbox.type = "checkbox";
-                checkbox.className = "toggle";
-                checkbox.checked = !currentUnavailableItems.includes(item);
+            const label = document.createElement("label");
+            label.textContent = item;
 
-                if (!checkbox.checked) {
-                    row.classList.add("unavailable");
-                }
+            const checkbox = document.createElement("input");
+            checkbox.type = "checkbox";
+            checkbox.className = "toggle";
+            checkbox.checked = !currentUnavailableItems.includes(item);
+            if (!checkbox.checked) row.classList.add("unavailable");
 
-                checkbox.onchange = () => {
-                    updateAvailability(item, checkbox.checked);
-                    row.classList.toggle("unavailable", !checkbox.checked);
-                };
+            checkbox.onchange = () => {
+                updateAvailability(item, checkbox.checked);
+                row.classList.toggle("unavailable", !checkbox.checked);
+            };
 
-                row.appendChild(label);
-                row.appendChild(checkbox);
-                container.appendChild(row);
-                });
-            }
-            updateSidebar(currentUnavailableItems);
+            row.appendChild(label);
+            row.appendChild(checkbox);
+            container.appendChild(row);
+            });
+        }
+
+        updateSidebar(currentUnavailableItems);
+        })
+        .catch(err => {
+        console.error("Failed to load availability", err);
         });
     }
   
