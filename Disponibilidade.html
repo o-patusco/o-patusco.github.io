@@ -200,11 +200,18 @@
     <div id="layout">
         <div id="item-list"></div>
         <div id="sidebar">
-          <h2>Faltam por categoria</h2>
-          <ul id="sidebar-list"></ul>
-          <div class="reset-availability">
+        <h2>Faltam por categoria</h2>
+        <ul id="sidebar-list"></ul>
+
+        <!-- Prices Panel -->
+        <div style="margin-top:20px">
+            <h2>Preços</h2>
+            <div id="prices-panel"></div>
+        </div>
+
+        <div class="reset-availability">
             <button onclick="resetAvailability()">🔄 Reiniciar todas as categorias</button>
-          </div>
+        </div>
         </div>
     </div>
   
@@ -388,17 +395,6 @@
         updateSidebar(currentUnavailableItems);
         saveSettingsDebounced();
     }
-        // Debounce the save: wait 1 second after last change
-        if (saveTimeout) clearTimeout(saveTimeout);
-        saveTimeout = setTimeout(() => {
-            saveToGitHub(currentUnavailableItems);
-            const msg = document.getElementById("saveMsg");
-            msg.style.display = "block";
-            setTimeout(() => msg.style.display = "none", 2000);
-        }, 1000);
-
-        updateSidebar(currentUnavailableItems);
-    }
 
     function updateSidebar(unavailableItems) {
         const sidebarList = document.getElementById("sidebar-list");
@@ -430,12 +426,15 @@
         MENU_SETTINGS.unavailable = [];
         await saveSettingsDebounced();
         loadItems();
+
         const msg = document.getElementById("saveMsg");
         msg.innerText = "Disponibilidade reiniciada! ✅";
         msg.style.display = "block";
-        setTimeout(() => { msg.style.display = "none"; msg.innerText = "Disponibilidade guardada! ✅"; }, 2000);
+        setTimeout(() => {
+            msg.style.display = "none";
+            msg.innerText = "Disponibilidade guardada! ✅";
+        }, 2000);
     }
-
     function renderPricesPanel() {
         const wrap = document.getElementById("prices-panel");
         if (!wrap) return;
@@ -447,18 +446,22 @@
         const cLabel = document.createElement("label");
         cLabel.textContent = "Moeda";
         const cSelect = document.createElement("select");
-        ["EUR","GBP","USD","BRL"].forEach(c => {
+        ["EUR", "GBP", "USD", "BRL"].forEach(c => {
             const opt = document.createElement("option");
-            opt.value = c; opt.textContent = c;
+            opt.value = c;
+            opt.textContent = c;
             if (c === MENU_SETTINGS.currency) opt.selected = true;
             cSelect.appendChild(opt);
         });
-        cSelect.onchange = () => { MENU_SETTINGS.currency = cSelect.value; saveSettingsDebounced(); };
+        cSelect.onchange = () => {
+            MENU_SETTINGS.currency = cSelect.value;
+            saveSettingsDebounced();
+        };
         currencyRow.appendChild(cLabel);
         currencyRow.appendChild(cSelect);
         wrap.appendChild(currencyRow);
 
-        // Price inputs for each item
+        // Price inputs by section/item
         for (const section in allItems) {
             const h3 = document.createElement("h3");
             h3.textContent = section;
@@ -467,6 +470,7 @@
             allItems[section].forEach(item => {
                 const row = document.createElement("div");
                 row.className = "item";
+
                 const label = document.createElement("label");
                 label.textContent = item;
 
@@ -475,17 +479,20 @@
                 input.step = "0.1";
                 input.min = "0";
                 input.style = "width:110px;text-align:right;";
-                if (typeof MENU_SETTINGS.prices[item] === "number") input.value = String(MENU_SETTINGS.prices[item]);
+                if (typeof MENU_SETTINGS.prices[item] === "number") {
+                    input.value = String(MENU_SETTINGS.prices[item]);
+                }
                 input.placeholder = "—";
                 input.oninput = () => {
                     const v = input.value.trim();
-                    if (v === "") delete MENU_SETTINGS.prices[item];
-                    else {
-                        const num = Number(v);
-                        if (!Number.isNaN(num) && num >= 0) MENU_SETTINGS.prices[item] = num;
+                    if (v === "") {
+                    delete MENU_SETTINGS.prices[item];
+                    } else {
+                    const num = Number(v);
+                    if (!Number.isNaN(num) && num >= 0) MENU_SETTINGS.prices[item] = num;
                     }
                     saveSettingsDebounced();
-            };
+                };
 
             row.appendChild(label);
             row.appendChild(input);
@@ -493,7 +500,6 @@
             });
         }
     }
-
 
 
   </script>
