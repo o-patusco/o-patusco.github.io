@@ -12,24 +12,49 @@
     <script>
         document.addEventListener("DOMContentLoaded", async () => {
             try {
-                const response = await fetch("https://disponibilidade.restaurante-patusco.workers.dev/");
-                if (!response.ok) throw new Error("Error al cargar los datos de disponibilidad.");
+                const res = await fetch("https://disponibilidade.restaurante-patusco.workers.dev/", { cache: "no-cache" });
+                if (!res.ok) throw new Error("fetch failed");
+                const data = await res.json();
 
-                const data = await response.json();
-                const unavailableItems = Array.isArray(data) ? data : [];
-                console.log("Elementos no disponibles para ocultar:", unavailableItems);
+                // Normalize (back-compat with old array format)
+                const unavailable = Array.isArray(data) ? data : (data.unavailable || []);
+                const prices      = Array.isArray(data) ? {}    : (data.prices || {});
+                const currency    = "EUR"; // fixed
 
-                unavailableItems.forEach(item => {
-                    const rows = document.querySelectorAll(`tr[data-name="${item}"]`);
-                    rows.forEach(row => {
-                        row.classList.add("unavailable");
-                        row.title = "Indisponível no momento";
-                    });
+                // 1) Hide unavailable rows
+                unavailable.forEach(name => {
+                document.querySelectorAll(`tr[data-name="${name}"], tr[data-key="${name}"]`)
+                    .forEach(tr => tr.style.display = "none");
                 });
-            } catch (error) {
-                console.error("Error al cargar los elementos no disponibles:", error);
+
+                // 2) Write prices for ALL rows that have data-name (or data-key)
+                const lang = document.documentElement.lang || "pt";
+                const localeMap = { pt: "pt-PT", en: "en-GB", fr: "fr-FR", es: "es-ES" };
+                const fmt = new Intl.NumberFormat(localeMap[lang] || "pt-PT", {
+                    style: "currency",
+                    currency,
+                    minimumFractionDigits: 2
+                });
+
+                document.querySelectorAll("tr[data-name], tr[data-key]").forEach(tr => {
+                    // prefer stable key if you add one later; otherwise use data-name
+                    const key = tr.getAttribute("data-key") || tr.getAttribute("data-name");
+                    const p = prices[key];
+                    if (typeof p === "number") {
+                        const cell = tr.querySelector("td:last-child");
+                        if (cell) cell.textContent = fmt.format(p);
+                    }
+                });
+            } catch (e) {
+                console.error("menu settings load error:", e);
+                // fallback: keep hardcoded prices
             }
         });
+
+
+
+
+
     </script>
 </head>
 <body>
