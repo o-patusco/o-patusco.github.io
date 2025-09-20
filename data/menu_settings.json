@@ -19,7 +19,8 @@
     "Tosta mista com tomate",
     "Gin Tónico Beefeater",
     "Arroz de pato",
-    "Massa de marisco"
+    "Massa de marisco",
+    "Tofu panado com arroz de tomate"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -50,6 +51,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2025-09-20T20:23:07.323Z",
+  "updated_at": "2025-09-20T20:23:09.929Z",
   "version": 1
 }
