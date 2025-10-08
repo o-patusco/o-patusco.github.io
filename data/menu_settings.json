@@ -22,7 +22,8 @@
     "Massa de marisco",
     "Tofu panado com arroz de tomate",
     "Coxinha",
-    "Rissol camarão"
+    "Rissol camarão",
+    "Rissóis (prato)"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -53,6 +54,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2025-10-08T12:33:32.581Z",
+  "updated_at": "2025-10-08T12:33:35.474Z",
   "version": 1
 }
