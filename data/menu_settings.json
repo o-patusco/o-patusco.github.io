@@ -21,7 +21,6 @@
     "Arroz de pato",
     "Massa de marisco",
     "Tofu panado com arroz de tomate",
-    "Hambúrguer",
     "Coxinha",
     "Rissol camarão"
   ],
@@ -54,6 +53,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2025-10-08T12:33:25.926Z",
+  "updated_at": "2025-10-08T12:33:32.581Z",
   "version": 1
 }
