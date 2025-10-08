@@ -24,7 +24,8 @@
     "Rissol camarão",
     "Rissóis (prato)",
     "Frango assado",
-    "Água das Pedras Morango"
+    "Água das Pedras Morango",
+    "Água das Pedras Limão"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -55,6 +56,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2025-10-08T12:33:57.202Z",
+  "updated_at": "2025-10-08T12:33:58.190Z",
   "version": 1
 }
