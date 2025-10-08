@@ -25,7 +25,8 @@
     "Água das Pedras Morango",
     "Água das Pedras Limão",
     "Super Bock 33cl",
-    "Super Bock Fino"
+    "Super Bock Fino",
+    "Mousse de limão"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -56,6 +57,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2025-10-08T12:34:47.543Z",
+  "updated_at": "2025-10-08T12:34:50.389Z",
   "version": 1
 }
