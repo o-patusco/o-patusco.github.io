@@ -1,7 +1,6 @@
 {
   "currency": "EUR",
   "unavailable": [
-    "Pão e manteiga de ervas",
     "Rissol chili",
     "Peixinhos da horta",
     "Nachos com queijo",
@@ -53,6 +52,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2025-10-16T18:30:38.866Z",
+  "updated_at": "2025-10-21T11:14:45.829Z",
   "version": 1
 }
