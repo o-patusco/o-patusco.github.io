@@ -21,7 +21,8 @@
     "Bolo de côco e baunilha (vegano)",
     "Aros de cebola",
     "Carne de porco à alentejana",
-    "Massa de marisco"
+    "Massa de marisco",
+    "Coca-Cola Zero"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -52,6 +53,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2025-10-21T11:15:18.662Z",
+  "updated_at": "2025-10-21T11:15:20.378Z",
   "version": 1
 }
