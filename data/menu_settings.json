@@ -20,7 +20,8 @@
     "Água das Pedras Morango",
     "Água das Pedras Limão",
     "Pêra bêbada",
-    "Bolo de côco e baunilha (vegano)"
+    "Bolo de côco e baunilha (vegano)",
+    "Aros de cebola"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -51,6 +52,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2025-10-21T11:14:49.668Z",
+  "updated_at": "2025-10-21T11:14:54.009Z",
   "version": 1
 }
