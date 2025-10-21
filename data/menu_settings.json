@@ -1,7 +1,6 @@
 {
   "currency": "EUR",
   "unavailable": [
-    "Pão e manteiga de ervas",
     "Rissol chili",
     "Peixinhos da horta",
     "Nachos com queijo",
@@ -9,7 +8,6 @@
     "Moelas",
     "Paté do mar",
     "Hummus",
-    "Altano",
     "Tosta de queijo",
     "Tosta de queijo vegano",
     "Tosta mista",
@@ -17,7 +15,16 @@
     "Tosta de queijo com tomate",
     "Tosta de queijo vegano com tomate",
     "Tosta mista com tomate",
-    "Gin Tónico Beefeater"
+    "Coxinha",
+    "Rissóis (prato)",
+    "Pêra bêbada",
+    "Bolo de côco e baunilha (vegano)",
+    "Aros de cebola",
+    "Carne de porco à alentejana",
+    "Massa de marisco",
+    "Coca-Cola Zero",
+    "Super Bock Fino",
+    "Mousse de limão"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -48,6 +55,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2025-09-16T13:10:39.647Z",
+  "updated_at": "2025-10-21T11:15:41.583Z",
   "version": 1
 }
