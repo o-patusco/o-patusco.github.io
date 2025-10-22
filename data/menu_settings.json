@@ -23,7 +23,8 @@
     "Carne de porco à alentejana",
     "Coca-Cola Zero",
     "Super Bock Fino",
-    "Mousse de limão"
+    "Mousse de limão",
+    "Arroz de pato"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -54,6 +55,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2025-10-22T12:36:13.932Z",
+  "updated_at": "2025-10-22T12:36:15.591Z",
   "version": 1
 }
