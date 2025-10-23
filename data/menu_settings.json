@@ -20,7 +20,9 @@
     "Bolo de côco e baunilha (vegano)",
     "Mousse de limão",
     "Coxinha",
-    "Chili"
+    "Chili",
+    "Super Bock Mini",
+    "Super Bock 33cl"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -51,6 +53,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2025-10-23T11:00:35.404Z",
+  "updated_at": "2025-10-23T11:00:41.332Z",
   "version": 1
 }
