@@ -19,7 +19,8 @@
     "Pêra bêbada",
     "Bolo de côco e baunilha (vegano)",
     "Mousse de limão",
-    "Coxinha"
+    "Coxinha",
+    "Chili"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -50,6 +51,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2025-10-23T11:00:09.345Z",
+  "updated_at": "2025-10-23T11:00:35.404Z",
   "version": 1
 }
