@@ -81,12 +81,17 @@
             return;
         }
 
+        if (day === 0) {
+            alert("Não aceitamos pedidos ao Domingo. Por favor escolhe outro dia.");
+            return;
+        }
+
         const isLunchTime = hours >= 12 && hours < 15;
         const isDinnerTime = (hours > 19 || (hours === 19 && minutes >= 30)) && (hours < 22 || (hours === 22 && minutes === 0));
         const isDinnerDay = day === 4 || day === 5 || day === 6;
 
         if (!isLunchTime && !(isDinnerDay && isDinnerTime)) {
-            alert("Por favor escolhe uma hora dentro do nosso horário:\n12:00–15:00 (Terça a Domingo)\n19:30–22:00 (Quinta a Sábado)");
+            alert("Por favor escolhe uma hora dentro do nosso horário:\n12:00–15:00 (Terça a Sábado)\n19:30–22:00 (Quinta a Sábado)");
             return;
         }
 
@@ -161,8 +166,8 @@
         <p class="info-subtitle">🕒 Horários</p>
       
         <p class="info-hours">
-          Terça, quarta e domingo: <strong>12:00 às 15:30</strong><br>
-          Quinta, sexta e sábado: <strong>12:00 às 15:30</strong> e <strong>19:30 às 22:00</strong>
+          Terça, quarta: <strong>12:00 às 15:00</strong><br>
+          Quinta, sexta e sábado: <strong>12:00 às 15:00</strong> e <strong>19:30 às 22:00</strong>
         </p>
       </div>
     <header>
@@ -193,11 +198,10 @@
         <h3>Entradas</h3>
         <table class="pedidos-table">
           <tr><th>Nome</th><th>Preço</th><th>Quantidade</th></tr>
-          <tr><td>Pão</td><td>1,00 €</td><td><button onclick="changeQuantity('Pão', -1, 1.00)">–</button><span id="qty-Pão">0</span><button onclick="changeQuantity('Pão', 1, 1.00)">+</button></td></tr>
-          <tr><td>Bolinho de bacalhau</td><td>1,50 €</td><td><button onclick="changeQuantity('Bolinho de bacalhau', -1, 1.50)">–</button><span id="qty-Bolinho de bacalhau">0</span><button onclick="changeQuantity('Bolinho de bacalhau', 1, 1.50)">+</button></td></tr>
+          <tr><td>Pão</td><td>1,50 €</td><td><button onclick="changeQuantity('Pão', -1, 1.50)">–</button><span id="qty-Pão">0</span><button onclick="changeQuantity('Pão', 1, 1.50)">+</button></td></tr>
           <tr><td>Rissol</td><td>1,50 €</td><td><button onclick="changeQuantity('Rissol', -1, 1.50)">–</button><span id="qty-Rissol">0</span><button onclick="changeQuantity('Rissol', 1, 1.50)">+</button></td></tr>
-          <tr><td>Coxinha</td><td>1,50 €</td><td><button onclick="changeQuantity('Coxinha', -1, 1.50)">–</button><span id="qty-Coxinha">0</span><button onclick="changeQuantity('Coxinha', 1, 1.50)">+</button></td></tr>
           <tr><td>Croquete</td><td>1,50 €</td><td><button onclick="changeQuantity('Croquete', -1, 1.50)">–</button><span id="qty-Croquete">0</span><button onclick="changeQuantity('Croquete', 1, 1.50)">+</button></td></tr>
+          <tr><td>Coxinha</td><td>2,00 €</td><td><button onclick="changeQuantity('Coxinha', -1, 2.00)">–</button><span id="qty-Coxinha">0</span><button onclick="changeQuantity('Coxinha', 1, 2.00)">+</button></td></tr>
           <tr><td>Sopa do dia (meia)</td><td>1,50 €</td><td><button onclick="changeQuantity('Sopa do dia (meia)', -1, 1.50)">–</button><span id="qty-Sopa do dia (meia)">0</span><button onclick="changeQuantity('Sopa do dia (meia)', 1, 1.50)">+</button></td></tr>
           <tr><td>Sopa do dia</td><td>2,00 €</td><td><button onclick="changeQuantity('Sopa do dia', -1, 2.00)">–</button><span id="qty-Sopa do dia">0</span><button onclick="changeQuantity('Sopa do dia', 1, 2.00)">+</button></td></tr>
         </table>
@@ -207,13 +211,10 @@
           <tr><th>Nome</th><th>Preço</th><th>Quantidade</th></tr>
           <tr><td>Frango assado</td><td>6,00 €</td><td><button onclick="changeQuantity('Frango assado', -1, 6.00)">–</button><span id="qty-Frango assado">0</span><button onclick="changeQuantity('Frango assado', 1, 6.00)">+</button></td></tr>
           <tr><td>Hambúrguer</td><td>6,00 €</td><td><button onclick="changeQuantity('Hambúrguer', -1, 6.00)">–</button><span id="qty-Hambúrguer">0</span><button onclick="changeQuantity('Hambúrguer', 1, 6.00)">+</button></td></tr>
-          <tr><td>Alheira com ovo</td><td>6,00 €</td><td><button onclick="changeQuantity('Alheira com ovo', -1, 6.00)">–</button><span id="qty-Alheira com ovo">0</span><button onclick="changeQuantity('Alheira com ovo', 1, 6.00)">+</button></td></tr>
-          <tr><td>Moelas</td><td>6,00 €</td><td><button onclick="changeQuantity('Moelas', -1, 6.00)">–</button><span id="qty-Moelas">0</span><button onclick="changeQuantity('Moelas', 1, 6.00)">+</button></td></tr>
+          <tr><td>Alheira com ovo</td><td>6,50 €</td><td><button onclick="changeQuantity('Alheira com ovo', -1, 6.50)">–</button><span id="qty-Alheira com ovo">0</span><button onclick="changeQuantity('Alheira com ovo', 1, 6.50)">+</button></td></tr>
           <tr><td>Rissóis (prato)</td><td>6,00 €</td><td><button onclick="changeQuantity('Rissóis (prato)', -1, 6.00)">–</button><span id="qty-Rissóis (prato)">0</span><button onclick="changeQuantity('Rissóis (prato)', 1, 6.00)">+</button></td></tr>
-          <tr><td>Lombo de porco assado*</td><td>7,00 €</td><td><button onclick="changeQuantity('Lombo de porco assado', -1, 7.00)">–</button><span id="qty-Lombo de porco assado">0</span><button onclick="changeQuantity('Lombo de porco assado', 1, 7.00)">+</button></td></tr>
-          <tr><td>Carne de porco à alentejana</td><td>7,00 €</td><td><button onclick="changeQuantity('Carne de porco à alentejana', -1, 7.00)">–</button><span id="qty-Carne de porco à alentejana">0</span><button onclick="changeQuantity('Carne de porco à alentejana', 1, 7.00)">+</button></td></tr>
-          <tr><td>Prego no prato</td><td>8,00 €</td><td><button onclick="changeQuantity('Prego no prato', -1, 7.00)">–</button><span id="qty-Prego no prato">0</span><button onclick="changeQuantity('Prego no prato', 1, 7.00)">+</button></td></tr>
-          <tr><td>Frango recheado com alheira</td><td>8,00 €</td><td><button onclick="changeQuantity('Frango recheado com alheira', -1, 7.00)">–</button><span id="qty-Frango recheado com alheira">0</span><button onclick="changeQuantity('Frango recheado com alheira', 1, 8.00)">+</button></td></tr>
+          <tr><td>Carne de porco à alentejana</td><td>7,50 €</td><td><button onclick="changeQuantity('Carne de porco à alentejana', -1, 7.50)">–</button><span id="qty-Carne de porco à alentejana">0</span><button onclick="changeQuantity('Carne de porco à alentejana', 1, 7.50)">+</button></td></tr>
+          <tr><td>Frango recheado com alheira</td><td>7,50 €</td><td><button onclick="changeQuantity('Frango recheado com alheira', -1, 7.50)">–</button><span id="qty-Frango recheado com alheira">0</span><button onclick="changeQuantity('Frango recheado com alheira', 1, 7.50)">+</button></td></tr>
           <tr><td>Arroz de pato</td><td>8,00 €</td><td><button onclick="changeQuantity('Arroz de pato', -1, 8.00)">–</button><span id="qty-Arroz de pato">0</span><button onclick="changeQuantity('Arroz de pato', 1, 8.00)">+</button></td></tr>
         </table>
         <p class="aviso-disponibilidade">*Consulte a disponibilidade no dia.</p>
@@ -230,10 +231,9 @@
         <table class="pedidos-table">
           <tr><th>Nome</th><th>Preço</th><th>Quantidade</th></tr>
           <tr><td>Chili</td><td>6,00 €</td><td><button onclick="changeQuantity('Chili', -1, 6.00)">–</button><span id="qty-Chili">0</span><button onclick="changeQuantity('Chili', 1, 6.00)">+</button></td></tr>
-          <tr><td>Tofu panado*</td><td>7,00 €</td><td><button onclick="changeQuantity('Tofu panado', -1, 6.00)">–</button><span id="qty-Tofu panado">0</span><button onclick="changeQuantity('Tofu panado', 1, 6.00)">+</button></td></tr>
-          <tr><td>Beringelas recheadas</td><td>7,00 €</td><td><button onclick="changeQuantity('Beringelas recheadas', -1, 7.00)">–</button><span id="qty-Beringelas recheadas">0</span><button onclick="changeQuantity('Beringelas recheadas', 1, 7.00)">+</button></td></tr>
-          <tr><td>Strogonoff de tofu e cogumelos*</td><td>7,00 €</td><td><button onclick="changeQuantity('Strogonoff de tofu e cogumelos', -1, 7.00)">–</button><span id="qty-Strogonoff de tofu e cogumelos">0</span><button onclick="changeQuantity('Strogonoff de tofu e cogumelos', 1, 7.00)">+</button></td></tr>
-          <tr><td>Tofu à lagareiro</td><td>8,00 €</td><td><button onclick="changeQuantity('Tofu à lagareiro', -1, 8.00)">–</button><span id="qty-Tofu à lagareiro">0</span><button onclick="changeQuantity('Tofu à lagareiro', 1, 8.00)">+</button></td></tr>
+          <tr><td>Tofu panado*</td><td>7,00 €</td><td><button onclick="changeQuantity('Tofu panado', -1, 7.00)">–</button><span id="qty-Tofu panado">0</span><button onclick="changeQuantity('Tofu panado', 1, 7.00)">+</button></td></tr>
+          <tr><td>Beringelas recheadas</td><td>7,50 €</td><td><button onclick="changeQuantity('Beringelas recheadas', -1, 7.50)">–</button><span id="qty-Beringelas recheadas">0</span><button onclick="changeQuantity('Beringelas recheadas', 1, 7.50)">+</button></td></tr>
+          <tr><td>Tofu à lagareiro</td><td>8,50 €</td><td><button onclick="changeQuantity('Tofu à lagareiro', -1, 8.50)">–</button><span id="qty-Tofu à lagareiro">0</span><button onclick="changeQuantity('Tofu à lagareiro', 1, 8.50)">+</button></td></tr>
         </table>
         <p class="aviso-disponibilidade">*Consulte a disponibilidade no dia.</p>
       
@@ -440,11 +440,11 @@
       
           <tr>
             <td>Salame de chocolate</td>
-            <td>1,00 €</td>
+            <td>1,50 €</td>
             <td>
-              <button onclick="changeQuantity('Salame', -1, 1.00)">–</button>
+              <button onclick="changeQuantity('Salame', -1, 1.50)">–</button>
               <span id="qty-Salame">0</span>
-              <button onclick="changeQuantity('Salame', 1, 1.00)">+</button>
+              <button onclick="changeQuantity('Salame', 1, 1.50)">+</button>
             </td>
           </tr>
       
@@ -470,53 +470,25 @@
       
           <tr>
             <td>Mousse de chocolate</td>
-            <td>1,80 €</td>
+            <td>2,00 €</td>
             <td>
-              <button onclick="changeQuantity('Mousse de chocolate', -1, 1.80)">–</button>
+              <button onclick="changeQuantity('Mousse de chocolate', -1, 2.00)">–</button>
               <span id="qty-Mousse de chocolate">0</span>
-              <button onclick="changeQuantity('Mousse de chocolate', 1, 1.80)">+</button>
+              <button onclick="changeQuantity('Mousse de chocolate', 1, 2.00)">+</button>
+            </td>
+          </tr>
+
+                    <tr>
+            <td>Bolo de bolacha</td>
+            <td>2,20 €</td>
+            <td>
+              <button onclick="changeQuantity('Bolo de bolacha', -1, 2.20)">–</button>
+              <span id="qty-Bolo de bolacha">0</span>
+              <button onclick="changeQuantity('Bolo de bolacha', 1, 2.20)">+</button>
             </td>
           </tr>
       
-          <tr>
-            <td>Pêra bêbada</td>
-            <td>2,20 €</td>
-            <td>
-              <button onclick="changeQuantity('Pêra bêbada', -1, 2.20)">–</button>
-              <span id="qty-Pêra bêbada">0</span>
-              <button onclick="changeQuantity('Pêra bêbada', 1, 2.20)">+</button>
-            </td>
-          </tr>
 
-          <tr>
-            <td>Pêra bêbada</td>
-            <td>2,20 €</td>
-            <td>
-              <button onclick="changeQuantity('Pêra bêbada', -1, 2.20)">–</button>
-              <span id="qty-Pêra bêbada">0</span>
-              <button onclick="changeQuantity('Pêra bêbada', 1, 2.20)">+</button>
-            </td>
-          </tr>
-
-          <tr>
-            <td>Pêra bêbada</td>
-            <td>2,20 €</td>
-            <td>
-              <button onclick="changeQuantity('Pêra bêbada', -1, 2.20)">–</button>
-              <span id="qty-Pêra bêbada">0</span>
-              <button onclick="changeQuantity('Pêra bêbada', 1, 2.20)">+</button>
-            </td>
-          </tr>
-
-          <tr>
-            <td>Bolo de côco e baunilha (vegano)</td>
-            <td>2,50 €</td>
-            <td>
-              <button onclick="changeQuantity('Bolo de côco e baunilha (vegano)', -1, 2.20)">–</button>
-              <span id="qty-Bolo de côco e baunilha (vegano)">0</span>
-              <button onclick="changeQuantity('Bolo de côco e baunilha (vegano)', 1, 2.20)">+</button>
-            </td>
-          </tr>
 
         </table>
       </section>
