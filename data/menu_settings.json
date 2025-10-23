@@ -23,7 +23,8 @@
     "Chili",
     "Super Bock Mini",
     "Super Bock 33cl",
-    "Super Bock Fino"
+    "Super Bock Fino",
+    "Mojito"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -54,6 +55,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2025-10-23T11:00:42.494Z",
+  "updated_at": "2025-10-23T11:02:48.460Z",
   "version": 1
 }
