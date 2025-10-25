@@ -23,7 +23,8 @@
     "Super Bock Mini",
     "Super Bock 33cl",
     "Super Bock Fino",
-    "Mojito"
+    "Mojito",
+    "Arroz de pato"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -54,6 +55,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2025-10-25T18:42:12.283Z",
+  "updated_at": "2025-10-25T18:42:13.802Z",
   "version": 1
 }
