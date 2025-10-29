@@ -24,7 +24,8 @@
     "Super Bock 33cl",
     "Super Bock Fino",
     "Mojito",
-    "Arroz de pato"
+    "Arroz de pato",
+    "Carne de porco à alentejana"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -55,6 +56,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2025-10-25T18:42:13.802Z",
+  "updated_at": "2025-10-29T12:24:17.466Z",
   "version": 1
 }
