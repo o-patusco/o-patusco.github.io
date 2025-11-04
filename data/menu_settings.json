@@ -18,8 +18,7 @@
     "Rissóis (prato)",
     "Pêra bêbada",
     "Bolo de côco e baunilha (vegano)",
-    "Mousse de limão",
-    "Mojito"
+    "Mousse de limão"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -50,6 +49,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2025-11-04T12:30:22.533Z",
+  "updated_at": "2025-11-04T12:30:42.383Z",
   "version": 1
 }
