@@ -19,7 +19,8 @@
     "Pêra bêbada",
     "Bolo de côco e baunilha (vegano)",
     "Mousse de limão",
-    "Frango recheado com alheira"
+    "Frango recheado com alheira",
+    "Chili"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -50,6 +51,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2025-11-04T12:31:03.106Z",
+  "updated_at": "2025-11-04T12:31:07.346Z",
   "version": 1
 }
