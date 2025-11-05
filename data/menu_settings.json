@@ -20,7 +20,8 @@
     "Bolo de côco e baunilha (vegano)",
     "Mousse de limão",
     "Frango recheado com alheira",
-    "Chili"
+    "Chili",
+    "Coxinha"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -51,6 +52,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2025-11-04T12:31:07.346Z",
+  "updated_at": "2025-11-05T12:12:18.042Z",
   "version": 1
 }
