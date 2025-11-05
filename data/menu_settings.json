@@ -22,7 +22,8 @@
     "Croquete",
     "Aros de cebola",
     "Carne de porco à alentejana",
-    "Rissóis (prato)"
+    "Rissóis (prato)",
+    "Tofu à lagareiro"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -53,6 +54,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2025-11-05T12:12:53.692Z",
+  "updated_at": "2025-11-05T12:12:55.337Z",
   "version": 1
 }
