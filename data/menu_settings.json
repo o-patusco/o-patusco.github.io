@@ -23,7 +23,8 @@
     "Chili",
     "Coxinha",
     "Croquete",
-    "Aros de cebola"
+    "Aros de cebola",
+    "Carne de porco à alentejana"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -54,6 +55,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2025-11-05T12:12:22.561Z",
+  "updated_at": "2025-11-05T12:12:39.598Z",
   "version": 1
 }
