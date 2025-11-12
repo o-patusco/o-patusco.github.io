@@ -17,7 +17,8 @@
     "Tosta mista com tomate",
     "Pêra bêbada",
     "Bolo de côco e baunilha (vegano)",
-    "Rissóis (prato)"
+    "Rissóis (prato)",
+    "Carne de porco à alentejana"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -48,6 +49,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2025-11-12T12:31:26.326Z",
+  "updated_at": "2025-11-12T12:31:37.811Z",
   "version": 1
 }
