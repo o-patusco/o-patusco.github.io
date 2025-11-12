@@ -18,7 +18,8 @@
     "Pêra bêbada",
     "Bolo de côco e baunilha (vegano)",
     "Rissóis (prato)",
-    "Carne de porco à alentejana"
+    "Carne de porco à alentejana",
+    "Chili"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -49,6 +50,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2025-11-12T12:31:37.811Z",
+  "updated_at": "2025-11-12T12:31:40.320Z",
   "version": 1
 }
