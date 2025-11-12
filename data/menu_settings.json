@@ -17,9 +17,7 @@
     "Tosta mista com tomate",
     "Pêra bêbada",
     "Bolo de côco e baunilha (vegano)",
-    "Coxinha",
-    "Rissóis (prato)",
-    "Croquete"
+    "Rissóis (prato)"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -50,6 +48,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2025-11-07T13:41:38.266Z",
+  "updated_at": "2025-11-12T12:31:26.326Z",
   "version": 1
 }
