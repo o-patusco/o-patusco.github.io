@@ -21,7 +21,8 @@
     "Carne de porco à alentejana",
     "Mojito",
     "Mousse de chocolate",
-    "Massa de marisco"
+    "Massa de marisco",
+    "Chili"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -52,6 +53,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2025-11-25T13:22:48.745Z",
+  "updated_at": "2025-11-25T13:22:50.324Z",
   "version": 1
 }
