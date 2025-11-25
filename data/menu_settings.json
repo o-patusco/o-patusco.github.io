@@ -20,7 +20,8 @@
     "Rissóis (prato)",
     "Carne de porco à alentejana",
     "Mojito",
-    "Mousse de chocolate"
+    "Mousse de chocolate",
+    "Massa de marisco"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -51,6 +52,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2025-11-19T12:33:06.887Z",
+  "updated_at": "2025-11-25T13:22:48.745Z",
   "version": 1
 }
