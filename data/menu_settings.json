@@ -23,7 +23,6 @@
     "Carne de porco à alentejana",
     "Hambúrguer",
     "Massa de marisco",
-    "Chili",
     "Arroz de pato"
   ],
   "prices": {
@@ -55,6 +54,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2025-12-10T11:54:22.603Z",
+  "updated_at": "2025-12-10T11:54:29.875Z",
   "version": 1
 }
