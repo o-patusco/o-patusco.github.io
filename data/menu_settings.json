@@ -20,7 +20,8 @@
     "Rissóis (prato)",
     "Mojito",
     "Mousse de limão",
-    "Arroz de pato"
+    "Arroz de pato",
+    "Hambúrguer"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -51,6 +52,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2025-12-12T11:39:07.513Z",
+  "updated_at": "2025-12-12T11:39:10.048Z",
   "version": 1
 }
