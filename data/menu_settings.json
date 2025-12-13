@@ -23,7 +23,8 @@
     "Arroz de pato",
     "Hambúrguer",
     "Filete de peixe",
-    "Tofu panado com arroz de tomate"
+    "Tofu panado com arroz de tomate",
+    "Aros de cebola"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -54,6 +55,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2025-12-12T11:39:15.284Z",
+  "updated_at": "2025-12-13T12:42:09.297Z",
   "version": 1
 }
