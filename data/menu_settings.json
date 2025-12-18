@@ -20,10 +20,10 @@
     "Rissóis (prato)",
     "Mojito",
     "Mousse de limão",
-    "Arroz de pato",
     "Filete de peixe",
     "Tofu panado com arroz de tomate",
-    "Aros de cebola"
+    "Aros de cebola",
+    "Arroz de pato"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -54,6 +54,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2025-12-18T12:51:16.826Z",
+  "updated_at": "2025-12-18T12:51:19.363Z",
   "version": 1
 }
