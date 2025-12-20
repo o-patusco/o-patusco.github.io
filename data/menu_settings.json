@@ -22,7 +22,8 @@
     "Mousse de limão",
     "Aros de cebola",
     "Frango assado",
-    "Hambúrguer"
+    "Hambúrguer",
+    "Carne de porco à alentejana"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -53,6 +54,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2025-12-20T15:05:00.250Z",
+  "updated_at": "2025-12-20T15:05:01.831Z",
   "version": 1
 }
