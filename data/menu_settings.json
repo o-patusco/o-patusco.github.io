@@ -21,7 +21,8 @@
     "Mojito",
     "Mousse de limão",
     "Aros de cebola",
-    "Frango assado"
+    "Frango assado",
+    "Hambúrguer"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -52,6 +53,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2025-12-20T15:04:58.411Z",
+  "updated_at": "2025-12-20T15:05:00.250Z",
   "version": 1
 }
