@@ -20,8 +20,7 @@
     "Rissóis (prato)",
     "Mojito",
     "Mousse de limão",
-    "Aros de cebola",
-    "Carne de porco à alentejana"
+    "Aros de cebola"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -52,6 +51,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2025-12-26T13:12:07.650Z",
+  "updated_at": "2025-12-26T13:12:09.346Z",
   "version": 1
 }
