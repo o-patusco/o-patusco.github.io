@@ -20,7 +20,8 @@
     "Rissóis (prato)",
     "Mojito",
     "Mousse de limão",
-    "Aros de cebola"
+    "Aros de cebola",
+    "Massa de marisco"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -51,6 +52,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2025-12-27T19:16:40.155Z",
+  "updated_at": "2025-12-27T19:16:46.015Z",
   "version": 1
 }
