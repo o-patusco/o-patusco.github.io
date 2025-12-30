@@ -32,7 +32,8 @@
     "Rissol camarão",
     "Chouriço no barro c/pão",
     "Alheira grelhada c/pão",
-    "Pão e manteiga"
+    "Pão e manteiga",
+    "Pão"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -63,6 +64,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2025-12-30T12:15:49.844Z",
+  "updated_at": "2025-12-30T12:15:50.897Z",
   "version": 1
 }
