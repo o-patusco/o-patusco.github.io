@@ -24,7 +24,8 @@
     "Massa de marisco",
     "Hambúrguer",
     "Carne de porco à alentejana",
-    "Frango recheado com alheira"
+    "Frango recheado com alheira",
+    "Arroz de pato"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -55,6 +56,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2025-12-30T12:12:10.542Z",
+  "updated_at": "2025-12-30T12:12:11.472Z",
   "version": 1
 }
