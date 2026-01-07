@@ -30,7 +30,8 @@
     "Alheira grelhada c/pão",
     "Pão e manteiga",
     "Pão",
-    "Pão e manteiga de ervas"
+    "Pão e manteiga de ervas",
+    "Tofu panado com arroz de tomate"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -61,6 +62,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-01-07T12:01:53.744Z",
+  "updated_at": "2026-01-07T12:02:07.885Z",
   "version": 1
 }
