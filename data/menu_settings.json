@@ -24,8 +24,7 @@
     "Frango recheado com alheira",
     "Arroz de pato",
     "Chouriço no barro c/pão",
-    "Alheira grelhada c/pão",
-    "Tofu panado com arroz de tomate"
+    "Alheira grelhada c/pão"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -56,6 +55,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-01-08T11:48:55.088Z",
+  "updated_at": "2026-01-08T11:48:57.266Z",
   "version": 1
 }
