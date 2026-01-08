@@ -22,8 +22,7 @@
     "Mousse de limão",
     "Aros de cebola",
     "Frango recheado com alheira",
-    "Arroz de pato",
-    "Alheira grelhada c/pão"
+    "Arroz de pato"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -54,6 +53,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-01-08T11:58:39.379Z",
+  "updated_at": "2026-01-08T11:58:40.353Z",
   "version": 1
 }
