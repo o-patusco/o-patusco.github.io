@@ -23,7 +23,6 @@
     "Aros de cebola",
     "Frango recheado com alheira",
     "Arroz de pato",
-    "Chouriço no barro c/pão",
     "Alheira grelhada c/pão"
   ],
   "prices": {
@@ -55,6 +54,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-01-08T11:48:57.266Z",
+  "updated_at": "2026-01-08T11:58:39.379Z",
   "version": 1
 }
