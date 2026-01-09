@@ -20,8 +20,7 @@
     "Rissóis (prato)",
     "Mojito",
     "Mousse de limão",
-    "Aros de cebola",
-    "Frango recheado com alheira"
+    "Aros de cebola"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -52,6 +51,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-01-09T12:03:11.485Z",
+  "updated_at": "2026-01-09T12:03:12.103Z",
   "version": 1
 }
