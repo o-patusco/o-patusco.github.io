@@ -22,7 +22,6 @@
     "Mousse de limão",
     "Aros de cebola",
     "Beringelas recheadas",
-    "Frango recheado com alheira",
     "Massa de marisco"
   ],
   "prices": {
@@ -54,6 +53,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-01-14T22:28:01.859Z",
+  "updated_at": "2026-01-14T22:28:02.424Z",
   "version": 1
 }
