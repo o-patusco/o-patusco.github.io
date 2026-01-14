@@ -21,7 +21,8 @@
     "Mojito",
     "Mousse de limão",
     "Aros de cebola",
-    "Beringelas recheadas"
+    "Beringelas recheadas",
+    "Carne de porco à alentejana"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -52,6 +53,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-01-10T13:05:23.955Z",
+  "updated_at": "2026-01-14T11:54:27.685Z",
   "version": 1
 }
