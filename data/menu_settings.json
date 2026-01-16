@@ -21,7 +21,8 @@
     "Mojito",
     "Mousse de limão",
     "Aros de cebola",
-    "Arroz de pato"
+    "Arroz de pato",
+    "Super Bock 33cl"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -52,6 +53,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-01-16T12:02:33.540Z",
+  "updated_at": "2026-01-16T12:03:00.489Z",
   "version": 1
 }
