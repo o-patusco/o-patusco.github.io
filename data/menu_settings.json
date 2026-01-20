@@ -21,7 +21,8 @@
     "Mojito",
     "Mousse de limão",
     "Aros de cebola",
-    "Super Bock 33cl"
+    "Super Bock 33cl",
+    "Croquete"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -52,6 +53,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-01-17T12:48:58.751Z",
+  "updated_at": "2026-01-20T12:20:16.911Z",
   "version": 1
 }
