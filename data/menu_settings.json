@@ -24,7 +24,8 @@
     "Super Bock 33cl",
     "Chouriço no barro c/pão",
     "Carne de porco à alentejana",
-    "Arroz de pato"
+    "Arroz de pato",
+    "Mousse de chocolate"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -55,6 +56,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-01-20T12:20:35.547Z",
+  "updated_at": "2026-01-20T12:20:46.829Z",
   "version": 1
 }
