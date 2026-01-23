@@ -23,9 +23,7 @@
     "Aros de cebola",
     "Chouriço no barro c/pão",
     "Mousse de chocolate",
-    "Pão e manteiga",
     "Pão e manteiga de ervas",
-    "Pão",
     "Carne de porco à alentejana"
   ],
   "prices": {
@@ -57,6 +55,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-01-23T11:59:33.519Z",
+  "updated_at": "2026-01-23T20:15:26.548Z",
   "version": 1
 }
