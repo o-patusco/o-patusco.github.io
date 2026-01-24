@@ -21,8 +21,7 @@
     "Mojito",
     "Mousse de limão",
     "Aros de cebola",
-    "Mousse de chocolate",
-    "Carne de porco à alentejana"
+    "Mousse de chocolate"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -53,6 +52,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-01-24T12:38:33.772Z",
+  "updated_at": "2026-01-24T12:38:37.804Z",
   "version": 1
 }
