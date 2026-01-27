@@ -28,7 +28,8 @@
     "Arroz de pato",
     "Massa de marisco",
     "Chili",
-    "Tofu à lagareiro"
+    "Tofu à lagareiro",
+    "Tofu panado com arroz de tomate"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -59,6 +60,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-01-27T12:30:56.190Z",
+  "updated_at": "2026-01-27T12:30:57.588Z",
   "version": 1
 }
