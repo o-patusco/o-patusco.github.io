@@ -23,7 +23,8 @@
     "Aros de cebola",
     "Mousse de chocolate",
     "Alheira grelhada c/pão",
-    "Alheira com ovo"
+    "Alheira com ovo",
+    "Carne de porco à alentejana"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -54,6 +55,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-01-27T11:48:25.254Z",
+  "updated_at": "2026-01-27T11:48:26.872Z",
   "version": 1
 }
