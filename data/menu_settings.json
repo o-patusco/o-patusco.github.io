@@ -26,7 +26,8 @@
     "Alheira com ovo",
     "Carne de porco à alentejana",
     "Arroz de pato",
-    "Massa de marisco"
+    "Massa de marisco",
+    "Chili"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -57,6 +58,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-01-27T11:48:31.673Z",
+  "updated_at": "2026-01-27T11:48:33.127Z",
   "version": 1
 }
