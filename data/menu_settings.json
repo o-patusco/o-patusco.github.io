@@ -20,7 +20,8 @@
     "Rissóis (prato)",
     "Mojito",
     "Aros de cebola",
-    "Arroz de pato"
+    "Arroz de pato",
+    "Chili"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -51,6 +52,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-01-31T12:33:39.298Z",
+  "updated_at": "2026-01-31T13:03:57.046Z",
   "version": 1
 }
