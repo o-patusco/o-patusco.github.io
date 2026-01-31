@@ -22,7 +22,8 @@
     "Aros de cebola",
     "Arroz de pato",
     "Chili",
-    "Frango recheado com alheira"
+    "Frango recheado com alheira",
+    "Beringelas recheadas"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -53,6 +54,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-01-31T19:42:01.068Z",
+  "updated_at": "2026-01-31T19:42:05.047Z",
   "version": 1
 }
