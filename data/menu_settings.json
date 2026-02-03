@@ -29,7 +29,8 @@
     "Hambúrguer",
     "Alheira com ovo",
     "Carne de porco à alentejana",
-    "Filete de peixe"
+    "Filete de peixe",
+    "Tofu à lagareiro"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -60,6 +61,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-02-03T12:03:12.144Z",
+  "updated_at": "2026-02-03T12:03:14.506Z",
   "version": 1
 }
