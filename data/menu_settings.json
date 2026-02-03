@@ -24,7 +24,8 @@
     "Chili",
     "Frango recheado com alheira",
     "Beringelas recheadas",
-    "Massa de marisco"
+    "Massa de marisco",
+    "Alheira grelhada c/pão"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -55,6 +56,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-01-31T19:56:02.725Z",
+  "updated_at": "2026-02-03T12:02:59.364Z",
   "version": 1
 }
