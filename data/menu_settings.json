@@ -21,7 +21,8 @@
     "Mojito",
     "Massa de marisco",
     "Hambúrguer",
-    "Mousse de limão"
+    "Mousse de limão",
+    "Filete de peixe"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -52,6 +53,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-02-07T14:07:29.588Z",
+  "updated_at": "2026-02-07T20:24:07.775Z",
   "version": 1
 }
