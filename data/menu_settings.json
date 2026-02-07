@@ -21,7 +21,6 @@
     "Mojito",
     "Massa de marisco",
     "Hambúrguer",
-    "Tofu à lagareiro",
     "Mousse de limão"
   ],
   "prices": {
@@ -53,6 +52,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-02-07T14:07:28.857Z",
+  "updated_at": "2026-02-07T14:07:29.588Z",
   "version": 1
 }
