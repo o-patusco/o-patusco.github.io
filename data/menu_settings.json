@@ -19,9 +19,7 @@
     "Bolo de côco e baunilha (vegano)",
     "Rissóis (prato)",
     "Mojito",
-    "Massa de marisco",
     "Mousse de limão",
-    "Filete de peixe",
     "Beringelas recheadas"
   ],
   "prices": {
@@ -53,6 +51,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-02-09T10:52:43.252Z",
+  "updated_at": "2026-02-09T10:52:45.827Z",
   "version": 1
 }
