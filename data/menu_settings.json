@@ -22,8 +22,7 @@
     "Mousse de limão",
     "Carne de porco à alentejana",
     "Frango recheado com alheira",
-    "Filete de peixe",
-    "Massa de marisco"
+    "Filete de peixe"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -54,6 +53,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-02-11T11:53:20.855Z",
+  "updated_at": "2026-02-11T11:53:24.986Z",
   "version": 1
 }
