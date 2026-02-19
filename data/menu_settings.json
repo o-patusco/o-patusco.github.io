@@ -19,8 +19,7 @@
     "Bolo de côco e baunilha (vegano)",
     "Rissóis (prato)",
     "Mojito",
-    "Mousse de limão",
-    "Massa de marisco"
+    "Mousse de limão"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -51,6 +50,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-02-19T19:37:49.987Z",
+  "updated_at": "2026-02-19T19:37:51.433Z",
   "version": 1
 }
