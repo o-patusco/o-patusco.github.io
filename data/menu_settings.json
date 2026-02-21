@@ -23,7 +23,8 @@
     "Massa de marisco",
     "Frango assado",
     "Hambúrguer",
-    "Alheira com ovo"
+    "Alheira com ovo",
+    "Filete de peixe"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -54,6 +55,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-02-21T20:13:52.828Z",
+  "updated_at": "2026-02-21T20:13:56.685Z",
   "version": 1
 }
