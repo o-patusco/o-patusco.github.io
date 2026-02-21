@@ -22,7 +22,8 @@
     "Mousse de limão",
     "Massa de marisco",
     "Frango assado",
-    "Hambúrguer"
+    "Hambúrguer",
+    "Alheira com ovo"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -53,6 +54,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-02-21T20:13:50.717Z",
+  "updated_at": "2026-02-21T20:13:52.828Z",
   "version": 1
 }
