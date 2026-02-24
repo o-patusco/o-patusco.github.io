@@ -27,7 +27,8 @@
     "Filete de peixe",
     "Tofu panado com arroz de tomate",
     "Beringelas recheadas",
-    "Coxinha"
+    "Coxinha",
+    "Carne de porco à alentejana"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -58,6 +59,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-02-24T12:06:05.058Z",
+  "updated_at": "2026-02-24T12:06:09.238Z",
   "version": 1
 }
