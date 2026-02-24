@@ -21,7 +21,6 @@
     "Mojito",
     "Mousse de limão",
     "Massa de marisco",
-    "Carne de porco à alentejana",
     "Arroz de pato"
   ],
   "prices": {
@@ -53,6 +52,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-02-24T20:57:57.912Z",
+  "updated_at": "2026-02-24T20:57:59.473Z",
   "version": 1
 }
