@@ -21,9 +21,6 @@
     "Mojito",
     "Mousse de limão",
     "Massa de marisco",
-    "Frango assado",
-    "Hambúrguer",
-    "Alheira com ovo",
     "Carne de porco à alentejana",
     "Arroz de pato"
   ],
@@ -56,6 +53,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-02-24T20:57:54.404Z",
+  "updated_at": "2026-02-24T20:57:57.912Z",
   "version": 1
 }
