@@ -20,7 +20,8 @@
     "Rissóis (prato)",
     "Mojito",
     "Massa de marisco",
-    "Carne de porco à alentejana"
+    "Carne de porco à alentejana",
+    "Frango recheado com alheira"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -51,6 +52,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-03-03T11:56:18.515Z",
+  "updated_at": "2026-03-03T11:56:25.293Z",
   "version": 1
 }
