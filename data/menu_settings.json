@@ -19,7 +19,8 @@
     "Bolo de côco e baunilha (vegano)",
     "Rissóis (prato)",
     "Mojito",
-    "Massa de marisco"
+    "Massa de marisco",
+    "Carne de porco à alentejana"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -50,6 +51,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-02-28T12:08:49.909Z",
+  "updated_at": "2026-03-03T11:56:18.515Z",
   "version": 1
 }
