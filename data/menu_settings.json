@@ -22,7 +22,8 @@
     "Massa de marisco",
     "Carne de porco à alentejana",
     "Frango recheado com alheira",
-    "Arroz de pato"
+    "Arroz de pato",
+    "Chili"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -53,6 +54,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-03-03T11:56:27.243Z",
+  "updated_at": "2026-03-03T11:57:31.711Z",
   "version": 1
 }
