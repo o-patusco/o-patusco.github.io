@@ -20,8 +20,7 @@
     "Rissóis (prato)",
     "Mojito",
     "Bolo de chocolate",
-    "Croquete",
-    "Hambúrguer"
+    "Croquete"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -52,6 +51,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-03-06T11:12:32.926Z",
+  "updated_at": "2026-03-06T19:34:41.546Z",
   "version": 1
 }
