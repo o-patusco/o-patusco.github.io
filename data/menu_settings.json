@@ -21,7 +21,8 @@
     "Mojito",
     "Carne de porco à alentejana",
     "Arroz de pato",
-    "Bolo de chocolate"
+    "Bolo de chocolate",
+    "Croquete"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -52,6 +53,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-03-04T11:52:30.158Z",
+  "updated_at": "2026-03-06T11:12:06.366Z",
   "version": 1
 }
