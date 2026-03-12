@@ -24,7 +24,8 @@
     "Massa de marisco",
     "Arroz de pato",
     "Chili",
-    "Beringelas recheadas"
+    "Beringelas recheadas",
+    "Hambúrguer"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -55,6 +56,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-03-12T11:34:18.844Z",
+  "updated_at": "2026-03-12T11:34:26.076Z",
   "version": 1
 }
