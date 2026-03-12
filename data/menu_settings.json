@@ -22,7 +22,8 @@
     "Bolo de chocolate",
     "Croquete",
     "Massa de marisco",
-    "Arroz de pato"
+    "Arroz de pato",
+    "Chili"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -53,6 +54,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-03-12T11:34:10.885Z",
+  "updated_at": "2026-03-12T11:34:16.664Z",
   "version": 1
 }
