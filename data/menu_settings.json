@@ -25,7 +25,9 @@
     "Arroz de pato",
     "Chili",
     "Beringelas recheadas",
-    "Hambúrguer"
+    "Hambúrguer",
+    "Pão",
+    "Pão e manteiga"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -56,6 +58,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-03-12T11:34:26.076Z",
+  "updated_at": "2026-03-13T11:55:48.136Z",
   "version": 1
 }
