@@ -21,10 +21,7 @@
     "Mojito",
     "Bolo de chocolate",
     "Massa de marisco",
-    "Carne de porco à alentejana",
-    "Frango recheado com alheira",
-    "Chili",
-    "Arroz de pato"
+    "Chili"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -55,6 +52,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-03-26T19:36:04.440Z",
+  "updated_at": "2026-03-26T19:36:06.041Z",
   "version": 1
 }
