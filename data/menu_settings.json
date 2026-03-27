@@ -21,7 +21,8 @@
     "Mojito",
     "Bolo de chocolate",
     "Beringelas recheadas",
-    "Tofu panado com arroz de tomate"
+    "Tofu panado com arroz de tomate",
+    "Arroz de pato"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -52,6 +53,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-03-27T14:49:41.243Z",
+  "updated_at": "2026-03-27T14:49:43.385Z",
   "version": 1
 }
