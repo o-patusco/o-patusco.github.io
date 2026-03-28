@@ -22,7 +22,6 @@
     "Bolo de chocolate",
     "Tofu panado com arroz de tomate",
     "Arroz de pato",
-    "Frango assado",
     "Frango recheado com alheira"
   ],
   "prices": {
@@ -54,6 +53,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-03-28T12:45:14.686Z",
+  "updated_at": "2026-03-28T19:24:10.475Z",
   "version": 1
 }
