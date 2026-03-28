@@ -22,7 +22,8 @@
     "Bolo de chocolate",
     "Beringelas recheadas",
     "Tofu panado com arroz de tomate",
-    "Arroz de pato"
+    "Arroz de pato",
+    "Frango assado"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -53,6 +54,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-03-27T14:49:43.385Z",
+  "updated_at": "2026-03-28T12:32:50.999Z",
   "version": 1
 }
