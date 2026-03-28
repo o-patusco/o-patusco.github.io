@@ -20,9 +20,7 @@
     "Rissóis (prato)",
     "Mojito",
     "Bolo de chocolate",
-    "Tofu panado com arroz de tomate",
-    "Arroz de pato",
-    "Frango recheado com alheira"
+    "Tofu panado com arroz de tomate"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -53,6 +51,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-03-28T19:24:10.475Z",
+  "updated_at": "2026-03-28T19:24:11.786Z",
   "version": 1
 }
