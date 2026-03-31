@@ -22,7 +22,9 @@
     "Bolo de chocolate",
     "Tofu panado com arroz de tomate",
     "Carne de porco à alentejana",
-    "Frango recheado com alheira"
+    "Frango recheado com alheira",
+    "Massa de marisco",
+    "Filete de peixe"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -53,6 +55,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-03-31T10:57:46.751Z",
+  "updated_at": "2026-03-31T10:57:48.815Z",
   "version": 1
 }
