@@ -25,7 +25,8 @@
     "Frango recheado com alheira",
     "Massa de marisco",
     "Filete de peixe",
-    "Chili"
+    "Chili",
+    "Frango assado"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -56,6 +57,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-03-31T10:57:50.079Z",
+  "updated_at": "2026-04-01T11:01:14.574Z",
   "version": 1
 }
