@@ -23,7 +23,6 @@
     "Tofu panado com arroz de tomate",
     "Frango recheado com alheira",
     "Frango assado",
-    "Beringelas recheadas",
     "Mousse de limão"
   ],
   "prices": {
@@ -55,6 +54,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-04-02T10:57:08.162Z",
+  "updated_at": "2026-04-02T10:57:10.060Z",
   "version": 1
 }
