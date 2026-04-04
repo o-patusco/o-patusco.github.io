@@ -23,7 +23,8 @@
     "Tofu panado com arroz de tomate",
     "Frango recheado com alheira",
     "Frango assado",
-    "Mousse de limão"
+    "Mousse de limão",
+    "Chouriço no barro c/pão"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -54,6 +55,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-04-02T10:57:10.060Z",
+  "updated_at": "2026-04-04T19:29:04.659Z",
   "version": 1
 }
