@@ -24,7 +24,8 @@
     "Mousse de limão",
     "Chouriço no barro c/pão",
     "Moelas",
-    "Arroz de pato"
+    "Arroz de pato",
+    "Massa de marisco"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -55,6 +56,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-04-04T19:29:11.054Z",
+  "updated_at": "2026-04-04T19:29:12.104Z",
   "version": 1
 }
