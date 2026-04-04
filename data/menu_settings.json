@@ -5,7 +5,6 @@
     "Peixinhos da horta",
     "Nachos com queijo",
     "Alheira vegetariana grelhada c/pão",
-    "Moelas",
     "Paté do mar",
     "Hummus",
     "Tosta de queijo",
@@ -22,7 +21,6 @@
     "Bolo de chocolate",
     "Tofu panado com arroz de tomate",
     "Frango recheado com alheira",
-    "Frango assado",
     "Mousse de limão",
     "Chouriço no barro c/pão"
   ],
@@ -55,6 +53,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-04-04T19:29:04.659Z",
+  "updated_at": "2026-04-04T19:29:06.569Z",
   "version": 1
 }
