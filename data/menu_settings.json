@@ -30,7 +30,8 @@
     "Pão e manteiga de ervas",
     "Coxinha",
     "Frango assado",
-    "Hambúrguer"
+    "Hambúrguer",
+    "Carne de porco à alentejana"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -61,6 +62,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-04-08T11:06:34.668Z",
+  "updated_at": "2026-04-08T11:06:36.308Z",
   "version": 1
 }
