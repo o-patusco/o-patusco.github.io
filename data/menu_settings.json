@@ -32,7 +32,8 @@
     "Frango assado",
     "Hambúrguer",
     "Carne de porco à alentejana",
-    "Filete de peixe"
+    "Filete de peixe",
+    "Chili"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -63,6 +64,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-04-08T11:06:38.216Z",
+  "updated_at": "2026-04-08T11:06:40.504Z",
   "version": 1
 }
