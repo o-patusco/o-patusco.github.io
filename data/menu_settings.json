@@ -27,7 +27,8 @@
     "Massa de marisco",
     "Pão",
     "Pão e manteiga",
-    "Pão e manteiga de ervas"
+    "Pão e manteiga de ervas",
+    "Coxinha"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -58,6 +59,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-04-08T11:06:27.597Z",
+  "updated_at": "2026-04-08T11:06:29.315Z",
   "version": 1
 }
