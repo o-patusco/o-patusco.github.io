@@ -22,8 +22,7 @@
     "Chouriço no barro c/pão",
     "Moelas",
     "Pão e manteiga de ervas",
-    "Salame",
-    "Chili"
+    "Salame"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -54,6 +53,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-04-14T16:07:31.604Z",
+  "updated_at": "2026-04-14T16:07:37.074Z",
   "version": 1
 }
