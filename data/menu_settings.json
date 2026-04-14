@@ -23,8 +23,7 @@
     "Moelas",
     "Pão e manteiga de ervas",
     "Salame",
-    "Chili",
-    "Massa de marisco"
+    "Chili"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -55,6 +54,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-04-14T16:07:28.232Z",
+  "updated_at": "2026-04-14T16:07:31.604Z",
   "version": 1
 }
