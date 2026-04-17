@@ -23,7 +23,6 @@
     "Moelas",
     "Pão e manteiga de ervas",
     "Salame",
-    "Alheira com ovo",
     "Massa de marisco"
   ],
   "prices": {
@@ -55,6 +54,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-04-16T18:23:19.407Z",
+  "updated_at": "2026-04-17T10:58:40.036Z",
   "version": 1
 }
