@@ -23,7 +23,8 @@
     "Moelas",
     "Pão e manteiga de ervas",
     "Salame",
-    "Frango assado"
+    "Frango assado",
+    "Frango recheado com alheira"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -54,6 +55,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-04-18T11:24:56.928Z",
+  "updated_at": "2026-04-21T10:50:57.615Z",
   "version": 1
 }
