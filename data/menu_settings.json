@@ -26,7 +26,8 @@
     "Frango assado",
     "Frango recheado com alheira",
     "Massa de marisco",
-    "Pão e manteiga"
+    "Pão e manteiga",
+    "Pão"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -57,6 +58,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-04-22T10:46:28.183Z",
+  "updated_at": "2026-04-22T10:46:32.844Z",
   "version": 1
 }
