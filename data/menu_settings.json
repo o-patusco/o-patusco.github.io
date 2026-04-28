@@ -25,7 +25,8 @@
     "Salame",
     "Pão e manteiga",
     "Pão",
-    "Frango recheado com alheira"
+    "Frango recheado com alheira",
+    "Carne de porco à alentejana"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -56,6 +57,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-04-24T18:28:43.803Z",
+  "updated_at": "2026-04-28T11:13:51.851Z",
   "version": 1
 }
