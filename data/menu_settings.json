@@ -24,10 +24,7 @@
     "Pão e manteiga de ervas",
     "Salame",
     "Pão e manteiga",
-    "Pão",
-    "Chili",
-    "Beringelas recheadas",
-    "Tofu à lagareiro"
+    "Pão"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -58,6 +55,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-04-28T17:16:49.058Z",
+  "updated_at": "2026-04-28T17:16:55.537Z",
   "version": 1
 }
