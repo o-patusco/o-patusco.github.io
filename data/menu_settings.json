@@ -26,7 +26,8 @@
     "Pão e manteiga",
     "Pão",
     "Carne de porco à alentejana",
-    "Tofu panado com arroz de tomate"
+    "Tofu panado com arroz de tomate",
+    "Mousse de chocolate"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -57,6 +58,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-05-06T12:42:31.475Z",
+  "updated_at": "2026-05-06T13:08:53.941Z",
   "version": 1
 }
