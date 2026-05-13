@@ -26,7 +26,9 @@
     "Arroz doce",
     "Mousse de limão",
     "Croquete",
-    "Arroz de pato"
+    "Arroz de pato",
+    "Pão",
+    "Pão e manteiga"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -57,6 +59,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-05-08T11:18:11.200Z",
+  "updated_at": "2026-05-13T10:50:22.618Z",
   "version": 1
 }
