@@ -29,8 +29,7 @@
     "Arroz de pato",
     "Pão",
     "Pão e manteiga",
-    "Pão e manteiga de ervas",
-    "Massa de marisco"
+    "Pão e manteiga de ervas"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -61,6 +60,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-05-13T18:50:16.767Z",
+  "updated_at": "2026-05-13T18:50:17.969Z",
   "version": 1
 }
