@@ -28,7 +28,9 @@
     "Croquete",
     "Arroz de pato",
     "Pão",
-    "Pão e manteiga"
+    "Pão e manteiga",
+    "Pão e manteiga de ervas",
+    "Frango assado"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -59,6 +61,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-05-13T10:50:22.618Z",
+  "updated_at": "2026-05-13T10:50:30.173Z",
   "version": 1
 }
