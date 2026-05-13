@@ -30,7 +30,6 @@
     "Pão",
     "Pão e manteiga",
     "Pão e manteiga de ervas",
-    "Frango recheado com alheira",
     "Massa de marisco"
   ],
   "prices": {
@@ -62,6 +61,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-05-13T18:50:14.756Z",
+  "updated_at": "2026-05-13T18:50:16.767Z",
   "version": 1
 }
