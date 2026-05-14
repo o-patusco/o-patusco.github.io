@@ -27,8 +27,6 @@
     "Mousse de limão",
     "Croquete",
     "Arroz de pato",
-    "Pão e manteiga",
-    "Pão e manteiga de ervas",
     "Chili"
   ],
   "prices": {
@@ -60,6 +58,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-05-14T10:09:34.723Z",
+  "updated_at": "2026-05-14T10:09:37.791Z",
   "version": 1
 }
