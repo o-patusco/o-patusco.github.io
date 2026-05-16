@@ -25,7 +25,8 @@
     "Arroz doce",
     "Mousse de limão",
     "Croquete",
-    "Frango assado"
+    "Frango assado",
+    "Frango recheado com alheira"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -56,6 +57,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-05-16T20:24:37.414Z",
+  "updated_at": "2026-05-16T20:24:39.027Z",
   "version": 1
 }
