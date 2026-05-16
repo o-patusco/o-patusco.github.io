@@ -24,7 +24,8 @@
     "Mousse de chocolate",
     "Arroz doce",
     "Mousse de limão",
-    "Croquete"
+    "Croquete",
+    "Frango assado"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -55,6 +56,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-05-16T18:34:09.793Z",
+  "updated_at": "2026-05-16T20:24:37.414Z",
   "version": 1
 }
