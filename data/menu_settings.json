@@ -26,7 +26,9 @@
     "Mousse de limão",
     "Croquete",
     "Frango assado",
-    "Frango recheado com alheira"
+    "Frango recheado com alheira",
+    "Tofu panado com arroz de tomate",
+    "Tofu à lagareiro"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -57,6 +59,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-05-16T20:24:39.027Z",
+  "updated_at": "2026-05-16T20:24:45.007Z",
   "version": 1
 }
