@@ -25,8 +25,7 @@
     "Arroz doce",
     "Mousse de limão",
     "Croquete",
-    "Tofu panado com arroz de tomate",
-    "Tofu à lagareiro"
+    "Massa de marisco"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -57,6 +56,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-05-22T18:52:39.487Z",
+  "updated_at": "2026-05-22T18:52:42.598Z",
   "version": 1
 }
