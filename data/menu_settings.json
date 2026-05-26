@@ -25,7 +25,8 @@
     "Arroz doce",
     "Mousse de limão",
     "Croquete",
-    "Massa de marisco"
+    "Massa de marisco",
+    "Hambúrguer"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -56,6 +57,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-05-22T18:52:42.598Z",
+  "updated_at": "2026-05-26T11:05:57.714Z",
   "version": 1
 }
