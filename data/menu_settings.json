@@ -27,7 +27,8 @@
     "Hambúrguer",
     "Tofu panado com arroz de tomate",
     "Tofu à lagareiro",
-    "Salada mista"
+    "Salada mista",
+    "Chili"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -58,6 +59,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-05-27T10:41:47.187Z",
+  "updated_at": "2026-05-28T12:20:05.178Z",
   "version": 1
 }
