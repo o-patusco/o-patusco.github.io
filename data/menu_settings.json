@@ -20,7 +20,8 @@
     "Mojito",
     "Bolo de chocolate",
     "Moelas",
-    "Chouriço no barro c/pão"
+    "Chouriço no barro c/pão",
+    "Mousse de limão"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -51,6 +52,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-05-29T11:33:17.665Z",
+  "updated_at": "2026-05-29T11:33:18.841Z",
   "version": 1
 }
