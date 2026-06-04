@@ -22,8 +22,7 @@
     "Moelas",
     "Chouriço no barro c/pão",
     "Mousse de limão",
-    "Frango assado",
-    "Massa de marisco"
+    "Frango assado"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -54,6 +53,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-06-04T20:06:15.772Z",
+  "updated_at": "2026-06-04T20:06:18.644Z",
   "version": 1
 }
