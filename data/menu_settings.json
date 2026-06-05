@@ -21,7 +21,6 @@
     "Bolo de chocolate",
     "Moelas",
     "Mousse de limão",
-    "Frango assado",
     "Frango recheado com alheira"
   ],
   "prices": {
@@ -53,6 +52,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-06-05T18:17:27.181Z",
+  "updated_at": "2026-06-05T18:17:30.504Z",
   "version": 1
 }
