@@ -20,7 +20,8 @@
     "Mojito",
     "Bolo de chocolate",
     "Moelas",
-    "Mousse de limão"
+    "Mousse de limão",
+    "Frango recheado com alheira"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -51,6 +52,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-06-11T18:21:37.059Z",
+  "updated_at": "2026-06-12T11:10:53.302Z",
   "version": 1
 }
