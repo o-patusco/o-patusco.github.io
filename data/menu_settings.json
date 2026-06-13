@@ -22,7 +22,8 @@
     "Moelas",
     "Mousse de limão",
     "Massa de marisco",
-    "Rissol camarão"
+    "Rissol camarão",
+    "Carne de porco à alentejana"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -53,6 +54,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-06-13T11:33:21.941Z",
+  "updated_at": "2026-06-13T11:33:25.351Z",
   "version": 1
 }
