@@ -25,9 +25,7 @@
     "Rissol camarão",
     "Carne de porco à alentejana",
     "Bolo de bolacha",
-    "Arroz doce",
-    "Arroz de pato",
-    "Frango recheado com alheira"
+    "Arroz doce"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -58,6 +56,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-06-13T18:15:23.011Z",
+  "updated_at": "2026-06-17T18:32:14.328Z",
   "version": 1
 }
