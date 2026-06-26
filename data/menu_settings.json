@@ -24,8 +24,7 @@
     "Rissol camarão",
     "Bolo de bolacha",
     "Arroz doce",
-    "Massa de marisco",
-    "Arroz de pato"
+    "Massa de marisco"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -56,6 +55,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-06-25T18:22:34.005Z",
+  "updated_at": "2026-06-26T10:50:57.332Z",
   "version": 1
 }
