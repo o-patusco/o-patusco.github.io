@@ -24,7 +24,8 @@
     "Rissol camarão",
     "Massa de marisco",
     "Dose de batatas fritas",
-    "Croquete"
+    "Croquete",
+    "Carne de porco à alentejana"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -55,6 +56,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-07-08T10:52:58.844Z",
+  "updated_at": "2026-07-08T10:53:02.662Z",
   "version": 1
 }
