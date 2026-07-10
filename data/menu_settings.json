@@ -22,7 +22,6 @@
     "Moelas",
     "Mousse de limão",
     "Rissol camarão",
-    "Croquete",
     "Chili"
   ],
   "prices": {
@@ -54,6 +53,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-07-10T18:42:37.837Z",
+  "updated_at": "2026-07-10T18:42:42.234Z",
   "version": 1
 }
