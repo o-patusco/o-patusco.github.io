@@ -20,7 +20,6 @@
     "Mojito",
     "Bolo de chocolate",
     "Moelas",
-    "Mousse de limão",
     "Rissol camarão"
   ],
   "prices": {
@@ -52,6 +51,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-07-11T10:47:38.434Z",
+  "updated_at": "2026-07-11T10:47:53.874Z",
   "version": 1
 }
