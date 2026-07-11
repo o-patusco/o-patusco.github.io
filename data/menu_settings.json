@@ -21,7 +21,8 @@
     "Bolo de chocolate",
     "Moelas",
     "Rissol camarão",
-    "Arroz doce"
+    "Arroz doce",
+    "Mousse de chocolate"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -52,6 +53,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-07-11T10:47:54.646Z",
+  "updated_at": "2026-07-11T10:47:56.530Z",
   "version": 1
 }
