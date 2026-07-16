@@ -22,8 +22,7 @@
     "Moelas",
     "Rissol camarão",
     "Aros de cebola",
-    "Mousse de limão",
-    "Frango recheado com alheira"
+    "Mousse de limão"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -54,6 +53,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-07-16T11:14:18.469Z",
+  "updated_at": "2026-07-16T18:31:40.762Z",
   "version": 1
 }
