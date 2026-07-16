@@ -23,7 +23,6 @@
     "Rissol camarão",
     "Aros de cebola",
     "Mousse de limão",
-    "Bolo de bolacha",
     "Frango recheado com alheira"
   ],
   "prices": {
@@ -55,6 +54,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-07-16T11:14:05.662Z",
+  "updated_at": "2026-07-16T11:14:18.469Z",
   "version": 1
 }
