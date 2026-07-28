@@ -25,7 +25,9 @@
     "Mousse de limão",
     "Coxinha",
     "Carne de porco à alentejana",
-    "Massa de marisco"
+    "Massa de marisco",
+    "Chili",
+    "Bolo de bolacha"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -56,6 +58,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-07-28T11:09:43.265Z",
+  "updated_at": "2026-07-28T11:10:00.534Z",
   "version": 1
 }
