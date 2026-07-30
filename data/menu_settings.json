@@ -27,7 +27,8 @@
     "Massa de marisco",
     "Chili",
     "Bolo de bolacha",
-    "Frango assado"
+    "Frango assado",
+    "Salame"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -58,6 +59,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-07-30T11:03:18.012Z",
+  "updated_at": "2026-07-30T11:03:25.513Z",
   "version": 1
 }
