@@ -20,8 +20,8 @@
     "Mojito",
     "Bolo de chocolate",
     "Moelas",
-    "Mousse de limão",
-    "Croquete"
+    "Croquete",
+    "Arroz doce"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -52,6 +52,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-07-31T11:03:02.901Z",
+  "updated_at": "2026-07-31T11:03:05.566Z",
   "version": 1
 }
