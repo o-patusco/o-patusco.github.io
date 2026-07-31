@@ -27,7 +27,8 @@
     "Massa de marisco",
     "Chili",
     "Frango assado",
-    "Salame"
+    "Salame",
+    "Croquete"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -58,6 +59,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-07-30T11:03:28.106Z",
+  "updated_at": "2026-07-31T11:02:35.874Z",
   "version": 1
 }
