@@ -21,7 +21,6 @@
     "Bolo de chocolate",
     "Moelas",
     "Mousse de limão",
-    "Salame",
     "Croquete"
   ],
   "prices": {
@@ -53,6 +52,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-07-31T11:02:53.822Z",
+  "updated_at": "2026-07-31T11:03:02.901Z",
   "version": 1
 }
