@@ -23,7 +23,8 @@
     "Croquete",
     "Arroz doce",
     "Frango recheado com alheira",
-    "Beringelas recheadas"
+    "Beringelas recheadas",
+    "Mousse de chocolate"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -54,6 +55,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-08-01T11:56:57.430Z",
+  "updated_at": "2026-08-01T11:57:05.230Z",
   "version": 1
 }
