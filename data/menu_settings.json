@@ -21,7 +21,8 @@
     "Bolo de chocolate",
     "Moelas",
     "Croquete",
-    "Arroz doce"
+    "Arroz doce",
+    "Frango recheado com alheira"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -52,6 +53,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-07-31T11:03:05.566Z",
+  "updated_at": "2026-08-01T11:56:54.502Z",
   "version": 1
 }
