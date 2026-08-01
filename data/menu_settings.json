@@ -22,7 +22,8 @@
     "Moelas",
     "Croquete",
     "Arroz doce",
-    "Frango recheado com alheira"
+    "Frango recheado com alheira",
+    "Beringelas recheadas"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -53,6 +54,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-08-01T11:56:54.502Z",
+  "updated_at": "2026-08-01T11:56:57.430Z",
   "version": 1
 }
