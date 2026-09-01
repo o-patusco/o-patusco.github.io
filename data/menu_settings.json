@@ -27,7 +27,7 @@
     "Carne de porco à alentejana",
     "Massa de marisco",
     "Arroz de pato",
-    "Chili"
+    "Tofu panado com arroz de tomate"
   ],
   "prices": {
     "Azeitonas": 1.5,
@@ -58,6 +58,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-09-01T18:31:02.492Z",
+  "updated_at": "2026-09-01T18:31:08.222Z",
   "version": 1
 }
