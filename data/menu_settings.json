@@ -27,11 +27,12 @@
     "Carne de porco à alentejana",
     "Massa de marisco",
     "Arroz de pato",
-    "Tofu panado com arroz de tomate"
+    "Tofu panado com arroz de tomate",
+    "Salmão da avó"
   ],
   "prices": {
     "Bolo de chocolate": 2.5
   },
-  "updated_at": "2026-09-02T17:15:51.513Z",
+  "updated_at": "2026-09-02T17:20:28.912Z",
   "version": 1
 }
