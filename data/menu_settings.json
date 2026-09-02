@@ -30,7 +30,6 @@
     "Tofu panado com arroz de tomate"
   ],
   "prices": {
-    "Espadalinha": 4.5,
     "Mousse de chocolate": 2,
     "Bolo de chocolate": 2.5,
     "Café": 0.9,
@@ -46,6 +45,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-09-02T17:15:23.540Z",
+  "updated_at": "2026-09-02T17:15:27.170Z",
   "version": 1
 }
