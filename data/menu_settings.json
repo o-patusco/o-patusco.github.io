@@ -30,7 +30,6 @@
     "Tofu panado com arroz de tomate"
   ],
   "prices": {
-    "Coxinha": 2,
     "Chouriço no barro c/pão": 4.5,
     "Alheira grelhada c/pão": 4.5,
     "Alheira com ovo": 6.5,
@@ -55,6 +54,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-09-02T17:15:01.301Z",
+  "updated_at": "2026-09-02T17:15:04.940Z",
   "version": 1
 }
