@@ -30,7 +30,6 @@
     "Tofu panado com arroz de tomate"
   ],
   "prices": {
-    "Beringelas recheadas": 7.5,
     "Tofu à lagareiro": 8.5,
     "Limonada": 1.5,
     "Espadalinha": 4.5,
@@ -49,6 +48,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-09-02T17:15:13.651Z",
+  "updated_at": "2026-09-02T17:15:16.518Z",
   "version": 1
 }
