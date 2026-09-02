@@ -30,7 +30,6 @@
     "Tofu panado com arroz de tomate"
   ],
   "prices": {
-    "Mousse de chocolate": 2,
     "Bolo de chocolate": 2.5,
     "Café": 0.9,
     "Abatanado": 0.9,
@@ -41,6 +40,6 @@
     "Cappuccino": 2,
     "Carioca de limão": 0.9
   },
-  "updated_at": "2026-09-02T17:15:33.079Z",
+  "updated_at": "2026-09-02T17:15:35.292Z",
   "version": 1
 }
