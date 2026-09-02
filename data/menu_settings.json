@@ -28,11 +28,12 @@
     "Massa de marisco",
     "Arroz de pato",
     "Tofu panado com arroz de tomate",
-    "Salmão da avó"
+    "Salmão da avó",
+    "Bife à portuguesa"
   ],
   "prices": {
     "Bolo de chocolate": 2.5
   },
-  "updated_at": "2026-09-02T17:20:28.912Z",
+  "updated_at": "2026-09-02T17:20:31.898Z",
   "version": 1
 }
