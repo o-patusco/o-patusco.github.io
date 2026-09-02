@@ -30,7 +30,6 @@
     "Tofu panado com arroz de tomate"
   ],
   "prices": {
-    "Alheira com ovo": 6.5,
     "Carne de porco à alentejana": 7.5,
     "Frango recheado com alheira": 7.5,
     "Beringelas recheadas": 7.5,
@@ -52,6 +51,6 @@
     "Vodka Limão": 5,
     "Gin Tónico Gordon's": 6.5
   },
-  "updated_at": "2026-09-02T17:15:07.662Z",
+  "updated_at": "2026-09-02T17:15:09.888Z",
   "version": 1
 }
