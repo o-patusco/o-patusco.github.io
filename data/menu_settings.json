@@ -31,8 +31,7 @@
   ],
   "prices": {
     "Bolo de chocolate": 2.5,
-    "Café": 0.9,
-    "Abatanado": 0.9,
+    "Abatanado": 0,
     "Pingo": 1.2,
     "Duplo shot": 1.6,
     "Meia de leite": 1.5,
@@ -40,6 +39,6 @@
     "Cappuccino": 2,
     "Carioca de limão": 0.9
   },
-  "updated_at": "2026-09-02T17:15:35.292Z",
+  "updated_at": "2026-09-02T17:15:38.847Z",
   "version": 1
 }
