@@ -24,7 +24,6 @@
     "Arroz doce",
     "Mousse de chocolate",
     "Aros de cebola",
-    "Carne de porco à alentejana",
     "Massa de marisco",
     "Arroz de pato",
     "Tofu panado com arroz de tomate",
@@ -34,6 +33,6 @@
   "prices": {
     "Bolo de chocolate": 2.5
   },
-  "updated_at": "2026-09-02T17:20:31.898Z",
+  "updated_at": "2026-09-03T19:58:59.851Z",
   "version": 1
 }
