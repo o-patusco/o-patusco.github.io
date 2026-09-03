@@ -25,14 +25,12 @@
     "Mousse de chocolate",
     "Aros de cebola",
     "Massa de marisco",
-    "Arroz de pato",
     "Tofu panado com arroz de tomate",
-    "Salmão da avó",
-    "Bife à portuguesa"
+    "Salmão da avó"
   ],
   "prices": {
     "Bolo de chocolate": 2.5
   },
-  "updated_at": "2026-09-03T19:58:59.851Z",
+  "updated_at": "2026-09-03T19:59:01.205Z",
   "version": 1
 }
