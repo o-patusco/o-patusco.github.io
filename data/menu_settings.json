@@ -24,11 +24,13 @@
     "Arroz doce",
     "Mousse de chocolate",
     "Tofu panado com arroz de tomate",
-    "Strogonoff de Seitan"
+    "Strogonoff de Seitan",
+    "Chouriço no barro c/pão",
+    "Aros de cebola"
   ],
   "prices": {
     "Bolo de chocolate": 2.5
   },
-  "updated_at": "2026-09-05T11:38:47.642Z",
+  "updated_at": "2026-09-05T11:38:51.043Z",
   "version": 1
 }
