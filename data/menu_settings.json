@@ -29,11 +29,12 @@
     "Aros de cebola",
     "Carne de porco à alentejana",
     "Frango recheado com alheira",
-    "Arroz de pato"
+    "Arroz de pato",
+    "Bife à portuguesa"
   ],
   "prices": {
     "Bolo de chocolate": 2.5
   },
-  "updated_at": "2026-09-05T11:38:54.980Z",
+  "updated_at": "2026-09-05T11:38:55.696Z",
   "version": 1
 }
