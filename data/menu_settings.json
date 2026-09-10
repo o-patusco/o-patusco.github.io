@@ -24,11 +24,12 @@
     "Mousse de chocolate",
     "Tofu panado com arroz de tomate",
     "Strogonoff de Seitan",
-    "Bife à portuguesa"
+    "Bife à portuguesa",
+    "Salmão da avó"
   ],
   "prices": {
     "Bolo de chocolate": 2.5
   },
-  "updated_at": "2026-09-10T19:53:45.831Z",
+  "updated_at": "2026-09-10T19:53:47.259Z",
   "version": 1
 }
