@@ -25,7 +25,6 @@
     "Tofu panado com arroz de tomate",
     "Strogonoff de Seitan",
     "Chouriço no barro c/pão",
-    "Aros de cebola",
     "Carne de porco à alentejana",
     "Frango recheado com alheira",
     "Arroz de pato",
@@ -34,6 +33,6 @@
   "prices": {
     "Bolo de chocolate": 2.5
   },
-  "updated_at": "2026-09-10T19:53:38.764Z",
+  "updated_at": "2026-09-10T19:53:39.606Z",
   "version": 1
 }
