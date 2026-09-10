@@ -20,7 +20,6 @@
     "Mojito",
     "Bolo de chocolate",
     "Moelas",
-    "Croquete",
     "Arroz doce",
     "Mousse de chocolate",
     "Tofu panado com arroz de tomate",
@@ -35,6 +34,6 @@
   "prices": {
     "Bolo de chocolate": 2.5
   },
-  "updated_at": "2026-09-05T11:38:55.696Z",
+  "updated_at": "2026-09-10T19:53:38.764Z",
   "version": 1
 }
