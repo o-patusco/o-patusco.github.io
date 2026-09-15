@@ -23,7 +23,6 @@
     "Arroz doce",
     "Mousse de chocolate",
     "Tofu panado com arroz de tomate",
-    "Strogonoff de Seitan",
     "Bife à portuguesa",
     "Salmão da avó",
     "Chouriço no barro c/pão",
@@ -33,6 +32,6 @@
   "prices": {
     "Bolo de chocolate": 2.5
   },
-  "updated_at": "2026-09-15T18:30:46.654Z",
+  "updated_at": "2026-09-15T18:30:50.029Z",
   "version": 1
 }
