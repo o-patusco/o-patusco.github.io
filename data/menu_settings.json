@@ -24,13 +24,11 @@
     "Mousse de chocolate",
     "Tofu panado com arroz de tomate",
     "Bife à portuguesa",
-    "Salmão da avó",
-    "Chouriço no barro c/pão",
-    "Massa de marisco"
+    "Chouriço no barro c/pão"
   ],
   "prices": {
     "Bolo de chocolate": 2.5
   },
-  "updated_at": "2026-09-17T18:44:18.681Z",
+  "updated_at": "2026-09-17T18:44:22.738Z",
   "version": 1
 }
