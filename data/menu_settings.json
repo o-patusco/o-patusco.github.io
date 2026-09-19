@@ -25,11 +25,12 @@
     "Tofu panado com arroz de tomate",
     "Bife à portuguesa",
     "Chouriço no barro c/pão",
-    "Massa de marisco"
+    "Massa de marisco",
+    "Hambúrguer"
   ],
   "prices": {
     "Bolo de chocolate": 2.5
   },
-  "updated_at": "2026-09-17T18:44:32.949Z",
+  "updated_at": "2026-09-19T10:29:27.144Z",
   "version": 1
 }
