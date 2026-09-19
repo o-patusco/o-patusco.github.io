@@ -26,11 +26,13 @@
     "Bife à portuguesa",
     "Chouriço no barro c/pão",
     "Massa de marisco",
-    "Hambúrguer"
+    "Hambúrguer",
+    "Carne de porco à alentejana",
+    "Salmão da avó"
   ],
   "prices": {
     "Bolo de chocolate": 2.5
   },
-  "updated_at": "2026-09-19T10:29:27.144Z",
+  "updated_at": "2026-09-19T10:29:32.767Z",
   "version": 1
 }
