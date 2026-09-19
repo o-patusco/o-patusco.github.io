@@ -25,7 +25,6 @@
     "Tofu panado com arroz de tomate",
     "Bife à portuguesa",
     "Massa de marisco",
-    "Hambúrguer",
     "Carne de porco à alentejana",
     "Salmão da avó",
     "Beringelas recheadas",
@@ -36,6 +35,6 @@
   "prices": {
     "Bolo de chocolate": 2.5
   },
-  "updated_at": "2026-09-19T18:28:33.514Z",
+  "updated_at": "2026-09-19T18:28:34.953Z",
   "version": 1
 }
