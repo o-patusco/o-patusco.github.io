@@ -31,11 +31,13 @@
     "Salmão da avó",
     "Beringelas recheadas",
     "Alheira grelhada c/pão",
-    "Rissol camarão"
+    "Rissol camarão",
+    "Coxinha",
+    "Croquete"
   ],
   "prices": {
     "Bolo de chocolate": 2.5
   },
-  "updated_at": "2026-09-19T18:28:27.886Z",
+  "updated_at": "2026-09-19T18:28:30.916Z",
   "version": 1
 }
