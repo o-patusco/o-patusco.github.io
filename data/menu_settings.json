@@ -28,11 +28,12 @@
     "Massa de marisco",
     "Hambúrguer",
     "Carne de porco à alentejana",
-    "Salmão da avó"
+    "Salmão da avó",
+    "Beringelas recheadas"
   ],
   "prices": {
     "Bolo de chocolate": 2.5
   },
-  "updated_at": "2026-09-19T10:29:32.767Z",
+  "updated_at": "2026-09-19T10:29:34.025Z",
   "version": 1
 }
