@@ -30,11 +30,12 @@
     "Coxinha",
     "Croquete",
     "Frango recheado com alheira",
-    "Salmão da avó"
+    "Salmão da avó",
+    "Arroz de pato"
   ],
   "prices": {
     "Bolo de chocolate": 2.5
   },
-  "updated_at": "2026-09-22T18:23:24.681Z",
+  "updated_at": "2026-09-22T18:48:25.189Z",
   "version": 1
 }
