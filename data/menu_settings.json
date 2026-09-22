@@ -31,11 +31,12 @@
     "Coxinha",
     "Croquete",
     "Strogonoff de Seitan",
-    "Frango recheado com alheira"
+    "Frango recheado com alheira",
+    "Salmão da avó"
   ],
   "prices": {
     "Bolo de chocolate": 2.5
   },
-  "updated_at": "2026-09-22T18:23:18.270Z",
+  "updated_at": "2026-09-22T18:23:21.029Z",
   "version": 1
 }
