@@ -26,7 +26,6 @@
     "Bife à portuguesa",
     "Massa de marisco",
     "Carne de porco à alentejana",
-    "Rissol camarão",
     "Coxinha",
     "Croquete",
     "Frango recheado com alheira",
@@ -36,6 +35,6 @@
   "prices": {
     "Bolo de chocolate": 2.5
   },
-  "updated_at": "2026-09-22T18:48:25.189Z",
+  "updated_at": "2026-09-23T18:37:42.263Z",
   "version": 1
 }
