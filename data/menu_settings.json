@@ -25,11 +25,12 @@
     "Tofu panado com arroz de tomate",
     "Bife à portuguesa",
     "Salmão da avó",
-    "Arroz de pato"
+    "Arroz de pato",
+    "Tofu panado"
   ],
   "prices": {
     "Bolo de chocolate": 2.5
   },
-  "updated_at": "2026-10-06T18:05:07.623Z",
+  "updated_at": "2026-10-06T18:05:09.143Z",
   "version": 1
 }
