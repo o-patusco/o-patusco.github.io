@@ -27,11 +27,13 @@
     "Salmão da avó",
     "Tofu panado",
     "Rissol camarão",
-    "Frango assado"
+    "Frango assado",
+    "Frango recheado com alheira",
+    "Arroz de pato"
   ],
   "prices": {
     "Bolo de chocolate": 2.5
   },
-  "updated_at": "2026-10-10T19:00:25.766Z",
+  "updated_at": "2026-10-10T19:00:27.349Z",
   "version": 1
 }
