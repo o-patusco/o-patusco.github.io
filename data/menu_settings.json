@@ -26,11 +26,12 @@
     "Bife à portuguesa",
     "Salmão da avó",
     "Tofu panado",
-    "Rissol camarão"
+    "Rissol camarão",
+    "Frango assado"
   ],
   "prices": {
     "Bolo de chocolate": 2.5
   },
-  "updated_at": "2026-10-10T19:00:23.120Z",
+  "updated_at": "2026-10-10T19:00:25.766Z",
   "version": 1
 }
