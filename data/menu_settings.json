@@ -25,15 +25,15 @@
     "Tofu panado com arroz de tomate",
     "Bife à portuguesa",
     "Salmão da avó",
-    "Tofu panado",
     "Rissol camarão",
     "Frango assado",
     "Frango recheado com alheira",
-    "Arroz de pato"
+    "Arroz de pato",
+    "Beringelas recheadas"
   ],
   "prices": {
     "Bolo de chocolate": 2.5
   },
-  "updated_at": "2026-10-10T19:00:27.349Z",
+  "updated_at": "2026-10-10T19:00:31.806Z",
   "version": 1
 }
