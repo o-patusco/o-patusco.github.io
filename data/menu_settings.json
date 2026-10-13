@@ -26,7 +26,6 @@
     "Bife à portuguesa",
     "Salmão da avó",
     "Rissol camarão",
-    "Frango assado",
     "Frango recheado com alheira",
     "Arroz de pato",
     "Beringelas recheadas",
@@ -35,6 +34,6 @@
   "prices": {
     "Bolo de chocolate": 2.5
   },
-  "updated_at": "2026-10-13T18:35:20.513Z",
+  "updated_at": "2026-10-13T18:35:22.843Z",
   "version": 1
 }
