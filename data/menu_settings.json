@@ -26,14 +26,14 @@
     "Bife à portuguesa",
     "Salmão da avó",
     "Rissol camarão",
-    "Frango recheado com alheira",
     "Arroz de pato",
     "Beringelas recheadas",
-    "Croquete"
+    "Croquete",
+    "Carne de porco à alentejana"
   ],
   "prices": {
     "Bolo de chocolate": 2.5
   },
-  "updated_at": "2026-10-13T18:35:22.843Z",
+  "updated_at": "2026-10-13T18:35:25.501Z",
   "version": 1
 }
