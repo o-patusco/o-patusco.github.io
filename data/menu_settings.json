@@ -29,11 +29,12 @@
     "Arroz de pato",
     "Beringelas recheadas",
     "Croquete",
-    "Carne de porco à alentejana"
+    "Carne de porco à alentejana",
+    "Massa de marisco"
   ],
   "prices": {
     "Bolo de chocolate": 2.5
   },
-  "updated_at": "2026-10-13T18:35:25.501Z",
+  "updated_at": "2026-10-13T18:35:28.223Z",
   "version": 1
 }
