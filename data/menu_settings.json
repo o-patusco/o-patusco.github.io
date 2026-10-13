@@ -29,11 +29,12 @@
     "Frango assado",
     "Frango recheado com alheira",
     "Arroz de pato",
-    "Beringelas recheadas"
+    "Beringelas recheadas",
+    "Croquete"
   ],
   "prices": {
     "Bolo de chocolate": 2.5
   },
-  "updated_at": "2026-10-10T19:00:31.806Z",
+  "updated_at": "2026-10-13T18:35:20.513Z",
   "version": 1
 }
