@@ -29,11 +29,12 @@
     "Beringelas recheadas",
     "Croquete",
     "Carne de porco à alentejana",
-    "Filete de peixe"
+    "Filete de peixe",
+    "Strogonoff de Seitan"
   ],
   "prices": {
     "Bolo de chocolate": 2.5
   },
-  "updated_at": "2026-10-14T18:39:58.256Z",
+  "updated_at": "2026-10-14T18:40:05.160Z",
   "version": 1
 }
