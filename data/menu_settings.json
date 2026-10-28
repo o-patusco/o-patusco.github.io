@@ -28,7 +28,6 @@
     "Carne de porco à alentejana",
     "Strogonoff de Seitan",
     "Rissol carne",
-    "Arroz de pato",
     "Massa de marisco",
     "Filete de peixe",
     "Beringelas recheadas"
@@ -36,6 +35,6 @@
   "prices": {
     "Bolo de chocolate": 2.5
   },
-  "updated_at": "2026-10-27T20:28:09.630Z",
+  "updated_at": "2026-10-28T19:34:11.636Z",
   "version": 1
 }
