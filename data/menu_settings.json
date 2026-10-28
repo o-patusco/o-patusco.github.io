@@ -28,11 +28,12 @@
     "Carne de porco à alentejana",
     "Rissol carne",
     "Massa de marisco",
-    "Filete de peixe"
+    "Filete de peixe",
+    "Strogonoff de Seitan"
   ],
   "prices": {
     "Bolo de chocolate": 2.5
   },
-  "updated_at": "2026-10-28T19:34:14.182Z",
+  "updated_at": "2026-10-28T19:40:58.073Z",
   "version": 1
 }
