@@ -26,15 +26,13 @@
     "Bife à portuguesa",
     "Salmão da avó",
     "Carne de porco à alentejana",
-    "Strogonoff de Seitan",
     "Rissol carne",
     "Massa de marisco",
-    "Filete de peixe",
-    "Beringelas recheadas"
+    "Filete de peixe"
   ],
   "prices": {
     "Bolo de chocolate": 2.5
   },
-  "updated_at": "2026-10-28T19:34:11.636Z",
+  "updated_at": "2026-10-28T19:34:14.182Z",
   "version": 1
 }
