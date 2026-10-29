@@ -25,7 +25,6 @@
     "Tofu panado com arroz de tomate",
     "Bife à portuguesa",
     "Salmão da avó",
-    "Carne de porco à alentejana",
     "Rissol carne",
     "Massa de marisco",
     "Filete de peixe",
@@ -34,6 +33,6 @@
   "prices": {
     "Bolo de chocolate": 2.5
   },
-  "updated_at": "2026-10-28T19:40:58.073Z",
+  "updated_at": "2026-10-29T19:37:53.487Z",
   "version": 1
 }
