@@ -27,11 +27,12 @@
     "Salmão da avó",
     "Rissol carne",
     "Tofu à lagareiro",
-    "Croquete"
+    "Croquete",
+    "Alheira com ovo"
   ],
   "prices": {
     "Bolo de chocolate": 2.5
   },
-  "updated_at": "2026-11-04T13:52:54.592Z",
+  "updated_at": "2026-11-04T13:52:56.052Z",
   "version": 1
 }
