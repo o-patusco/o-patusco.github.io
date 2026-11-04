@@ -28,11 +28,13 @@
     "Rissol carne",
     "Tofu à lagareiro",
     "Croquete",
-    "Alheira com ovo"
+    "Alheira com ovo",
+    "Carne de porco à alentejana",
+    "Frango recheado com alheira"
   ],
   "prices": {
     "Bolo de chocolate": 2.5
   },
-  "updated_at": "2026-11-04T13:52:56.052Z",
+  "updated_at": "2026-11-04T13:53:00.024Z",
   "version": 1
 }
