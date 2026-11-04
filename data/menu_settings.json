@@ -30,11 +30,12 @@
     "Croquete",
     "Alheira com ovo",
     "Carne de porco à alentejana",
-    "Frango recheado com alheira"
+    "Frango recheado com alheira",
+    "Arroz de pato"
   ],
   "prices": {
     "Bolo de chocolate": 2.5
   },
-  "updated_at": "2026-11-04T13:53:00.024Z",
+  "updated_at": "2026-11-04T13:53:02.418Z",
   "version": 1
 }
