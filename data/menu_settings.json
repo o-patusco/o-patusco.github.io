@@ -26,7 +26,6 @@
     "Bife à portuguesa",
     "Salmão da avó",
     "Rissol carne",
-    "Tofu à lagareiro",
     "Croquete",
     "Alheira com ovo",
     "Carne de porco à alentejana",
@@ -37,6 +36,6 @@
   "prices": {
     "Bolo de chocolate": 2.5
   },
-  "updated_at": "2026-11-04T13:53:08.331Z",
+  "updated_at": "2026-11-04T13:53:09.785Z",
   "version": 1
 }
