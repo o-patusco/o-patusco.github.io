@@ -20,18 +20,18 @@
     "Mojito",
     "Bolo de chocolate",
     "Moelas",
-    "Mousse de chocolate",
     "Tofu panado com arroz de tomate",
     "Bife à portuguesa",
     "Salmão da avó",
     "Rissol carne",
     "Strogonoff de Seitan",
     "Massa de marisco",
-    "Chili"
+    "Chili",
+    "Mousse de limão"
   ],
   "prices": {
     "Bolo de chocolate": 2.5
   },
-  "updated_at": "2026-11-05T11:46:57.676Z",
+  "updated_at": "2026-11-05T11:47:38.454Z",
   "version": 1
 }
