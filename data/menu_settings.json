@@ -26,11 +26,12 @@
     "Bife à portuguesa",
     "Salmão da avó",
     "Rissol carne",
-    "Strogonoff de Seitan"
+    "Strogonoff de Seitan",
+    "Massa de marisco"
   ],
   "prices": {
     "Bolo de chocolate": 2.5
   },
-  "updated_at": "2026-11-05T11:44:18.260Z",
+  "updated_at": "2026-11-05T11:45:46.909Z",
   "version": 1
 }
