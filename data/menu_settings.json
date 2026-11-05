@@ -27,11 +27,12 @@
     "Strogonoff de Seitan",
     "Massa de marisco",
     "Chili",
-    "Mousse de limão"
+    "Mousse de limão",
+    "Torrada"
   ],
   "prices": {
     "Bolo de chocolate": 2.5
   },
-  "updated_at": "2026-11-05T11:47:38.454Z",
+  "updated_at": "2026-11-05T11:47:47.322Z",
   "version": 1
 }
