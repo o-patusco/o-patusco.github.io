@@ -27,11 +27,12 @@
     "Salmão da avó",
     "Rissol carne",
     "Strogonoff de Seitan",
-    "Massa de marisco"
+    "Massa de marisco",
+    "Chili"
   ],
   "prices": {
     "Bolo de chocolate": 2.5
   },
-  "updated_at": "2026-11-05T11:45:46.909Z",
+  "updated_at": "2026-11-05T11:45:51.273Z",
   "version": 1
 }
