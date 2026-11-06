@@ -26,11 +26,12 @@
     "Rissol carne",
     "Strogonoff de Seitan",
     "Mousse de limão",
-    "Frango recheado com alheira"
+    "Frango recheado com alheira",
+    "Tofu à lagareiro"
   ],
   "prices": {
     "Bolo de chocolate": 2.5
   },
-  "updated_at": "2026-11-06T12:09:01.016Z",
+  "updated_at": "2026-11-06T12:09:04.308Z",
   "version": 1
 }
