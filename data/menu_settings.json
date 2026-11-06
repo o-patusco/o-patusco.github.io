@@ -25,7 +25,6 @@
     "Salmão da avó",
     "Rissol carne",
     "Strogonoff de Seitan",
-    "Massa de marisco",
     "Chili",
     "Mousse de limão",
     "Frango recheado com alheira"
@@ -33,6 +32,6 @@
   "prices": {
     "Bolo de chocolate": 2.5
   },
-  "updated_at": "2026-11-06T12:08:54.298Z",
+  "updated_at": "2026-11-06T12:08:58.068Z",
   "version": 1
 }
