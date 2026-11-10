@@ -25,11 +25,12 @@
     "Salmão da avó",
     "Rissol carne",
     "Strogonoff de Seitan",
-    "Frango recheado com alheira"
+    "Frango recheado com alheira",
+    "Croquete"
   ],
   "prices": {
     "Bolo de chocolate": 2.5
   },
-  "updated_at": "2026-11-06T13:26:02.832Z",
+  "updated_at": "2026-11-10T12:51:41.831Z",
   "version": 1
 }
