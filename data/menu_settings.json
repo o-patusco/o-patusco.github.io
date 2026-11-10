@@ -26,11 +26,12 @@
     "Rissol carne",
     "Strogonoff de Seitan",
     "Frango recheado com alheira",
-    "Croquete"
+    "Croquete",
+    "Carne de porco à alentejana"
   ],
   "prices": {
     "Bolo de chocolate": 2.5
   },
-  "updated_at": "2026-11-10T12:51:41.831Z",
+  "updated_at": "2026-11-10T12:51:47.229Z",
   "version": 1
 }
