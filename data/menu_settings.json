@@ -23,7 +23,6 @@
     "Tofu panado com arroz de tomate",
     "Bife à portuguesa",
     "Salmão da avó",
-    "Rissol carne",
     "Strogonoff de Seitan",
     "Frango recheado com alheira",
     "Croquete",
@@ -36,6 +35,6 @@
   "prices": {
     "Bolo de chocolate": 2.5
   },
-  "updated_at": "2026-11-10T12:51:58.342Z",
+  "updated_at": "2026-11-10T19:31:17.517Z",
   "version": 1
 }
