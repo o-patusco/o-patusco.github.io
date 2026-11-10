@@ -30,11 +30,12 @@
     "Carne de porco à alentejana",
     "Arroz de pato",
     "Massa de marisco",
-    "Chili"
+    "Chili",
+    "Beringelas recheadas"
   ],
   "prices": {
     "Bolo de chocolate": 2.5
   },
-  "updated_at": "2026-11-10T12:51:56.566Z",
+  "updated_at": "2026-11-10T12:51:58.342Z",
   "version": 1
 }
