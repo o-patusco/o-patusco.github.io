@@ -29,11 +29,12 @@
     "Croquete",
     "Carne de porco à alentejana",
     "Arroz de pato",
-    "Massa de marisco"
+    "Massa de marisco",
+    "Chili"
   ],
   "prices": {
     "Bolo de chocolate": 2.5
   },
-  "updated_at": "2026-11-10T12:51:53.589Z",
+  "updated_at": "2026-11-10T12:51:56.566Z",
   "version": 1
 }
