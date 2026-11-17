@@ -25,7 +25,6 @@
     "Salmão da avó",
     "Strogonoff de Seitan",
     "Carne de porco à alentejana",
-    "Frango recheado com alheira",
     "Arroz de pato",
     "Filete de peixe",
     "Massa de marisco",
@@ -37,6 +36,6 @@
   "prices": {
     "Bolo de chocolate": 2.5
   },
-  "updated_at": "2026-11-17T12:47:17.472Z",
+  "updated_at": "2026-11-17T18:59:25.460Z",
   "version": 1
 }
