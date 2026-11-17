@@ -26,11 +26,13 @@
     "Strogonoff de Seitan",
     "Carne de porco à alentejana",
     "Frango recheado com alheira",
-    "Arroz de pato"
+    "Arroz de pato",
+    "Filete de peixe",
+    "Massa de marisco"
   ],
   "prices": {
     "Bolo de chocolate": 2.5
   },
-  "updated_at": "2026-11-17T12:44:49.205Z",
+  "updated_at": "2026-11-17T12:44:52.268Z",
   "version": 1
 }
