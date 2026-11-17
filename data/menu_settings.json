@@ -24,11 +24,13 @@
     "Bife à portuguesa",
     "Salmão da avó",
     "Strogonoff de Seitan",
-    "Carne de porco à alentejana"
+    "Carne de porco à alentejana",
+    "Frango recheado com alheira",
+    "Arroz de pato"
   ],
   "prices": {
     "Bolo de chocolate": 2.5
   },
-  "updated_at": "2026-11-17T12:44:44.859Z",
+  "updated_at": "2026-11-17T12:44:49.205Z",
   "version": 1
 }
