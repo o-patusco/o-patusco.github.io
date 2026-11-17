@@ -28,11 +28,12 @@
     "Frango recheado com alheira",
     "Arroz de pato",
     "Filete de peixe",
-    "Massa de marisco"
+    "Massa de marisco",
+    "Salada mista"
   ],
   "prices": {
     "Bolo de chocolate": 2.5
   },
-  "updated_at": "2026-11-17T12:44:52.268Z",
+  "updated_at": "2026-11-17T12:45:01.292Z",
   "version": 1
 }
