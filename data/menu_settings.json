@@ -30,11 +30,12 @@
     "Filete de peixe",
     "Massa de marisco",
     "Salada mista",
-    "Mousse de limão"
+    "Mousse de limão",
+    "Bolo de bolacha"
   ],
   "prices": {
     "Bolo de chocolate": 2.5
   },
-  "updated_at": "2026-11-17T12:45:11.744Z",
+  "updated_at": "2026-11-17T12:45:13.133Z",
   "version": 1
 }
