@@ -29,11 +29,12 @@
     "Arroz de pato",
     "Filete de peixe",
     "Massa de marisco",
-    "Salada mista"
+    "Salada mista",
+    "Mousse de limão"
   ],
   "prices": {
     "Bolo de chocolate": 2.5
   },
-  "updated_at": "2026-11-17T12:45:01.292Z",
+  "updated_at": "2026-11-17T12:45:11.744Z",
   "version": 1
 }
