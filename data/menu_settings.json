@@ -24,8 +24,6 @@
     "Bife à portuguesa",
     "Salmão da avó",
     "Strogonoff de Seitan",
-    "Carne de porco à alentejana",
-    "Arroz de pato",
     "Filete de peixe",
     "Massa de marisco",
     "Mousse de limão",
@@ -36,6 +34,6 @@
   "prices": {
     "Bolo de chocolate": 2.5
   },
-  "updated_at": "2026-11-18T11:48:09.446Z",
+  "updated_at": "2026-11-18T19:48:14.352Z",
   "version": 1
 }
