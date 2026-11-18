@@ -28,15 +28,15 @@
     "Arroz de pato",
     "Filete de peixe",
     "Massa de marisco",
-    "Salada mista",
     "Mousse de limão",
     "Bolo de bolacha",
     "Cappuccino",
-    "Beringelas recheadas"
+    "Beringelas recheadas",
+    "Tofu à lagareiro"
   ],
   "prices": {
     "Bolo de chocolate": 2.5
   },
-  "updated_at": "2026-11-18T11:47:41.728Z",
+  "updated_at": "2026-11-18T11:47:52.262Z",
   "version": 1
 }
