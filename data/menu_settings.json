@@ -29,7 +29,6 @@
     "Filete de peixe",
     "Massa de marisco",
     "Mousse de limão",
-    "Bolo de bolacha",
     "Cappuccino",
     "Beringelas recheadas",
     "Tofu à lagareiro"
@@ -37,6 +36,6 @@
   "prices": {
     "Bolo de chocolate": 2.5
   },
-  "updated_at": "2026-11-18T11:47:52.262Z",
+  "updated_at": "2026-11-18T11:48:09.446Z",
   "version": 1
 }
