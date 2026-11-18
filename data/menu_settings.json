@@ -31,11 +31,12 @@
     "Salada mista",
     "Mousse de limão",
     "Bolo de bolacha",
-    "Cappuccino"
+    "Cappuccino",
+    "Beringelas recheadas"
   ],
   "prices": {
     "Bolo de chocolate": 2.5
   },
-  "updated_at": "2026-11-17T18:59:25.460Z",
+  "updated_at": "2026-11-18T11:47:41.728Z",
   "version": 1
 }
