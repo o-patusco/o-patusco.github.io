@@ -23,7 +23,6 @@
     "Tofu panado com arroz de tomate",
     "Bife à portuguesa",
     "Salmão da avó",
-    "Strogonoff de Seitan",
     "Mousse de limão",
     "Cappuccino",
     "Tofu à lagareiro"
@@ -31,6 +30,6 @@
   "prices": {
     "Bolo de chocolate": 2.5
   },
-  "updated_at": "2026-11-20T12:02:56.268Z",
+  "updated_at": "2026-11-20T12:03:02.127Z",
   "version": 1
 }
